@@ -1,17 +1,159 @@
 import ast
+import asyncio
 import json
 import os
 import random
 import re
+import sqlite3
 from datetime import datetime
-from typing import Any, List, Dict, Tuple
+from pathlib import Path
+from typing import Any, Dict
+
 import aiohttp
-import time
 import numpy as np
-import requests
-import asyncio
-import http.client
 from amongagents.agent.neutral_prompts import *
+
+REPO_ROOT = Path(__file__).resolve().parents[3]
+DEFAULT_EXPERIMENT_PATH = REPO_ROOT / "human_trials" / "logs"
+SUPPORTED_LLM_PROVIDERS = {"openai", "gemini", "anthropic"}
+
+
+def _is_silence_response(value: object) -> bool:
+    """Recognize a model's explicit no-message choice in common output forms."""
+    normalized = re.sub(r"^\s*\[action\]\s*", "", str(value), flags=re.IGNORECASE).strip()
+    return bool(re.fullmatch(r'''(?:SPEAK\s*:\s*)?["'`]*SILENCE["'`]*[.!]?''', normalized, re.IGNORECASE))
+
+
+def _experiment_path() -> str:
+    experiment_path = Path(os.environ.get("EXPERIMENT_PATH", DEFAULT_EXPERIMENT_PATH)).expanduser()
+    experiment_path.mkdir(parents=True, exist_ok=True)
+    return str(experiment_path)
+
+
+def _normalize_provider(provider: str | None, model: str) -> str:
+    if provider:
+        provider = provider.strip().lower()
+    elif "/" in model:
+        provider = model.split("/", 1)[0].strip().lower()
+        if provider == "google":
+            provider = "gemini"
+    else:
+        provider = "gemini"
+
+    if provider not in SUPPORTED_LLM_PROVIDERS:
+        raise ValueError(
+            f"Unsupported LLM_PROVIDER={provider!r}. "
+            f"Use one of: {', '.join(sorted(SUPPORTED_LLM_PROVIDERS))}."
+        )
+    return provider
+
+
+def _normalize_model_name(provider: str, model: str) -> str:
+    model = model.strip()
+    provider_prefixes = {
+        "openai": ("openai/",),
+        "gemini": ("google/", "gemini/"),
+        "anthropic": ("anthropic/",),
+    }
+    for prefix in provider_prefixes[provider]:
+        if model.startswith(prefix):
+            return model.removeprefix(prefix)
+    return model
+
+
+def _provider_api_key(provider: str) -> str | None:
+    env_name = {
+        "openai": "OPENAI_API_KEY",
+        "gemini": "GEMINI_API_KEY",
+        "anthropic": "ANTHROPIC_API_KEY",
+    }[provider]
+    if provider == "gemini":
+        return os.getenv(env_name) or os.getenv("GOOGLE_API_KEY")
+    return os.getenv(env_name)
+
+
+def _anthropic_messages(messages: list[dict]) -> tuple[str, list[dict]]:
+    system_parts = []
+    conversation = []
+    for message in messages:
+        role = message.get("role", "user")
+        content = message.get("content", "")
+        if role == "system":
+            system_parts.append(content)
+        else:
+            conversation.append({
+                "role": "assistant" if role == "assistant" else "user",
+                "content": content,
+            })
+    return "\n\n".join(system_parts), conversation
+
+
+def _gemini_contents(messages: list[dict]) -> tuple[dict | None, list[dict]]:
+    system_parts = []
+    contents = []
+    for message in messages:
+        role = message.get("role", "user")
+        content = message.get("content", "")
+        if role == "system":
+            system_parts.append(content)
+        else:
+            contents.append({
+                "role": "model" if role == "assistant" else "user",
+                "parts": [{"text": content}],
+            })
+    system_instruction = None
+    if system_parts:
+        system_instruction = {"parts": [{"text": "\n\n".join(system_parts)}]}
+    return system_instruction, contents
+
+
+# Write one LLM request/response to the analysis database. The web server creates
+# the full schema; this local CREATE keeps standalone engine runs usable too.
+def _log_interaction_to_db(entry: dict):
+    db_path = os.path.join(_experiment_path(), "game_data.db")
+    player = entry.get("player", {})
+    interaction = entry.get("interaction", {})
+    try:
+        conn = sqlite3.connect(db_path)
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS llm_interactions (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                game_id TEXT NOT NULL,
+                occurred_at TEXT NOT NULL,
+                timestep INTEGER,
+                player_name TEXT NOT NULL,
+                player_role TEXT NOT NULL,
+                player_personality TEXT,
+                player_model TEXT NOT NULL,
+                player_location TEXT,
+                system_prompt TEXT,
+                prompt TEXT NOT NULL,
+                response TEXT NOT NULL,
+                full_response TEXT NOT NULL
+            )
+            """
+        )
+        conn.execute(
+            """
+            INSERT INTO llm_interactions (
+                game_id, occurred_at, timestep, player_name, player_role,
+                player_personality, player_model, player_location, system_prompt,
+                prompt, response, full_response
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                entry.get("game_index"), entry.get("timestamp"), entry.get("step"),
+                player.get("name"), player.get("identity"), player.get("personality"),
+                player.get("model"), player.get("location"), interaction.get("system_prompt"),
+                json.dumps(interaction.get("prompt")), json.dumps(interaction.get("response")),
+                interaction.get("full_response") or "",
+            ),
+        )
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        print(f"error inserting interaction to db: {e}")
 
 # Set Flask environment variable to True by default
 if "FLASK" not in os.environ:
@@ -55,25 +197,17 @@ class LLMAgent(Agent):
         self.system_prompt = system_prompt
         self.model = model
         self.temperature = 0.7
-        if self.model == "gpt-5.2":
-            self.api_key = os.getenv("OPENAI_API_KEY")
-            self.api_url = "https://api.openai.com/v1/chat/completions"
-        elif self.model.startswith("claude"):
-            self.api_key = os.getenv("ANTHROPIC_API_KEY")
-            self.api_url = "https://api.anthropic.com/v1/messages"
-        elif self.model == "gemini-2.0-flash":############################# GEMINI MODEL ##################
-            self.api_key = os.getenv("GEMINI_API_KEY")
-            self.api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent"
-        else:
-            self.api_key = os.getenv("OPENROUTER_API_KEY")
-            self.api_url = "https://openrouter.ai/api/v1/chat/completions"
+        self.provider = _normalize_provider(os.getenv("LLM_PROVIDER"), self.model)
+        self.provider_model = _normalize_model_name(self.provider, self.model)
+        self.api_key = _provider_api_key(self.provider)
         self.summarization = "No thought process has been made."
         self.processed_memory = "No memory has been processed."
         self.chat_history = []
         self.tools = tools
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
-        self.log_path = os.getenv("EXPERIMENT_PATH") + "/agent-logs.json"
-        self.compact_log_path = os.getenv("EXPERIMENT_PATH") + "/agent-logs-compact.json"
+        experiment_path = _experiment_path()
+        self.log_path = os.path.join(experiment_path, "agent-logs.json")
+        self.compact_log_path = os.path.join(experiment_path, "agent-logs-compact.json")
         self.game_index = game_index
 
     def log_interaction(self, sysprompt, prompt, original_response, step):
@@ -101,7 +235,7 @@ class LLMAgent(Agent):
                     except json.JSONDecodeError:
                         # If JSON parsing fails, try ast.literal_eval
                         return ast.literal_eval(s)
-                except:
+                except (ValueError, SyntaxError, TypeError, json.JSONDecodeError):
                     # If parsing fails, keep original string
                     return s
             return s
@@ -121,7 +255,7 @@ class LLMAgent(Agent):
         if isinstance(prompt, str):
             try:
                 prompt = parse_dict_string(prompt)
-            except:
+            except (ValueError, SyntaxError, TypeError, json.JSONDecodeError):
                 pass
         if isinstance(original_response, str):
             sections = {}
@@ -153,7 +287,7 @@ class LLMAgent(Agent):
 
         # Create the interaction object with proper nesting
         interaction = {
-            'game_index': 'Game ' + str(self.game_index),
+            'game_index': str(self.game_index),
             'step': step,
             "timestamp": str(datetime.now()),
             "player": {"name": self.player.name, "identity": self.player.identity, "personality": self.player.personality, "model": self.model, "location": self.player.location},
@@ -169,224 +303,118 @@ class LLMAgent(Agent):
             json.dump(interaction, f, separators=(",", ": "))
             f.write("\n")
             f.flush()
+        _log_interaction_to_db(interaction)
 
         print(".", end="", flush=True)
 
-    async def send_request(self, messages):
-        if self.model == "llama3.2:latest":
-            # JSON payload
-            payload = json.dumps({
-                "model": self.model,
-                "messages": messages,
-                "temperature": self.temperature,
-                "top_p": 1,
-                "frequency_penalty": 0,
-                "presence_penalty": 0,
-                "repetition_penalty": 1,
-                "top_k": 0,
-                "stream": False
-            })
+    def _build_llm_request(self, messages):
+        if not self.api_key:
+            raise RuntimeError(f"Missing API key for LLM_PROVIDER={self.provider}.")
 
-            for attempt in range(10):
-                try:
-                    # Connect to local server (adjust port if different)
-                    conn = http.client.HTTPConnection("wl-gpu1.cse.nd.edu", 11434)
-                    headers = {
-                        "Content-Type": "application/json"
-                    }
-
-                    # Send request
-                    conn.request("POST", "/api/chat", body=payload, headers=headers)
-                    response = conn.getresponse()
-
-                    # Read and display result
-                    if response.status == 200:
-                        data = json.loads(response.read())
-                        #print(data)
-                        #if "choices" not in data:
-                        #    print(f"API request failed: 'choices' key not in response for {self.model}.")
-                        #    #print(data)
-                        #    continue
-                        #if not data["choices"]:
-                        #    print(f"API request failed: 'choices' key is empty in response for {self.model}.")
-                        #    continue
-                        return data#[0]["message"]["content"]#data["choices"][0]["message"]["content"]
-                    else:
-                        print(f"Request failed with status code {response.status}")
-                    
-                except Exception as e:
-                    print(f"API request failed. Retrying... ({attempt + 1}/10) for {self.model}.")
-                    continue
-        elif self.model == "gemini-2.0-flash":############## GEMINI MODEL ############################
-            """Send a POST request to Gemini API with the provided messages."""
-            gemini_messages = []
-            for m in messages:
-                role = "user"
-                if m["role"] == "assistant":
-                    role = "model"
-                gemini_messages.append({
-                    "role": role,
-                    "parts": [{"text": m["content"]}]
-                })
-            headers = {
-                "Content-Type": "application/json"
-            }
-            payload = {
-                "contents": gemini_messages,
-                "generationConfig": {
+        if self.provider == "openai":
+            return (
+                "https://api.openai.com/v1/chat/completions",
+                {
+                    "Authorization": f"Bearer {self.api_key}",
+                    "Content-Type": "application/json",
+                },
+                {
+                    "model": self.provider_model,
+                    "messages": messages,
                     "temperature": self.temperature,
-                    "topP": 1
-                }
-            }
-            async with aiohttp.ClientSession() as session:
-                for attempt in range(10):
-                    try:
-                        async with session.post(
-                            f"{self.api_url}?key={self.api_key}",
-                            headers=headers,
-                            data=json.dumps(payload)
-                        ) as response:
-                            if response is None:
-                                print(f"API request failed: response is None for {self.model}.")
-                                continue
-                            if response.status == 200:
-                                data = await response.json()
-                                if "candidates" not in data:
-                                    print(f"API request failed: 'candidates' key not in response for {self.model}.")
-                                    continue
-                                if not data["candidates"]:
-                                    print(f"API request failed: 'candidates' key is empty for {self.model}.")
-                                    continue
-                                return data["candidates"][0]["content"]["parts"][0]["text"]
-                    except Exception as e:
-                        print(f"API request failed. Retrying... ({attempt + 1}/10) for {self.model}.")
-                        continue
-            return "SPEAK: ..."
-        elif self.model.startswith("claude"): ############## ANTHROPIC MODEL ############################
-            """Send a POST request to Anthropic API with the provided messages."""
+                },
+            )
 
-            headers = {
-                "x-api-key": self.api_key,
-                "anthropic-version": "2023-06-01",
-                "content-type": "application/json"
-            }
-
-            system_prompt = None
-            anthropic_messages = []
-
-            for msg in messages:
-                if msg["role"] == "system":
-                    if system_prompt is None:
-                        system_prompt = msg["content"]
-                    else:
-                        system_prompt += "\n\n" + msg["content"]
-                else:
-                    anthropic_messages.append(msg)
-            
+        if self.provider == "anthropic":
+            system_prompt, anthropic_messages = _anthropic_messages(messages)
             payload = {
-                "model": self.model,
+                "model": self.provider_model,
                 "messages": anthropic_messages,
-                "max_tokens": 2048
+                "max_tokens": int(os.getenv("LLM_MAX_TOKENS", "1024")),
+                "temperature": self.temperature,
             }
-
             if system_prompt:
                 payload["system"] = system_prompt
+            return (
+                "https://api.anthropic.com/v1/messages",
+                {
+                    "x-api-key": self.api_key,
+                    "anthropic-version": os.getenv("ANTHROPIC_VERSION", "2023-06-01"),
+                    "Content-Type": "application/json",
+                },
+                payload,
+            )
 
-            async with aiohttp.ClientSession() as session:
-                for attempt in range(10):
-                    try:
-                        async with session.post(
-                            self.api_url,
-                            headers=headers,
-                            data=json.dumps(payload)
-                        ) as response:
-
-                            if response is None:
-                                print(f"API request failed: response is None for {self.model}.")
-                                continue
-
-                            if response.status == 200:
-                                data = await response.json()
-
-                                if "content" not in data:
-                                    print(f"API request failed: 'content' key not in response for {self.model}.")
-                                    continue
-
-                                if not data["content"]:
-                                    print(f"API request failed: 'content' is empty for {self.model}.")
-                                    continue
-
-                                return data["content"][0]["text"]
-
-                            else:
-                                print(f"Status {response.status}: {await response.text()}")
-
-                    except Exception as e:
-                        print(f"API request failed. Retrying... ({attempt + 1}/10) for {self.model}.")
-                        print(e)
-                        continue
-
-            return "SPEAK: ..."
-        else:
-            """
-            Send a POST request to the OpenRouter or OpenAI API with retries and robust error handling.
-            """
-            headers = {
-                "Authorization": f"Bearer {self.api_key}",
-                "Content-Type": "application/json"
-            }
-
-            payload = {
-                "model": self.model,
-                "messages": messages,
+        system_instruction, gemini_contents = _gemini_contents(messages)
+        payload = {
+            "contents": gemini_contents,
+            "generationConfig": {
                 "temperature": self.temperature,
-                "top_p": 1,
-                "frequency_penalty": 0,
-                "presence_penalty": 0,
-                #"repetition_penalty": 1,
-                #"top_k": 0,
-                "stream": False  # Explicitly included to avoid API surprises
-            }
+                "maxOutputTokens": int(os.getenv("LLM_MAX_TOKENS", "1024")),
+            },
+        }
+        if system_instruction:
+            payload["systemInstruction"] = system_instruction
+        return (
+            f"https://generativelanguage.googleapis.com/v1beta/models/"
+            f"{self.provider_model}:generateContent?key={self.api_key}",
+            {"Content-Type": "application/json"},
+            payload,
+        )
 
-            max_attempts = 10
-            async with aiohttp.ClientSession() as session:
-                for attempt in range(1, max_attempts + 1):
-                    try:
-                        async with session.post(self.api_url, headers=headers, data=json.dumps(payload)) as response:
-                            # Handle non-200 status codes explicitly
-                            if response.status == 429:
-                                print("Rate limited. Waiting...")
-                                time.sleep((2 ** attempt) + random.uniform(0, 1))
-                                continue
-                            elif response.status != 200:
-                                text = await response.text()
-                                print(f"Attempt {attempt}/{max_attempts}: Request failed with status {response.status}. Response: {text}")
-                                continue
+    def _extract_llm_text(self, data):
+        if self.provider == "openai":
+            return data["choices"][0]["message"]["content"]
 
+        if self.provider == "anthropic":
+            parts = data.get("content", [])
+            return "".join(part.get("text", "") for part in parts if part.get("type") == "text")
+
+        parts = data["candidates"][0]["content"].get("parts", [])
+        return "".join(part.get("text", "") for part in parts)
+
+    async def send_request(self, messages):
+        """Send a chat-style request to the configured direct LLM provider."""
+        try:
+            url, headers, payload = self._build_llm_request(messages)
+        except Exception as exc:
+            print(f"LLM configuration failure for {self.model}: {exc}")
+            return {"content": "SPEAK: The AI connection failed after 10 attempts."}
+
+        async with aiohttp.ClientSession() as session:
+            for attempt in range(10):
+                try:
+                    print(
+                        f"LLM API request ({attempt + 1}/10) for "
+                        f"{self.provider}/{self.provider_model}",
+                        flush=True,
+                    )
+                    async with session.post(url, headers=headers, json=payload) as response:
+                        if response.status == 200:
                             data = await response.json()
+                            text = self._extract_llm_text(data)
+                            if text:
+                                print(
+                                    f"LLM API response received for "
+                                    f"{self.provider}/{self.provider_model}",
+                                    flush=True,
+                                )
+                                return text
+                            print(f"LLM API returned no text for {self.provider}/{self.provider_model}.")
+                        else:
+                            error_details = await response.text()
+                            print(
+                                f"LLM API failure ({response.status}) for "
+                                f"{self.provider}/{self.provider_model}: {error_details}"
+                            )
+                except Exception as exc:
+                    print(
+                        f"LLM API request failed. Retrying... ({attempt + 1}/10) "
+                        f"for {self.provider}/{self.provider_model}: {exc}"
+                    )
+                    continue
 
-                            # Validate response structure
-                            if not isinstance(data, dict):
-                                print(f"Attempt {attempt}/{max_attempts}: Response JSON is not a dict: {data}")
-                                continue
-
-                            #if "choices" not in data or not data["choices"]:
-                            #    print(f"Attempt {attempt}/{max_attempts}: 'choices' missing or empty in response: {data}")
-                            #    continue
-
-                            # Successful response
-                            return data  # You can access: data["choices"][0]["message"]["content"]
-
-                    except aiohttp.ClientError as e:
-                        print(f"Attempt {attempt}/{max_attempts}: ClientError occurred: {e}")
-                    except asyncio.TimeoutError:
-                        print(f"Attempt {attempt}/{max_attempts}: Timeout occurred.")
-                    except Exception as e:
-                        print(f"Attempt {attempt}/{max_attempts}: Unexpected error: {e}")
-
-                # If all attempts fail
-                print(f"All {max_attempts} attempts failed for model {self.model}.")
-                return None  # Or return {"message": "SPEAK: ..."} if you prefer a placeholder
+        return {"content": "SPEAK: The AI connection failed after 10 attempts."}
 
     def respond(self, message):
         all_info = self.player.all_info_prompt()
@@ -436,56 +464,79 @@ class LLMAgent(Agent):
     async def choose_action(self, timestep):
         available_actions = self.player.get_available_actions()
         all_info = self.player.all_info_prompt()
-        # phase = "Meeting phase" if len(available_actions) == 1 else "Task phase"
-        phase = "Meeting phase" if len(available_actions) == 1 or all(a.name == "VOTE" for a in available_actions) else "Task phase"
+        if all(action.name == "VOTE" for action in available_actions) and available_actions:
+            phase = "Meeting phase - Voting Round. You MUST cast a VOTE. Do NOT SPEAK."
+        elif any(action.name == "SPEAK" for action in available_actions):
+            phase = (
+                "Meeting phase - Free discussion. A speaking opportunity is available. "
+                "Speak only if you have a useful concise contribution; otherwise return "
+                "[Action] SILENCE. Do NOT VOTE yet."
+            )
+        else:
+            phase = (
+                "Real-time task phase. Make one independent action now. Other players "
+                "act independently, so an action can become unavailable before execution."
+            )
+
+        # Iterate through each available action object and converts to bullet newline menu for LLM
+        actions_str = "\n".join(f"- {repr(action)}" for action in available_actions)
 
         messages = [
             {"role": "system", "content": self.system_prompt},
             {
                 "role": "user",
-                "content": f"Summarization: {self.summarization}\n\n{all_info}\n\nMemory: {self.processed_memory}\
-                    \n\nPhase: {phase}. Return your output.",
+                "content": (
+                    f"Summarization: {self.summarization}\n\n{all_info}\n\n"
+                    f"Memory: {self.processed_memory}\n\n"
+                    f"Phase: {phase}.\n"
+                    "Available actions (choose EXACTLY one listed action, unless the "
+                    "meeting instruction specifically permits SILENCE):\n"
+                    f"{actions_str}\n\n"
+                    f"Return your output."
+                ),
             },
         ]
-        
+
         # log everything needed to reproduce the interaction
         full_prompt = {
             "Summarization": self.summarization,
             "All Info": all_info,
             "Memory": self.processed_memory,
             "Phase": phase,
+            "Available Actions": actions_str,
         }
         
         response = await self.send_request(messages)
-        #print("response: ", response)
-        
 
         self.log_interaction(sysprompt=self.system_prompt, prompt=full_prompt, original_response=response, step=timestep)
 
-        raw_message = {}
-        if isinstance(response, str):
-            raw_message['content'] = response
+        # Standardize response to a str
+        if isinstance(response, dict):
+            raw_message_text = response.get('content', str(response))
         else:
-            try: 
-                raw_message = response['message']
-            except:
-                try: 
-                    half_message = response['choices']
-                    half_message = half_message[0]
-                    raw_message = half_message['message']
-                except:
-                    print("Malformed response: ", response)
-                    exit
+            raw_message_text = str(response)
 
-        try:
-            parsed_message = self.parse_flexible_sections(raw_message['content'])
-        except:
-            print(raw_message)
-            exit
+        ai_role = getattr(self.player, 'identity', 'Unknown')
+        if not isinstance(ai_role, str):
+            ai_role = getattr(self, 'identity', 'Unknown')
 
-        memory = parsed_message['condensed memory']
-        summarization = parsed_message['thinking process']
-        output_action = parsed_message['action']
+        print("\n" + "="*50)
+        print(f"AI THOUGHTS - {self.player.name} ({ai_role})")
+        print(raw_message_text)
+        print("="*50 + "\n")
+        parsed_message = self.parse_flexible_sections(raw_message_text)
+
+        # Update agent state
+        # Use get with fallbacks to avoid key errors
+        self.processed_memory = parsed_message.get('condensed memory', 'No memory.')
+        self.summarization = parsed_message.get('thinking process', 'No thought.')
+        output_action = parsed_message.get('action', 'SPEAK: ...')
+
+        if (
+            any(action.name == "SPEAK" for action in available_actions)
+            and _is_silence_response(output_action)
+        ):
+            return None
 
         # pattern = r"^\[Condensed Memory\]((.|\n)*)\[Thinking Process\]((.|\n)*)\[Action\]((.|\n)*)$"
         # searchMessage = response['message']
@@ -546,16 +597,80 @@ class LLMAgent(Agent):
         #                 print("WAIT? ", output_action)
 
         for action in available_actions:
-            #print("TRAVERSE:", action)
-            if repr(action) in output_action:
+            if action.name == "VOTE":
+                # Strip identity suffix so crewmates can match e.g. "Player 5: green"
+                # even when repr is "VOTE Player 5: green (Impostor)"
+                target = re.sub(r'\s*\([^)]*\)\s*$', '', str(action.other_player.name)).strip()
+                if target and target in output_action:
+                    return action
+            elif repr(action) in output_action:
                 return action
             elif "SPEAK: " in repr(action) and "SPEAK: " in output_action:
                 message = output_action.split("SPEAK: ")[1]
+                await asyncio.sleep(0.10 * len(message))
                 action.message = message
                 return action
             else:
                 action.message = '...'
         return action
+
+    async def choose_private_vote(self, timestep, candidates, stage):
+        """Choose a private meeting assessment without exposing it to other players."""
+        all_info = self.player.all_info_prompt()
+        candidate_text = "\n".join(f"- {candidate}" for candidate in candidates)
+        instruction = (
+            f"{stage}. This response is private and will not be shown to other players.\n"
+            f"Choose one option from this list:\n{candidate_text}\n\n"
+            "Return your normal sections, and end the Action section with exactly "
+            f"{stage.upper()}: <one option>."
+        )
+        prompt = (
+            f"Summarization: {self.summarization}\n\n{all_info}\n\n"
+            f"Memory: {self.processed_memory}\n\n{instruction}"
+        )
+        messages = [
+            {"role": "system", "content": self.system_prompt},
+            {"role": "user", "content": prompt},
+        ]
+        full_prompt = {
+            "Summarization": self.summarization,
+            "All Info": all_info,
+            "Memory": self.processed_memory,
+            "Phase": stage,
+            "Candidates": candidates,
+        }
+        response = await self.send_request(messages)
+        response_text = response.get("content", str(response)) if isinstance(response, dict) else str(response)
+        self.log_interaction(self.system_prompt, full_prompt, response_text, timestep)
+        return response_text
+
+    async def choose_private_influences(self, timestep, candidates):
+        """Identify zero or more private influences on a completed vote."""
+        all_info = self.player.all_info_prompt()
+        candidate_text = "\n".join(f"- {candidate}" for candidate in candidates)
+        prompt = (
+            f"Summarization: {self.summarization}\n\n{all_info}\n\n"
+            f"Memory: {self.processed_memory}\n\n"
+            "Vote influence attribution. This response is private. Select any number of "
+            f"living ship-mates from:\n{candidate_text}\n\n"
+            "Return your normal sections, and end the Action section with "
+            "INFLUENCES: <comma-separated names>, or INFLUENCES: No one."
+        )
+        messages = [
+            {"role": "system", "content": self.system_prompt},
+            {"role": "user", "content": prompt},
+        ]
+        full_prompt = {
+            "Summarization": self.summarization,
+            "All Info": all_info,
+            "Memory": self.processed_memory,
+            "Phase": "Vote influence attribution",
+            "Candidates": candidates,
+        }
+        response = await self.send_request(messages)
+        response_text = response.get("content", str(response)) if isinstance(response, dict) else str(response)
+        self.log_interaction(self.system_prompt, full_prompt, response_text, timestep)
+        return response_text
 
     def choose_observation_location(self, map):
         if isinstance(map, (list, tuple)):
@@ -589,8 +704,9 @@ class HumanAgent(Agent):
         self.game_index = game_index
         self.summarization = "No thought process has been made."
         self.processed_memory = "No memory has been processed."
-        self.log_path = os.getenv("EXPERIMENT_PATH") + "/agent-logs.json"
-        self.compact_log_path = os.getenv("EXPERIMENT_PATH") + "/agent-logs-compact.json"
+        experiment_path = _experiment_path()
+        self.log_path = os.path.join(experiment_path, "agent-logs.json")
+        self.compact_log_path = os.path.join(experiment_path, "agent-logs-compact.json")
         self.current_available_actions = []
         self.current_step = 0
         self.max_steps = 50  # Default value, will be updated from game config
@@ -820,7 +936,7 @@ class HumanAgent(Agent):
                     print(f"Invalid input. Please enter a number between 0 and {len(map_list) - 1}.")
                 else:
                     return map_list[index]
-            except:
+            except (ValueError, IndexError, TypeError):
                 print("Invalid input. Please enter a number.")
 
     def log_interaction(self, sysprompt, prompt, original_response, step):
@@ -866,7 +982,7 @@ class HumanAgent(Agent):
 
         # Create the interaction object with proper nesting
         interaction = {
-            'game_index': 'Game ' + str(self.game_index),
+            'game_index': f"{os.environ.get('SESSION_ID', 'unknown')}_Game {self.game_index}",
             'step': step,
             "timestamp": str(datetime.now()),
             "player": {"name": self.player.name, "identity": self.player.identity, "personality": self.player.personality, "model": self.model, "location": self.player.location},
@@ -889,6 +1005,7 @@ class HumanAgent(Agent):
                 f.flush()
         except Exception as e:
             print(f"Error writing to log file: {e}") # Add error logging
+        _log_interaction_to_db(interaction)
 
         print(".", end="", flush=True)
 

@@ -1,5 +1,4 @@
 import copy
-from time import time
 
 import networkx as nx
 import numpy as np
@@ -86,8 +85,13 @@ class TaskAssignment:
 
         self.reset_task_assignments()
         num_common_tasks = self.game_config["num_common_tasks"]
+        seen_names = {}
+        for task in self.common_tasks:
+            if task.name not in seen_names:
+                seen_names[task.name] = task
+        unique_common_tasks = list(seen_names.values())
         selected_common_tasks = np.random.choice(
-            self.common_tasks, size=(num_common_tasks,)
+            unique_common_tasks, size=(num_common_tasks,), replace=False
         )
         common_tasks_for_players = [
             copy.deepcopy(selected_common_tasks) for _ in players
@@ -109,17 +113,19 @@ class TaskAssignment:
                 all_tasks = common_tasks
             else:
                 all_tasks = np.concatenate([common_tasks, short_tasks, long_tasks])
-                self.assigned_tasks.extend(all_tasks)
+
+                if player.identity != "Impostor":
+                    self.assigned_tasks.extend(all_tasks)
             player.assign_tasks(all_tasks)
 
     def check_task_completion(self):
         all_tasks = 0
         completed_tasks = 0
         for task in self.assigned_tasks:
-            if (
-                task.assigned_player.is_alive
-            ):  # if a player is dead, we do not check his task
-                all_tasks += 1
-                if task.check_completion():
-                    completed_tasks += 1
+            assigned_player = getattr(task, "assigned_player", None)
+            if assigned_player is not None and not getattr(assigned_player, "is_connected", True):
+                continue
+            all_tasks += 1
+            if task.check_completion():
+                completed_tasks += 1
         return completed_tasks / all_tasks if all_tasks > 0 else 0

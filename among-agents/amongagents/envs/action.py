@@ -37,6 +37,8 @@ class MoveTo(Action):
 
     @staticmethod
     def can_execute_actions(env, player):
+        if not getattr(player, "is_connected", True):
+            return []
         if env.current_phase == "task":
             new_locations = env.map.get_adjacent_rooms(player.location)
             return [MoveTo(player.location, location) for location in new_locations]
@@ -51,6 +53,8 @@ class Vent(MoveTo):
 
     @staticmethod
     def can_execute_actions(env, player):
+        if not getattr(player, "is_connected", True):
+            return []
         if env.current_phase == "task":
             new_locations = env.map.get_adjacent_rooms_vent(player.location)
             return [Vent(player.location, location) for location in new_locations]
@@ -72,12 +76,23 @@ class CallMeeting(Action):
         super().execute(env, player)
         env.current_phase = "meeting"
         env.button_num += 1
-        for player in env.players:
-            if not player.is_alive and not player.reported_death:
-                player.reported_death = True
+
+        #  If there's a dead body that hasn't been reported, report it. Otherwise, general meeting call.
+        target  = None
+        for p in env.players:
+            if not p.is_alive and not p.reported_death:
+                p.reported_death = True
+                target = p
+        msg = (f"REPORT: {player.name} found {target.name}'s body in {self.current_location}."
+               if target else f"REPORT: {player.name} called an emergency meeting.")
+        for p in env.players:
+            if p.is_alive:
+                p.observation_history.append(msg)
 
     @staticmethod
     def can_execute_actions(env, player):
+        if not getattr(player, "is_connected", True):
+            return []
         if env.current_phase == "task":
             current_location = player.location
             players_in_the_same_room = env.map.get_players_in_room(
@@ -104,17 +119,25 @@ class Vote(Action):
         self.other_player = other_player
 
     def __repr__(self):
-        return f"{self.name} {self.other_player.name}"
+        target = self.other_player.name if self.other_player else "none"
+        return f"{self.name} {target}"
 
     def execute(self, env, player):
         super().execute(env, player)
+        if self.other_player is None:
+            env.vote_info_one_round[player.name] = "none"
+            return
         env.vote_info_one_round[player.name] = self.other_player.name
         env.votes[self.other_player] = env.votes.get(self.other_player, 0) + 1
 
     def can_execute_actions(env, player):
+        if not getattr(player, "is_connected", True):
+            return []
         if env.current_phase == "meeting" and env.discussion_rounds_left == 0:
             alive_players_excluding_self = [
-                p for p in env.players if p.is_alive and p != player
+                p
+                for p in env.players
+                if p.is_alive and getattr(p, "is_connected", True) and p != player
             ]
             return [
                 Vote(player.location, other_player)
@@ -140,6 +163,8 @@ class Speak(Action):
         # TODO: Implement this
 
     def can_execute_actions(env, player):
+        if not getattr(player, "is_connected", True):
+            return []
         if env.current_phase == "meeting" and env.discussion_rounds_left == 0:
             return []
         # ADDITION BY ME
@@ -154,7 +179,7 @@ class ViewMonitor(Action):
         super().__init__("ViewMonitor", current_location=current_location)
 
     def __repr__(self):
-        return f"VIEW MONITOR"
+        return "VIEW MONITOR"
 
     def execute(self, env, player, choose_location):
         super().execute(env, player)
@@ -198,7 +223,8 @@ class ViewMonitor(Action):
         # TODO: Implement this
 
     def can_execute_actions(env, player):
-        available_tasks = []
+        if not getattr(player, "is_connected", True):
+            return []
         if player.location == "Security":
             return [ViewMonitor("Security")]
         else:
@@ -214,7 +240,7 @@ class CompleteTask(Action):
         return f"{self.name} - {self.task.name}"
 
     def action_text(self):
-        return f"Seemingly doing task"
+        return "Seemingly doing task"
 
     def execute(self, env, player):
         super().execute(env, player)
@@ -222,6 +248,8 @@ class CompleteTask(Action):
         # TODO: Implement this
 
     def can_execute_actions(env, player):
+        if not getattr(player, "is_connected", True):
+            return []
         available_tasks = []
         if env.current_phase == "task":
             current_location = player.location
@@ -253,10 +281,14 @@ class Kill(Action):
     def execute(self, env, player):
         super().execute(env, player)
         self.other_player.is_alive = False
+        self.other_player.killed_this_step = True
+        self.other_player.body_location = self.other_player.location
         player.kill_cooldown = env.game_config["kill_cooldown"]
 
     @staticmethod
     def can_execute_actions(env, player):
+        if not getattr(player, "is_connected", True):
+            return []
         if env.current_phase == "task" and player.kill_cooldown == 0:
             current_location = player.location
             other_players = env.map.get_players_in_room(current_location)
@@ -278,13 +310,15 @@ class CompleteFakeTask(CompleteTask):
         return f"{self.name} - {self.task.name}"
 
     def action_text(self):
-        return f"Seemingly doing task"
+        return "Seemingly doing task"
 
     def execute(self, env, player):
         super().execute(env, player)
         self.task.do_task()  # TODO: Implement this (implement fake task instance)
 
     def can_execute_actions(env, player):
+        if not getattr(player, "is_connected", True):
+            return []
         available_tasks = []
         if env.current_phase == "task":
             current_location = player.location

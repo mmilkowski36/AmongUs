@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Among Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <!-- Lobby Screen -->
+    <div class="container mt-5" id="lobby-screen-wrapper">
+        <header class="text-center mb-4">
+            <h2 class="text-light fw-bold">Among Us</h2>
+        </header>
+        <section id="lobby-screen" class="config-panel">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+
+                    <!-- Auto Matchmaking -->
+                    <div id="matchmaking-panel">
+                        <ul id="matchmaking-roster" class="list-group list-group-flush mb-3">
+                            <li class="lobby-player-slot list-group-item is-open">
+                                <img class="lobby-player-sprite" src="/assets/player_sprites/alive/player_red.png" alt="Open player slot">
+                                <span class="lobby-player-status">Waiting</span>
+                            </li>
+                            <li class="lobby-player-slot list-group-item is-open">
+                                <img class="lobby-player-sprite" src="/assets/player_sprites/alive/player_blue.png" alt="Open player slot">
+                                <span class="lobby-player-status">Waiting</span>
+                            </li>
+                            <li class="lobby-player-slot list-group-item is-open">
+                                <img class="lobby-player-sprite" src="/assets/player_sprites/alive/player_green.png" alt="Open player slot">
+                                <span class="lobby-player-status">Waiting</span>
+                            </li>
+                            <li class="lobby-player-slot list-group-item is-open">
+                                <img class="lobby-player-sprite" src="/assets/player_sprites/alive/player_pink.png" alt="Open player slot">
+                                <span class="lobby-player-status">Waiting</span>
+                            </li>
+                            <li class="lobby-player-slot list-group-item is-open">
+                                <img class="lobby-player-sprite" src="/assets/player_sprites/alive/player_orange.png" alt="Open player slot">
+                                <span class="lobby-player-status">Waiting</span>
+                            </li>
+                        </ul>
+                        <p id="matchmaking-status" class="text-light text-center mb-0">Finding a game...</p>
+                        <div class="d-grid gap-2 mt-3">
+                            <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#about-this-game-modal">About This Game</button>
+                            <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#how-to-play-modal">How to Play</button>
+                        </div>
+                    </div>
+
+                    <!-- Legacy Lobby Browser -->
+                    <div id="browse-panel" class="d-none">
+                        <div class="d-flex align-items-center mb-3">
+                            <button id="back-btn" class="btn btn-sm btn-outline-secondary me-2">Back</button>
+                            <h5 class="mb-0 text-light">Open Lobbies</h5>
+                            <button id="refresh-btn" class="btn btn-sm btn-outline-info ms-auto">Refresh</button>
+                        </div>
+                        <div id="lobby-list">
+                            <p class="text-muted text-center small">Loading...</p>
+                        </div>
+                    </div>
+
+                    <!-- Waiting Room: Shown After Hosting or Joining -->
+                    <div id="waiting-panel" class="d-none">
+                        <p id="lobby-timer" class="text-warning text-center fw-bold small mb-3 d-none"></p>
+                        <button id="start-game-btn" class="btn btn-success btn-lg w-100 fw-bold d-none">Start Game</button>
+                        <p id="waiting-hint" class="text-muted text-center small mt-2 d-none">Waiting for more players to join...</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Game Screen -->
+    <section id="game-screen" class="d-none" style="position: relative;">
+
+        <!-- Game Over Overlay -->
+        <div id="gameover-overlay" class="d-none">
+            <h1 id="gameover-title" class="fw-bold mb-4"></h1>
+            <div id="gameover-players" class="mb-4"></div>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <a id="participation-completion-link" class="btn btn-success px-4 py-2 fw-bold d-none" href="#" target="_blank" rel="noopener noreferrer">Log Participation</a>
+                <button class="btn btn-outline-light px-4 py-2 fw-bold" onclick="window.location.reload()">Return to Menu</button>
+            </div>
+        </div>
+
+        <!-- Meeting Overlay -->
+        <div id="meeting-overlay" class="d-none">
+            <h2 class="text-danger fw-bold text-center mb-2">📢 EMERGENCY MEETING</h2>
+            <div class="row flex-grow-1 overflow-hidden gx-3">
+
+                <!-- Discussion Chat -->
+                <div class="col-12 d-flex flex-column h-100">
+                    <div class="card bg-dark border-secondary flex-grow-1 mb-2 overflow-hidden">
+                        <div class="card-header text-info small fw-bold">CREW DISCUSSION</div>
+                        <div id="discussion-chat" class="card-body text-start" style="min-height: 0; overflow-y: auto; font-family: 'Courier New', monospace; font-size: 0.85rem; background: #050505;"></div>
+                    </div>
+                    <p id="turn-prompt" class="text-success fw-bold small text-center mb-1" style="display: none;"></p>
+                    <p id="turn-timer-meeting" class="fw-bold small text-center mb-1" style="display: none;"></p>
+                    <div id="chat-input-group" class="input-group" style="display: none;">
+                        <input type="text" id="chat-input" name="discussion-message" class="form-control bg-dark text-light border-secondary" placeholder="Defend yourself or accuse others..." autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+                        <button class="btn btn-info fw-bold" id="send-chat-btn">SEND</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="pre-vote-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark text-light border-secondary">
+                    <div class="modal-header border-secondary d-flex align-items-center">
+                        <h5 class="modal-title text-warning fw-bold">Vote Before the Chat Phase</h5>
+                        <span id="pre-vote-timer" class="ms-auto fw-bold text-warning">--s</span>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-3"><em>If the vote were right now, who would you vote to eject?</em><br><span class="text-secondary">This vote is private.</span></p>
+                        <div id="pre-vote-options" class="vote-modal-options"></div>
+                        <div id="pre-vote-waiting" class="text-center text-secondary fw-bold d-none">Waiting for the remaining private pre-votes...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="final-vote-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark text-light border-secondary">
+                    <div class="modal-header border-secondary d-flex align-items-center">
+                        <h5 class="modal-title text-success fw-bold">Cast Your Vote</h5>
+                        <span id="final-vote-timer" class="ms-auto fw-bold text-warning">--s</span>
+                    </div>
+                    <div class="modal-body">
+                        <div id="final-vote-options" class="vote-modal-options"></div>
+                        <button id="final-skip-vote" type="button" class="btn btn-outline-warning w-100 mt-3 fw-bold">Skip Vote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="vote-influence-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg vote-influence-dialog">
+                <div class="modal-content bg-dark text-light border-secondary">
+                    <div class="modal-header border-secondary"><h5 class="modal-title text-info fw-bold">Vote After the Chat Phase</h5><span id="vote-influence-timer" class="text-warning fw-bold ms-2" role="timer"></span></div>
+                    <div class="modal-body">
+                        <p><em>Which of the other players (if any) influenced your vote?</em></p>
+                        <div id="vote-influence-options" class="vote-influence-options"></div>
+                        <button id="submit-vote-influence" type="button" class="btn btn-info w-100 mt-3 fw-bold">Confirm Influence</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Task Progress Bar -->
+        <div id="task-bar-row">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="text-uppercase fw-bold" style="font-size:0.68rem; color:#6fcf97; letter-spacing:0.05em;">Task Progress</span>
+                <span id="task-percent-text" class="badge bg-success" style="font-size:0.7rem;">0%</span>
+            </div>
+            <div class="progress bg-dark border border-secondary" style="height: 10px; border-radius: 4px;">
+                <div id="total-task-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Game Log -->
+        <div id="game-log-strip">
+            <div class="log-label">Game Log</div>
+            <div id="game-log"></div>
+        </div>
+
+        <!-- Status Strip -->
+        <div id="status-strip">
+            <span>You: <span id="user-display" class="status-val">—</span><span id="role-reminder" class="fw-bold"></span></span>
+            <span>Location: <span id="location-display" class="status-val">—</span></span>
+            <span id="game-clock-strip" class="d-none">Match: <span id="game-clock-val" class="fw-bold">00:00</span></span>
+            <span id="turn-timer-strip" class="d-none">⏱ <span id="turn-timer-val" class="fw-bold">60</span>s</span>
+        </div>
+
+        <!-- Main Content: Room Stage -->
+        <div class="row g-2" id="main-content-row">
+
+            <!-- Room Stage -->
+            <div id="map-col">
+                <div id="room-view-wrapper">
+                    <div id="room-view">
+                        <div id="room-task-overlay"></div>
+                        <div id="room-player-layer"></div>
+                        <div id="room-interaction-layer"></div>
+                    </div>
+                </div>
+                <div id="minimap-container">
+                    <img src="/assets/map/skeld.png" alt="The Skeld">
+                    <div id="skeld-player-layer"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About This Game Modal -->
+    <div id="about-this-game-modal" class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title fw-bold">About This Game</h5>
+                </div>
+                <div class="modal-body" style="font-size:0.9rem;">
+
+                    <div class="row gx-4">
+                        <div class="col-md-6 mb-3">
+                            <h6 class="text-info fw-bold text-uppercase">Informed Consent</h6>
+                            <p class="text-light">
+                                You are invited to participate in a research study examining gameplay and communication in a real-time version of the game Among Us. In this study, you will make decisions during gameplay.
+                            </p>
+                            <p class="text-light">
+                                During the study, the system will record gameplay actions and in-game communications for research purposes. No personally identifying information will be collected beyond what is necessary to conduct the study.
+                            </p>
+                            <p class="text-light">
+                                The purpose of this research is to examine differences in gameplay, communication, and deception strategies across different types of players in a social deduction game environment.
+                            </p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6 class="text-warning fw-bold text-uppercase">What You Will Do</h6>
+                            <ul class="text-light ps-3">
+                                <li>Join a short online social-deduction game.</li>
+                                <li>Interact with other players through game actions and discussion.</li>
+                                <li>Make decisions during gameplay and timed meetings.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="border-secondary">
+
+                    <div class="row gx-4">
+                        <div class="col-md-6 mb-3">
+                            <h6 class="text-success fw-bold text-uppercase">Your Choice</h6>
+                            <ul class="text-light ps-3">
+                                <li>Participation is voluntary.</li>
+                                <li>You may stop playing at any time.</li>
+                                <li>Only continue if you are 18 years old and agree.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6 class="text-light fw-bold text-uppercase">Questions</h6>
+                            <ul class="text-muted ps-3">
+                                <li>Contact Prof. Tim Weninger: tweninger@nd.edu with questions</li>
+                                <li>Upon the completion of the game you will receive a link that can be used to register your completion</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button id="consent-agree-btn" type="button" class="btn btn-primary fw-bold px-4">I Agree</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to Play Modal -->
+    <div id="how-to-play-modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title fw-bold">How to Play</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" style="font-size:0.9rem;">
+
+                    <div class="row gx-4">
+                        <div class="col-md-6 mb-3">
+                            <h6 class="text-success fw-bold text-uppercase">Crewmates</h6>
+                            <ul class="text-light ps-3">
+                                <li>Complete all your assigned tasks, <strong>or</strong></li>
+                                <li>Vote out all Impostors in meetings</li>
+                            </ul>
+                            <h6 class="text-danger fw-bold text-uppercase mt-3">Impostors</h6>
+                            <ul class="text-light ps-3">
+                                <li>Kill Crewmates until they are outnumbered, <strong>or</strong></li>
+                                <li>Survive until the game time limit runs out</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6 class="text-info fw-bold text-uppercase">During the Game</h6>
+                            <ul class="text-light ps-3">
+                                <li><strong>Move</strong>: Travel to an adjacent room</li>
+                                <li><strong>Do Task</strong>: Work at a task in your room until its timer ends (Crewmates)</li>
+                                <li><strong>Report</strong>: Report a dead body to call a meeting</li>
+                                <li><strong>Emergency Meeting</strong>: Call a meeting from the Cafeteria</li>
+                                <li><strong>Kill</strong>: Eliminate a nearby Crewmate (Impostors only)</li>
+                                <li><strong>Vent</strong>: Teleport between vent-connected rooms (Impostors only)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="border-secondary">
+
+                    <div class="row gx-4">
+                        <div class="col-md-6 mb-3">
+                            <h6 class="text-warning fw-bold text-uppercase">Emergency Meetings</h6>
+                            <ul class="text-light ps-3">
+                                <li>Discuss who you think the Impostor is</li>
+                                <li>Discuss freely during the timed discussion</li>
+                                <li>Then everyone votes. Player with most votes gets ejected</li>
+                                <li>Ties result in no ejection</li>
+                                <li>Dead players must observe but cannot vote or speak</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6 class="text-light fw-bold text-uppercase">Tips</h6>
+                            <ul class="text-muted ps-3">
+                                <li>You can only see players who are in the same room as you</li>
+                                <li>Watch the game log carefully. It records when players leave your room</li>
+                                <li>Be careful using Impostor actions like killing and venting; witnesses in the same room will see it</li>
+                                <li>If you fail to submit an action on time, a null action is submitted automatically</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-primary fw-bold px-4" data-bs-dismiss="modal">Got it</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Death Modal -->
+    <div id="killed-modal" class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white text-center border-danger">
+                <div class="modal-body p-5">
+                    <h2 class="display-5 fw-bold text-danger mb-3">YOU WERE KILLED</h2>
+                    <p class="text-light mb-4">You are now a ghost and cannot send chat messages or vote. Please stay and help your crew win! You can still move around and complete your tasks when meetings end.</p>
+                    <button type="button" class="btn btn-outline-light px-4" data-bs-dismiss="modal">Continue as Ghost</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Role Reveal Modal -->
+    <div id="role-reveal-modal" class="modal fade" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white text-center border-secondary">
+                <div class="modal-body p-5">
+                    <h2 id="role-title" class="display-4 fw-bold mb-3">Keep this a secret!</h2>
+                    <h4 class="mb-4">Your role is:</h4>
+                    <h1 id="role-display" class="display-3 fw-bold text-uppercase mb-4">Loading...</h1>
+                    <h5 class="mb-5 text-light">You are playing as:
+                        <span id="color-name-display" class="text-capitalize fw-bold"></span>
+                        <img id="color-img-display" src="" style="width: 45px; margin-left: 10px; vertical-align: middle;">
+                    </h5>
+                    <button type="button" class="btn btn-primary btn-lg px-5" id="enter-map-btn" data-bs-dismiss="modal">Enter the Cafeteria</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/static/js/game.js"></script>
+</body>
+</html>

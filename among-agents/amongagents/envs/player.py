@@ -1,9 +1,14 @@
+import os
+
 from amongagents.envs.action import (
     COMMON_ACTIONS,
     CREWMATE_ACTIONS,
     IMPOSTER_ACTIONS,
     CompleteTask,
 )
+
+LLM_RECENT_OBSERVATIONS = max(1, int(os.getenv("LLM_RECENT_OBSERVATIONS", "40")))
+LLM_RECENT_ACTIONS = max(1, int(os.getenv("LLM_RECENT_ACTIONS", "10")))
 
 PLAYER_COLORS = [
     "red",
@@ -42,8 +47,11 @@ class Player:
 
         # Player status
         self.is_alive = True
+        self.is_connected = True
         self.tasks = []
         self.reported_death = False
+        self.body_location = None # Represents location at death (static)
+        self.killed_this_step = False
 
     def __repr__(self) -> str:
         return f"{self.name} ({self.identity})"
@@ -64,10 +72,13 @@ class Player:
         self.available_actions = actions
 
     def get_available_actions(self):
+        if not self.is_connected:
+            return []
         if self.is_alive:
             return self.available_actions
         else:
-            return []
+            # Ghosts can only move or complete tasks
+            return [action for action in self.available_actions if action.name in ("MOVE", "COMPLETE TASK")]
 
     def make_action(self, env, action, choose_location="Cafeteria"):
         if action.name == "ViewMonitor":
@@ -91,6 +102,8 @@ class Player:
         self.action_history.append(record)
 
     def receive(self, message, info_type):
+        if not self.is_connected:
+            return
         if info_type == "location":
             self.location_info = message
         elif info_type == "action":
@@ -106,7 +119,7 @@ class Player:
             text += f"{i+1}. {action}\n"
         return text
 
-    def action_history_prompt(self, recent_num=4):
+    def action_history_prompt(self, recent_num=LLM_RECENT_ACTIONS):
         text = "Action history:\n"
         if len(self.action_history) == 0:
             text += "No actions have been taken yet.\n"
@@ -116,20 +129,19 @@ class Player:
                 current_phase = record["phase"]
                 action = record["action"]
                 if current_phase == "task":
-                    if type(action) == CompleteTask:
+                    if isinstance(action, CompleteTask):
                         action_text = str(action)
                     else:
                         action_text = action.action_text()
                     text += (
-                        f"Timestep {timestep}: [{current_phase} phase] {action_text}\n"
+                        f"Event {timestep}: [{current_phase} phase] {action_text}\n"
                     )
                 elif current_phase == "meeting":
-                    round = record["round"]
-                    text += f"Timestep {timestep}: [{current_phase} phase - round {round}] {action.action_text()}\n"
+                    text += f"Event {timestep}: [{current_phase} phase] {action.action_text()}\n"
         text += "\n"
         return text
 
-    def observation_history_prompt(self, recent_num=4):
+    def observation_history_prompt(self, recent_num=LLM_RECENT_OBSERVATIONS):
         text = "Observation history:\n"
         if len(self.observation_history) == 0:
             text += "No observations have been made yet.\n"
@@ -141,6 +153,7 @@ class Player:
 
     def tasks_prompt(self):
         text = "Your Assigned Tasks:\n"
+        text += "Completing a task takes time, so remaining alive and in the task room matters.\n"
         if len(self.tasks) == 0:
             text += "No tasks have been assigned yet.\n"
         else:

@@ -1,11 +1,10 @@
-import random
 import asyncio
+import json
+import os
+import random
 import time
 
 import numpy as np
-import json
-import os
-
 from amongagents.agent.agent import HumanAgent, LLMAgent, LLMHumanAgent, RandomAgent
 from amongagents.agent.neutral_prompts import (
     MEETING_PHASE_INSTRUCTION,
@@ -14,17 +13,14 @@ from amongagents.agent.neutral_prompts import (
     ImpostorPersonalities,
 )
 from amongagents.envs.configs.agent_config import (
-    ALL_LLM,
-    ALL_RANDOM,
-    CREWMATE_LLM,
     IMPOSTOR_LLM,
 )
+from amongagents.envs.configs.experiment_config import *
 from amongagents.envs.configs.game_config import *
-from amongagents.envs.map import Map, Spaceship
+from amongagents.envs.map import Map
 from amongagents.envs.player import PLAYER_COLORS, Crewmate, Impostor
 from amongagents.envs.task import TaskAssignment
 from amongagents.envs.tools import GetBestPath
-from amongagents.envs.configs.experiment_config import *
 
 # Set Flask environment variable to True by default
 if "FLASK" not in os.environ:
@@ -86,6 +82,7 @@ class AmongUs:
         self.all_phases = ["meeting", "task"]
         self.summary_json = {f"Game {game_index}": {"config": game_config}}
         self.list_of_impostors = []
+        self.meeting_in_progress = False
 
     def initialize_game(self):
         # reset game state
@@ -105,6 +102,7 @@ class AmongUs:
 
         # game state
         self.current_phase = "task"
+        self.meeting_in_progress = False
         self.initialize_players()
         self.initialize_agents()
         self.agent_log = []
@@ -224,14 +222,18 @@ class AmongUs:
             [
                 1
                 for player in self.players
-                if player.identity == "Impostor" and player.is_alive
+                if player.identity == "Impostor"
+                and player.is_alive
+                and getattr(player, "is_connected", True)
             ]
         )
         num_crewmates = sum(
             [
                 1
                 for player in self.players
-                if player.identity == "Crewmate" and player.is_alive
+                if player.identity == "Crewmate"
+                and player.is_alive
+                and getattr(player, "is_connected", True)
             ]
         )
         if num_impostors >= num_crewmates:
@@ -240,12 +242,15 @@ class AmongUs:
             return 2  # Crewmates win
         elif self.task_assignment.check_task_completion() == 1.0:
             return 3  # Crewmates win (task completed)
-        elif self.timestep >= self.game_config["max_timesteps"]:
+        elif getattr(self, "match_time_expired", False) or self.timestep >= self.game_config["max_timesteps"]:
             return 4  # Impostors win (time limit)
         return 0  # Game continues
 
     def check_actions(self):
         for player in self.players:
+            if not getattr(player, "is_connected", True):
+                player.set_available_actions([])
+                continue
             all_actions = player.get_all_actions()
             available_actions = []
             for action in all_actions:
@@ -261,29 +266,86 @@ class AmongUs:
         if self.UI:
             self.UI.draw_map(self)
 
+    def filter_recently_killed_action(self, player, action):
+        if self.current_phase != "task" or action is None:
+            return action
+        # A killed human continues as a ghost and may still move or complete tasks.
+        # The realtime server does not run task_phase_step(), which formerly reset
+        # this flag at the start of the next synchronized step.
+        if not player.is_alive:
+            return action
+        if not player.killed_this_step:
+            return action
+        if getattr(action, "name", None) == "COMPLETE TASK":
+            return action
+        return None
+
     async def agent_step(self, agent):
-        self.check_actions()
-        if not agent.player.is_alive:
+        if not getattr(agent.player, "is_connected", True):
             return
+
+        self.check_actions()
+
+        is_human = 'homosapiens' in getattr(agent, 'model', '')
+
+        # Dead AI do not take further actions.
+        if not agent.player.is_alive and not is_human:
+            return
+
         # kill cooldown
         if agent.player.identity == "Impostor" and agent.player.kill_cooldown > 0:
             agent.player.kill_cooldown -= 1
 
-        # Set current player for UI updates
+        # set current player for AI updates
         self.current_player = agent.player.name
 
         # interview
         if self.interviewer is not None:
             await self.interviewer.auto_question(self, agent)
+        try:
+            queued_action = getattr(agent, "queued_action", None)
+            if queued_action is not None:
+                action = queued_action
+                agent.queued_action = None
+            # Enforce a 120 second timeout for AI players.
+            elif is_human:
+                action = await agent.choose_action(self.timestep)
+            else:
+                action = await asyncio.wait_for(agent.choose_action(self.timestep), timeout=120.0)
+        except asyncio.TimeoutError:
+            available = agent.player.available_actions
+            # If timed out, return silently
+            if any("Speak" in str(type(a)) for a in available): # Speak confirms we are in discussion
+                print(f"DEBUG: {agent.player.name} timed out during discussion, skipping.")
+                return
+            # During voting, cast a skip vote
+            action = available[0] if available else None
+            for a in available:
+                if "Vote" in str(type(a)):
+                    action = a
+                    action.target = "none"
+                    break
 
-        # choose action
-        action = await agent.choose_action(self.timestep)
+        action = self.filter_recently_killed_action(agent.player, action)
+        if action is None:
+            self.update_map()
+            return
+
+        # Ghosts: execute move/task, discard meeting actions so ghosts don't speak
+        if not agent.player.is_alive and is_human:
+            if action and action.name in ("MOVE", "COMPLETE TASK"):
+                self.camera_record[agent.player.name] = action
+                self.record_activity(agent.player, action)
+                agent.player.make_action(self, action)
+            self.update_map()
+            return
+
         #print(action)
         observation_location = ""
-        if action.name == "ViewMonitor":
+        if not isinstance(action, str) and action.name == "ViewMonitor":
             observation_location = agent.choose_observation_location(
-                self.map.ship_map.nodes
-            )
+            self.map.ship_map.nodes
+    )
         self.camera_record[agent.player.name] = action
         if str(action).startswith("KILL"):
             location = agent.player.location
@@ -303,58 +365,114 @@ class AmongUs:
             await self.meeting_phase()
         self.timestep += 1
         #print(self.timestep)
-        print(f"|", end="", flush=True)
+        print("|", end="", flush=True)
         # import pdb; pdb.set_trace() # waiting after each timestep
 
     async def task_phase_step(self):
+        self.camera_record = {
+            p.name: "stand quietly and do nothing"
+            for p in self.players
+            if getattr(p, "is_connected", True)
+        }
+        for player in self.players:
+            player.killed_this_step = False
         for agent in self.agents:
+            if not getattr(agent.player, "is_connected", True):
+                continue
             if 'homosapiens' in agent.model:
                 self.is_human_turn = True
             else:
                 self.is_human_turn = False
             await self.agent_step(agent)
             if self.current_phase == "meeting":
-                break
+                self.is_human_turn = True
+                return
 
     async def meeting_phase(self):
+        self.meeting_in_progress = True
+        try:
+            await self._run_meeting_phase()
+        finally:
+            self.meeting_in_progress = False
+
+    async def _run_meeting_phase(self):
+        # Web games can run their discussion outside the sequential engine loop.
+        # In that case the server opens voting only after its shared chat timer ends.
+        externally_managed_discussion = getattr(self, "external_discussion_complete", False)
+        if not externally_managed_discussion:
+            self.discussion_rounds_left = self.game_config["discussion_rounds"]
+        print(f"DEBUG: _run_meeting_phase start, discussion_rounds_left={self.discussion_rounds_left}, agents={[a.player.name for a in self.agents]}")
+
         # Move all players to the Cafeteria
         for player in self.players:
-            player.location = "Cafeteria"
+            if getattr(player, "is_connected", True):
+                player.location = "Cafeteria"
 
         self.update_map()
 
         # Discussion
-        for round in range(self.game_config["discussion_rounds"]):
-            #print("Discussion round", round)
+        while self.discussion_rounds_left > 0:
+            print(f"DEBUG: discussion round, rounds_left={self.discussion_rounds_left}")
             for agent in self.agents:
-                if 'homosapiens' in agent.model:
+                if not getattr(agent.player, "is_connected", True):
+                    continue
+                # Dead players observe meetings but never receive a discussion turn.
+                if not agent.player.is_alive:
+                    continue
+                print(f"DEBUG: STARTING DISCUSSION turn for {agent.player.name} (rounds_left={self.discussion_rounds_left})")
+
+                is_human = 'homosapiens' in getattr(agent, 'model', '')
+                if is_human:
                     self.is_human_turn = True
+                    await self.agent_step(agent)
                 else:
                     self.is_human_turn = False
-                await self.agent_step(agent)
+                    await self.agent_step(agent)
+
             self.discussion_rounds_left -= 1
             # Update game state after each round
             self.check_actions()
             self.update_map()
 
         # Voting phase
-        #print("Voting phase")
+        print(f"DEBUG: entering voting phase, discussion_rounds_left={self.discussion_rounds_left}")
         self.vote_info_one_round = {}
         for agent in self.agents:
-            if 'homosapiens' in agent.model:
+            if not getattr(agent.player, "is_connected", True):
+                continue
+
+            is_human = 'homosapiens' in getattr(agent, 'model', '')
+            if is_human:
                 self.is_human_turn = True
+                if not agent.player.is_alive:
+                    continue
             else:
                 self.is_human_turn = False
+            print(f"DEBUG: STARTING VOTING turn for {agent.player.name} (rounds_left={self.discussion_rounds_left})")
             await self.agent_step(agent)
+
             # Update game state after each vote
             self.check_actions()
             self.update_map()
-
+        print("REACHED")
         # Vote out
         self.voteout()
+        self.external_discussion_complete = False
+        self.current_phase = "task"
         self.update_map()
 
     def voteout(self):
+        if not self.votes:
+            print("== No votes. ==")
+            # Manually trigger the transition back to tasks
+            self.current_phase = "task"
+            self.discussion_rounds_left = self.game_config["discussion_rounds"]
+            self.external_discussion_complete = False
+            system_logger = getattr(self, "record_game_system_event", None)
+            if callable(system_logger):
+                system_logger(self, "EJECTION_RESULT", {"ejected_player": None, "votes": [], "vote_count": 0})
+            return
+
         round = self.game_config["discussion_rounds"] - self.discussion_rounds_left
         max_votes = max(self.votes.values())
         print(self.vote_info_one_round)
@@ -376,6 +494,8 @@ class AmongUs:
                 "action": f"{player.name} was voted out! Detailed vote info:{vote_info}",
                 "player": "all players",
             }
+            ejection_broadcast = f"MEETING RESULT: {player.name} was ejected by vote. They are no longer in the game."
+            ejected_player = player
             print(f"== {player.name} was voted out ==")
         else:
             import_event = {
@@ -385,11 +505,30 @@ class AmongUs:
                 "action": f"No one was voted out. Detailed vote info:{vote_info}",
                 "player": "all players",
             }
+            ejection_broadcast = "MEETING RESULT: No one was ejected."
+            ejected_player = None
             print("== No one was voted out ==")
         self.important_activity_log.append(import_event)
+        # Push ejection result to every surviving player's observation history
+        for p in self.players:
+            if p.is_alive and getattr(p, "is_connected", True):
+                p.observation_history.append(ejection_broadcast)
         self.current_phase = "task"
         self.discussion_rounds_left = self.game_config["discussion_rounds"]
         self.votes = {}
+        self.update_map()
+        self.check_actions()
+        system_logger = getattr(self, "record_game_system_event", None)
+        if callable(system_logger):
+            system_logger(
+                self,
+                "EJECTION_RESULT",
+                {
+                    "ejected_player": getattr(ejected_player, "name", None),
+                    "votes": vote_info,
+                    "vote_count": max_votes,
+                },
+            )
 
     def check_monitor(self, room):
         players = self.map.get_players_in_room(room)
@@ -429,6 +568,9 @@ class AmongUs:
         # print(record)
         # print('.', end='', flush=True)
         self.message_system.route_real_time_message(self, record)
+        action_logger = getattr(self, "record_game_action", None)
+        if callable(action_logger):
+            action_logger(self, player, action, additional_info)
         if str(record["action"]).startswith("COMPLETE TASK"):
             imprtant_event = {
                 "timestep": self.timestep,
@@ -460,10 +602,9 @@ class MessageSystem:
         player = record["player"]
         action = record["action"]
         if current_phase == "task":
-            message = f"Timestep {timestep}: [{current_phase}] {player.name} {action.action_text()}"
+            message = f"Event {timestep}: [{current_phase}] {player.name} {action.action_text()}"
         elif current_phase == "meeting":
-            round = record["round"]
-            message = f"Timestep {timestep}: [{current_phase} phase - round {round}] {player.name} {action.action_text()}"
+            message = f"Event {timestep}: [{current_phase} phase] {player.name} {action.action_text()}"
         return message
 
     def create_location_message(self, record, env):
@@ -472,10 +613,23 @@ class MessageSystem:
             instruction = TASK_PHASE_INSTRUCTION
         elif env.current_phase == "meeting":
             max_rounds = env.game_config["discussion_rounds"]
-            round = max_rounds - env.discussion_rounds_left
-            phase_info = f"Meeting phase - Discussion round ({round}/{max_rounds})"
-            instruction = MEETING_PHASE_INSTRUCTION
-        message = f"Game Time: {env.timestep}/{env.game_config['max_timesteps']}\n"
+            if env.discussion_rounds_left == 0:
+                phase_info = "Meeting phase - Voting Round (discussion is over, cast your VOTE)"
+                instruction = "Discussion is over. You must now cast your VOTE for who you think the Impostor is."
+            else:
+                round = max_rounds - env.discussion_rounds_left
+                phase_info = f"Meeting phase - Discussion round ({round}/{max_rounds})"
+                instruction = MEETING_PHASE_INSTRUCTION
+        remaining_seconds = getattr(env, "match_seconds_left", None)
+        duration_seconds = getattr(env, "match_duration_seconds", None)
+        if remaining_seconds is not None and duration_seconds:
+            message = (
+                "Match time remaining: "
+                f"{remaining_seconds / 60:.1f} minutes of {duration_seconds / 60:.1f} minutes total.\n"
+            )
+            message += "Time is a win condition; prioritize efficient task progress as time runs low.\n"
+        else:
+            message = "Match time: no fixed wall-clock duration is configured.\n"
         message += f"Current phase: {phase_info}\n"
         message += f"{instruction}\n"
         players_text = ", ".join(record["players"])
@@ -492,6 +646,8 @@ class MessageSystem:
             ]
             record = {"location": location, "players": player_names}
             for player in players:
+                if not getattr(player, "is_connected", True):
+                    continue
                 self.send_message(
                     player,
                     self.create_location_message(record, env),
@@ -506,9 +662,13 @@ class MessageSystem:
             action.new_location if hasattr(action, "new_location") else location
         )  # could be different from action.current_location if player moved or vented
         for other_player in env.players:
-            if other_player != player and (
+            if (
+                getattr(other_player, "is_connected", True)
+                and other_player != player
+                and (
                 other_player.location == location
                 or other_player.location == new_location
+                )
             ):
                 self.send_message(
                     other_player, self.create_action_message(record), info_type="action"
