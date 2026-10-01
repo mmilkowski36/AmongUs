@@ -55,8 +55,18 @@ class LLMAgent(Agent):
         self.system_prompt = system_prompt
         self.model = model
         self.temperature = 0.7
-        self.api_key = os.getenv("OPENROUTER_API_KEY")
-        self.api_url = "https://openrouter.ai/api/v1/chat/completions"
+        if self.model == "gpt-5.2":
+            self.api_key = os.getenv("OPENAI_API_KEY")
+            self.api_url = "https://api.openai.com/v1/chat/completions"
+        elif self.model.startswith("claude"):
+            self.api_key = os.getenv("ANTHROPIC_API_KEY")
+            self.api_url = "https://api.anthropic.com/v1/messages"
+        elif self.model == "gemini-2.0-flash":############################# GEMINI MODEL ##################
+            self.api_key = os.getenv("GEMINI_API_KEY")
+            self.api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent"
+        else:
+            self.api_key = os.getenv("OPENROUTER_API_KEY")
+            self.api_url = "https://openrouter.ai/api/v1/chat/completions"
         self.summarization = "No thought process has been made."
         self.processed_memory = "No memory has been processed."
         self.chat_history = []
@@ -203,12 +213,129 @@ class LLMAgent(Agent):
                         return data#[0]["message"]["content"]#data["choices"][0]["message"]["content"]
                     else:
                         print(f"Request failed with status code {response.status}")
+                    
                 except Exception as e:
                     print(f"API request failed. Retrying... ({attempt + 1}/10) for {self.model}.")
                     continue
+        elif self.model == "gemini-2.0-flash":############## GEMINI MODEL ############################
+            """Send a POST request to Gemini API with the provided messages."""
+            gemini_messages = []
+            for m in messages:
+                role = "user"
+                if m["role"] == "assistant":
+                    role = "model"
+                gemini_messages.append({
+                    "role": role,
+                    "parts": [{"text": m["content"]}]
+                })
+            headers = {
+                "Content-Type": "application/json"
+            }
+            payload = {
+                "contents": gemini_messages,
+                "generationConfig": {
+                    "temperature": self.temperature,
+                    "topP": 1
+                }
+            }
+            async with aiohttp.ClientSession() as session:
+                for attempt in range(10):
+                    try:
+                        async with session.post(
+                            f"{self.api_url}?key={self.api_key}",
+                            headers=headers,
+                            data=json.dumps(payload)
+                        ) as response:
+                            if response is None:
+                                print(f"API request failed: response is None for {self.model}.")
+                                continue
+                            if response.status == 200:
+                                data = await response.json()
+                                if "candidates" not in data:
+                                    print(f"API request failed: 'candidates' key not in response for {self.model}.")
+                                    continue
+                                if not data["candidates"]:
+                                    print(f"API request failed: 'candidates' key is empty for {self.model}.")
+                                    continue
+                                return data["candidates"][0]["content"]["parts"][0]["text"]
+                    except Exception as e:
+                        print(f"API request failed. Retrying... ({attempt + 1}/10) for {self.model}.")
+                        continue
+            return "SPEAK: ..."
+        elif self.model.startswith("claude"): ############## ANTHROPIC MODEL ############################
+            """Send a POST request to Anthropic API with the provided messages."""
+
+            headers = {
+                "x-api-key": self.api_key,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json"
+            }
+
+            system_prompt = None
+            anthropic_messages = []
+
+            for msg in messages:
+                if msg["role"] == "system":
+                    if system_prompt is None:
+                        system_prompt = msg["content"]
+                    else:
+                        system_prompt += "\n\n" + msg["content"]
+                else:
+                    anthropic_messages.append(msg)
+            
+            payload = {
+                "model": self.model,
+                "messages": anthropic_messages,
+                "max_tokens": 2048
+            }
+
+            if system_prompt:
+                payload["system"] = system_prompt
+
+            async with aiohttp.ClientSession() as session:
+                for attempt in range(10):
+                    try:
+                        async with session.post(
+                            self.api_url,
+                            headers=headers,
+                            data=json.dumps(payload)
+                        ) as response:
+
+                            if response is None:
+                                print(f"API request failed: response is None for {self.model}.")
+                                continue
+
+                            if response.status == 200:
+                                data = await response.json()
+
+                                if "content" not in data:
+                                    print(f"API request failed: 'content' key not in response for {self.model}.")
+                                    continue
+
+                                if not data["content"]:
+                                    print(f"API request failed: 'content' is empty for {self.model}.")
+                                    continue
+
+                                return data["content"][0]["text"]
+
+                            else:
+                                print(f"Status {response.status}: {await response.text()}")
+
+                    except Exception as e:
+                        print(f"API request failed. Retrying... ({attempt + 1}/10) for {self.model}.")
+                        print(e)
+                        continue
+
+            return "SPEAK: ..."
         else:
-            """Send a POST request to OpenRouter API with the provided messages."""
-            headers = {"Authorization": f"Bearer {self.api_key}"}
+            """
+            Send a POST request to the OpenRouter or OpenAI API with retries and robust error handling.
+            """
+            headers = {
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json"
+            }
+
             payload = {
                 "model": self.model,
                 "messages": messages,
@@ -216,31 +343,50 @@ class LLMAgent(Agent):
                 "top_p": 1,
                 "frequency_penalty": 0,
                 "presence_penalty": 0,
-                "repetition_penalty": 1,
-                "top_k": 0,
+                #"repetition_penalty": 1,
+                #"top_k": 0,
+                "stream": False  # Explicitly included to avoid API surprises
             }
-        
+
+            max_attempts = 10
             async with aiohttp.ClientSession() as session:
-                for attempt in range(10):
+                for attempt in range(1, max_attempts + 1):
                     try:
                         async with session.post(self.api_url, headers=headers, data=json.dumps(payload)) as response:
-                            if response is None:
-                                print(f"API request failed: response is None for {self.model}.")
+                            # Handle non-200 status codes explicitly
+                            if response.status == 429:
+                                print("Rate limited. Waiting...")
+                                time.sleep((2 ** attempt) + random.uniform(0, 1))
                                 continue
-                            if response.status == 200:
-                                data = await response.json()
-                                print("HELLO?")
-                                if "choices" not in data:
-                                    print(f"API request failed: 'choices' key not in response for {self.model}.")
-                                    continue
-                                if not data["choices"]:
-                                    print(f"API request failed: 'choices' key is empty in response for {self.model}.")
-                                    continue
-                                return data["choices"][0]["message"]["content"]
+                            elif response.status != 200:
+                                text = await response.text()
+                                print(f"Attempt {attempt}/{max_attempts}: Request failed with status {response.status}. Response: {text}")
+                                continue
+
+                            data = await response.json()
+
+                            # Validate response structure
+                            if not isinstance(data, dict):
+                                print(f"Attempt {attempt}/{max_attempts}: Response JSON is not a dict: {data}")
+                                continue
+
+                            #if "choices" not in data or not data["choices"]:
+                            #    print(f"Attempt {attempt}/{max_attempts}: 'choices' missing or empty in response: {data}")
+                            #    continue
+
+                            # Successful response
+                            return data  # You can access: data["choices"][0]["message"]["content"]
+
+                    except aiohttp.ClientError as e:
+                        print(f"Attempt {attempt}/{max_attempts}: ClientError occurred: {e}")
+                    except asyncio.TimeoutError:
+                        print(f"Attempt {attempt}/{max_attempts}: Timeout occurred.")
                     except Exception as e:
-                        print(f"API request failed. Retrying... ({attempt + 1}/10) for {self.model}.")
-                        continue
-                return 'SPEAK: ...'
+                        print(f"Attempt {attempt}/{max_attempts}: Unexpected error: {e}")
+
+                # If all attempts fail
+                print(f"All {max_attempts} attempts failed for model {self.model}.")
+                return None  # Or return {"message": "SPEAK: ..."} if you prefer a placeholder
 
     def respond(self, message):
         all_info = self.player.all_info_prompt()
@@ -312,12 +458,30 @@ class LLMAgent(Agent):
         
         response = await self.send_request(messages)
         #print("response: ", response)
+        
 
         self.log_interaction(sysprompt=self.system_prompt, prompt=full_prompt, original_response=response, step=timestep)
 
-        raw_message = response['message']
+        raw_message = {}
+        if isinstance(response, str):
+            raw_message['content'] = response
+        else:
+            try: 
+                raw_message = response['message']
+            except:
+                try: 
+                    half_message = response['choices']
+                    half_message = half_message[0]
+                    raw_message = half_message['message']
+                except:
+                    print("Malformed response: ", response)
+                    exit
 
-        parsed_message = self.parse_flexible_sections(raw_message['content'])
+        try:
+            parsed_message = self.parse_flexible_sections(raw_message['content'])
+        except:
+            print(raw_message)
+            exit
 
         memory = parsed_message['condensed memory']
         summarization = parsed_message['thinking process']

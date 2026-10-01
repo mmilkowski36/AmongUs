@@ -59,6 +59,9 @@ BIG_LIST_OF_MODELS: List[str] = [
     "x-ai/grok-3-beta",
     "microsoft/phi-4",
     "llama3.2:latest",
+    "gpt-5.2",
+    "gemini-2.0-flash",
+    "claude-sonnet-4-6"
 ]
 
 ARGS = {
