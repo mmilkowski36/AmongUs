@@ -1,0 +1,2416 @@
+﻿game_id,event_id,timestep,meeting_number,name,type,role,target
+web_00a51b8147b34a689eaf8683d91539c5,86182,55,1,Player 3: red,ai,Crewmate,
+web_00a51b8147b34a689eaf8683d91539c5,86183,55,1,Player 4: purple,ai,Crewmate,
+web_00a51b8147b34a689eaf8683d91539c5,86184,55,1,Player 5: orange,ai,Impostor,
+web_00a51b8147b34a689eaf8683d91539c5,86206,55,1,Lime,human,Crewmate,Player 5: orange
+web_01e78c9e40664ee3bb5acfbc10613f5a,34324,6,1,Cyan,human,Crewmate,Pink
+web_01e78c9e40664ee3bb5acfbc10613f5a,34329,6,1,White,human,Crewmate,Pink
+web_01e78c9e40664ee3bb5acfbc10613f5a,34331,6,1,Pink,human,Impostor,White
+web_01e78c9e40664ee3bb5acfbc10613f5a,34351,6,1,Brown,human,Crewmate,
+web_02850aa5e68641d1b9199fdc9f4973af,64934,97,1,Player 4: black,ai,Crewmate,
+web_02850aa5e68641d1b9199fdc9f4973af,64937,97,1,Player 5: pink,ai,Impostor,
+web_02850aa5e68641d1b9199fdc9f4973af,64966,97,1,White,human,Crewmate,Player 4: black
+web_02951a360f3d44518168d741b2cee589,14461,90,1,Player 2: blue,ai,Crewmate,
+web_02951a360f3d44518168d741b2cee589,14462,90,1,Player 4: white,ai,Crewmate,
+web_02951a360f3d44518168d741b2cee589,14463,90,1,Player 3: yellow,ai,Impostor,
+web_0319ec96900444c5a6746862587a53e6,22005,17,1,White,human,Crewmate,Black
+web_0319ec96900444c5a6746862587a53e6,22007,17,1,Black,human,Impostor,Green
+web_0319ec96900444c5a6746862587a53e6,22009,17,1,Cyan,human,Crewmate,Black
+web_0319ec96900444c5a6746862587a53e6,22014,17,1,Green,human,Crewmate,White
+web_0319ec96900444c5a6746862587a53e6,22016,17,1,Yellow,human,Crewmate,Black
+web_03d94bf4722649489aa192349aaf81a4,41414,26,1,Player 2: orange,ai,Impostor,
+web_03d94bf4722649489aa192349aaf81a4,41430,26,1,Green,human,Crewmate,Red
+web_03d94bf4722649489aa192349aaf81a4,41433,26,1,Brown,human,Crewmate,Red
+web_03d94bf4722649489aa192349aaf81a4,41443,26,1,Red,human,Crewmate,Green
+web_0438431c54734f018baedfcf4c6e701b,34617,5,1,Blue,human,Crewmate,Red
+web_0438431c54734f018baedfcf4c6e701b,34619,5,1,Purple,human,Crewmate,Red
+web_0438431c54734f018baedfcf4c6e701b,34621,5,1,Green,human,Crewmate,Red
+web_0438431c54734f018baedfcf4c6e701b,34623,5,1,Red,human,Impostor,Blue
+web_04d2faf4e13f44cb92a61ad630e5bacd,84551,112,1,Player 4: pink,ai,Crewmate,
+web_04d2faf4e13f44cb92a61ad630e5bacd,84552,112,1,Player 2: cyan,ai,Crewmate,
+web_04d2faf4e13f44cb92a61ad630e5bacd,84553,112,1,Player 3: lime,ai,Impostor,
+web_04d2faf4e13f44cb92a61ad630e5bacd,84562,112,1,Brown,human,Crewmate,Player 4: pink
+web_05ab941807c746c78ef769ed63ae8774,14083,30,1,Player 2: cyan,ai,Crewmate,
+web_05ab941807c746c78ef769ed63ae8774,14085,30,1,Player 5: yellow,ai,Crewmate,
+web_05ab941807c746c78ef769ed63ae8774,14086,30,1,Player 4: blue,ai,Impostor,
+web_05bb916d09104f23bc6cb3feea8bc652,8179,76,1,Player 5: pink,ai,Crewmate,Yellow
+web_05bb916d09104f23bc6cb3feea8bc652,8190,76,1,Yellow,human,Crewmate,Green
+web_05bb916d09104f23bc6cb3feea8bc652,8197,76,1,Green,human,Impostor,Yellow
+web_05cb0e17664841448a9e9cbdc89032dc,56978,30,1,Player 2: white,ai,Crewmate,Player 5: blue
+web_05cb0e17664841448a9e9cbdc89032dc,56979,30,1,Player 3: lime,ai,Crewmate,Player 5: blue
+web_05cb0e17664841448a9e9cbdc89032dc,56980,30,1,Player 4: yellow,ai,Crewmate,
+web_05cb0e17664841448a9e9cbdc89032dc,56981,30,1,Player 5: blue,ai,Impostor,
+web_05cb0e17664841448a9e9cbdc89032dc,56986,30,1,Orange,human,Crewmate,Player 5: blue
+web_06a861f38696439eb474249ea9a57e2c,56402,69,1,Player 2: cyan,ai,Impostor,
+web_06a861f38696439eb474249ea9a57e2c,56412,69,1,Brown,human,Crewmate,Player 2: cyan
+web_06a861f38696439eb474249ea9a57e2c,56414,69,1,Red,human,Crewmate,Brown
+web_06a861f38696439eb474249ea9a57e2c,56427,69,1,Purple,human,Crewmate,Red
+web_06a861f38696439eb474249ea9a57e2c,56716,94,2,Player 2: cyan,ai,Impostor,Brown
+web_06a861f38696439eb474249ea9a57e2c,56722,94,2,Brown,human,Crewmate,Player 2: cyan
+web_06a861f38696439eb474249ea9a57e2c,56730,94,2,Purple,human,Crewmate,Brown
+web_078159558dc5400682d1d6ed953d3c91,47530,5,1,Player 5: pink,ai,Crewmate,
+web_078159558dc5400682d1d6ed953d3c91,47533,5,1,Player 3: orange,ai,Crewmate,
+web_078159558dc5400682d1d6ed953d3c91,47543,5,1,Yellow,human,Crewmate,
+web_078159558dc5400682d1d6ed953d3c91,47547,5,1,Green,human,Crewmate,
+web_078159558dc5400682d1d6ed953d3c91,47549,5,1,Brown,human,Impostor,
+web_078159558dc5400682d1d6ed953d3c91,48195,66,2,Player 5: pink,ai,Crewmate,
+web_078159558dc5400682d1d6ed953d3c91,48196,66,2,Player 3: orange,ai,Crewmate,
+web_078159558dc5400682d1d6ed953d3c91,48205,66,2,Brown,human,Impostor,Green
+web_078159558dc5400682d1d6ed953d3c91,48227,66,2,Green,human,Crewmate,Player 5: pink
+web_078159558dc5400682d1d6ed953d3c91,48236,66,2,Yellow,human,Crewmate,
+web_078159558dc5400682d1d6ed953d3c91,49233,202,3,Player 5: pink,ai,Crewmate,Player 3: orange
+web_078159558dc5400682d1d6ed953d3c91,49234,202,3,Player 3: orange,ai,Crewmate,Player 5: pink
+web_078159558dc5400682d1d6ed953d3c91,49252,202,3,Brown,human,Impostor,Player 3: orange
+web_078159558dc5400682d1d6ed953d3c91,49258,202,3,Yellow,human,Crewmate,Player 3: orange
+web_0820f80eea854efcaaa5640671b57f24,57595,50,1,Player 3: yellow,ai,Crewmate,Player 2: brown
+web_0820f80eea854efcaaa5640671b57f24,57596,50,1,Player 5: purple,ai,Crewmate,Player 2: brown
+web_0820f80eea854efcaaa5640671b57f24,57597,50,1,Player 2: brown,ai,Impostor,
+web_08be90eebc6f4ad69790a175d1bdbaa7,64476,37,1,Player 2: pink,ai,Crewmate,Purple
+web_08be90eebc6f4ad69790a175d1bdbaa7,64477,37,1,Player 4: white,ai,Crewmate,
+web_08be90eebc6f4ad69790a175d1bdbaa7,64519,37,1,Purple,human,Impostor,Player 4: white
+web_08f66080daf34b16873a4875876211c8,70017,34,1,Player 3: black,ai,Crewmate,
+web_08f66080daf34b16873a4875876211c8,70020,34,1,Player 5: red,ai,Impostor,
+web_08f66080daf34b16873a4875876211c8,70057,34,1,White,human,Crewmate,Player 3: black
+web_0906af9097c344c2b0d292a1457df036,89144,26,1,Player 5: black,ai,Crewmate,Yellow
+web_0906af9097c344c2b0d292a1457df036,89146,26,1,Player 3: pink,ai,Impostor,Player 2: brown
+web_0906af9097c344c2b0d292a1457df036,89149,26,1,Player 2: brown,ai,Crewmate,
+web_0906af9097c344c2b0d292a1457df036,89161,26,1,Yellow,human,Crewmate,Player 2: brown
+web_093b5daa16314efeae38e687e89784f0,84600,74,1,Player 3: green,ai,Impostor,Player 5: red
+web_093b5daa16314efeae38e687e89784f0,84601,74,1,Player 5: red,ai,Crewmate,Player 3: green
+web_093b5daa16314efeae38e687e89784f0,84615,74,1,Cyan,human,Crewmate,Player 5: red
+web_094b9d491b914bc78f81a4f66d4dffd4,79455,30,1,Player 3: cyan,ai,Crewmate,Player 4: brown
+web_094b9d491b914bc78f81a4f66d4dffd4,79456,30,1,Player 5: purple,ai,Crewmate,Player 4: brown
+web_094b9d491b914bc78f81a4f66d4dffd4,79457,30,1,Player 2: green,ai,Crewmate,
+web_094b9d491b914bc78f81a4f66d4dffd4,79458,30,1,Player 4: brown,ai,Impostor,Player 2: green
+web_094b9d491b914bc78f81a4f66d4dffd4,79463,30,1,Lime,human,Crewmate,Player 4: brown
+web_09a285709ca740a4bb7f3a6e2339b37c,38532,10,1,Purple,human,Crewmate,Lime
+web_09a285709ca740a4bb7f3a6e2339b37c,38536,10,1,Red,human,Crewmate,
+web_09a285709ca740a4bb7f3a6e2339b37c,38543,10,1,Lime,human,Crewmate,Pink
+web_09a285709ca740a4bb7f3a6e2339b37c,38563,10,1,Pink,human,Crewmate,Lime
+web_09de878d770542ef84d42fc3ea6c5e70,53553,8,1,Player 5: green,ai,Crewmate,
+web_09de878d770542ef84d42fc3ea6c5e70,53564,8,1,Lime,human,Crewmate,Player 5: green
+web_09de878d770542ef84d42fc3ea6c5e70,53571,8,1,Cyan,human,Crewmate,Player 5: green
+web_09de878d770542ef84d42fc3ea6c5e70,53582,8,1,Red,human,Impostor,Player 5: green
+web_0a1734eb46a94a6f8ef8839a9289355a,76771,72,1,Player 3: green,ai,Crewmate,
+web_0a1734eb46a94a6f8ef8839a9289355a,76796,72,1,White,human,Crewmate,Red
+web_0a1734eb46a94a6f8ef8839a9289355a,76800,72,1,Red,human,Impostor,White
+web_0a1734eb46a94a6f8ef8839a9289355a,77295,74,2,Player 3: green,ai,Crewmate,
+web_0a1734eb46a94a6f8ef8839a9289355a,77320,74,2,White,human,Crewmate,Red
+web_0a1734eb46a94a6f8ef8839a9289355a,77326,74,2,Red,human,Impostor,White
+web_0b1d9d7f03c04183a4093cbd314a8401,48224,26,1,Player 5: brown,ai,Crewmate,
+web_0b1d9d7f03c04183a4093cbd314a8401,48245,26,1,Cyan,human,Impostor,Lime
+web_0b1d9d7f03c04183a4093cbd314a8401,48247,26,1,Green,human,Crewmate,
+web_0b1d9d7f03c04183a4093cbd314a8401,48249,26,1,Lime,human,Crewmate,Cyan
+web_0b1d9d7f03c04183a4093cbd314a8401,48573,28,2,Player 5: brown,ai,Crewmate,Cyan
+web_0b1d9d7f03c04183a4093cbd314a8401,48585,28,2,Cyan,human,Impostor,Player 5: brown
+web_0b1d9d7f03c04183a4093cbd314a8401,48592,28,2,Green,human,Crewmate,Cyan
+web_0b1d9d7f03c04183a4093cbd314a8401,48617,28,2,Lime,human,Crewmate,Cyan
+web_0bfcb13857c14653add890899bbe0e6e,37866,92,1,Player 5: blue,ai,Crewmate,
+web_0bfcb13857c14653add890899bbe0e6e,37885,92,1,Green,human,Crewmate,
+web_0bfcb13857c14653add890899bbe0e6e,37890,92,1,Purple,human,Crewmate,Pink
+web_0bfcb13857c14653add890899bbe0e6e,37913,92,1,Orange,human,Crewmate,Purple
+web_0bfcb13857c14653add890899bbe0e6e,37941,92,1,Pink,human,Impostor,
+web_0bfcb13857c14653add890899bbe0e6e,38770,127,2,Player 5: blue,ai,Crewmate,
+web_0bfcb13857c14653add890899bbe0e6e,38778,127,2,Green,human,Crewmate,Purple
+web_0bfcb13857c14653add890899bbe0e6e,38784,127,2,Orange,human,Crewmate,Purple
+web_0bfcb13857c14653add890899bbe0e6e,38790,127,2,Purple,human,Crewmate,Pink
+web_0bfcb13857c14653add890899bbe0e6e,38813,127,2,Pink,human,Impostor,
+web_0c06e171eabf407eadfbe859369301db,51086,48,1,Player 4: pink,ai,Crewmate,
+web_0c06e171eabf407eadfbe859369301db,51093,48,1,Purple,human,Crewmate,Brown
+web_0c06e171eabf407eadfbe859369301db,51097,48,1,Brown,human,Crewmate,
+web_0c06e171eabf407eadfbe859369301db,51100,48,1,Cyan,human,Crewmate,Purple
+web_0c06e171eabf407eadfbe859369301db,51104,48,1,Yellow,human,Impostor,Cyan
+web_0c06e171eabf407eadfbe859369301db,51506,52,2,Player 4: pink,ai,Crewmate,
+web_0c06e171eabf407eadfbe859369301db,51535,52,2,Cyan,human,Crewmate,Yellow
+web_0c06e171eabf407eadfbe859369301db,51537,52,2,Brown,human,Crewmate,Cyan
+web_0c06e171eabf407eadfbe859369301db,51544,52,2,Purple,human,Crewmate,Cyan
+web_0c06e171eabf407eadfbe859369301db,51589,52,2,Yellow,human,Impostor,
+web_0d08eaaff58341368bfafcfce6f5c8e8,72250,84,1,Player 3: blue,ai,Crewmate,
+web_0d08eaaff58341368bfafcfce6f5c8e8,72253,84,1,Player 5: lime,ai,Crewmate,
+web_0d08eaaff58341368bfafcfce6f5c8e8,72279,84,1,Purple,human,Impostor,Player 3: blue
+web_0d08eaaff58341368bfafcfce6f5c8e8,72297,84,1,Brown,human,Crewmate,Player 5: lime
+web_0d08eaaff58341368bfafcfce6f5c8e8,72732,87,2,Player 5: lime,ai,Crewmate,
+web_0d08eaaff58341368bfafcfce6f5c8e8,72733,87,2,Player 3: blue,ai,Crewmate,
+web_0d08eaaff58341368bfafcfce6f5c8e8,72754,87,2,Purple,human,Impostor,Player 3: blue
+web_0d08eaaff58341368bfafcfce6f5c8e8,72784,87,2,Brown,human,Crewmate,Player 3: blue
+web_0d9e86ee51b64eda91d99465e14a7f78,62193,86,1,Player 3: brown,ai,Impostor,Blue
+web_0d9e86ee51b64eda91d99465e14a7f78,62214,86,1,Blue,human,Crewmate,Player 3: brown
+web_0d9e86ee51b64eda91d99465e14a7f78,62233,86,1,Green,human,Crewmate,Blue
+web_0e06e8c994ea48e18e52eadb834f8a73,87534,17,1,Player 3: brown,ai,Crewmate,
+web_0e06e8c994ea48e18e52eadb834f8a73,87536,17,1,Player 4: purple,ai,Impostor,
+web_0e06e8c994ea48e18e52eadb834f8a73,87537,17,1,Player 2: red,ai,Crewmate,
+web_0e06e8c994ea48e18e52eadb834f8a73,87539,17,1,Player 5: green,ai,Crewmate,
+web_0e06e8c994ea48e18e52eadb834f8a73,88151,57,2,Player 2: red,ai,Crewmate,Player 4: purple
+web_0e06e8c994ea48e18e52eadb834f8a73,88154,57,2,Player 4: purple,ai,Impostor,Player 2: red
+web_0e06e8c994ea48e18e52eadb834f8a73,88155,57,2,Player 3: brown,ai,Crewmate,
+web_0e4e3e799f354317876855ca0a71a4a9,56797,39,1,Player 3: yellow,ai,Impostor,
+web_0e4e3e799f354317876855ca0a71a4a9,56803,39,1,White,human,Crewmate,Player 3: yellow
+web_0e4e3e799f354317876855ca0a71a4a9,56812,39,1,Blue,human,Crewmate,Player 3: yellow
+web_0e688b7a7e854bfb840cead5f6256604,45910,8,1,Player 3: purple,ai,Impostor,
+web_0e688b7a7e854bfb840cead5f6256604,45917,8,1,White,human,Crewmate,Yellow
+web_0e688b7a7e854bfb840cead5f6256604,45919,8,1,Yellow,human,Crewmate,Player 3: purple
+web_0e688b7a7e854bfb840cead5f6256604,45939,8,1,Brown,human,Crewmate,Player 3: purple
+web_0e688b7a7e854bfb840cead5f6256604,45945,8,1,Black,human,Crewmate,Yellow
+web_0e688b7a7e854bfb840cead5f6256604,46165,20,2,Player 3: purple,ai,Impostor,
+web_0e688b7a7e854bfb840cead5f6256604,46173,20,2,White,human,Crewmate,Yellow
+web_0e688b7a7e854bfb840cead5f6256604,46179,20,2,Yellow,human,Crewmate,Player 3: purple
+web_0e688b7a7e854bfb840cead5f6256604,46201,20,2,Brown,human,Crewmate,
+web_0e744702025548be942b17059970cd2b,14220,22,1,Player 3: orange,ai,Impostor,Player 5: yellow
+web_0e744702025548be942b17059970cd2b,14222,22,1,Player 4: brown,ai,Crewmate,Player 3: orange
+web_0e744702025548be942b17059970cd2b,14224,22,1,Player 5: yellow,ai,Crewmate,Player 3: orange
+web_0e744702025548be942b17059970cd2b,14225,22,1,Player 2: red,ai,Crewmate,Player 3: orange
+web_0f4a37b0a9514d799995772376e70c4d,69866,53,1,Player 3: black,ai,Crewmate,Player 5: pink
+web_0f4a37b0a9514d799995772376e70c4d,69869,53,1,Player 5: pink,ai,Impostor,
+web_0f4a37b0a9514d799995772376e70c4d,69904,53,1,Blue,human,Crewmate,Lime
+web_0f4a37b0a9514d799995772376e70c4d,69910,53,1,Lime,human,Crewmate,Player 5: pink
+web_105381d1443c45c7bfd6d96419bc614a,60256,59,1,Player 5: lime,ai,Impostor,Green
+web_105381d1443c45c7bfd6d96419bc614a,60271,59,1,Orange,human,Crewmate,Green
+web_105381d1443c45c7bfd6d96419bc614a,60279,59,1,Green,human,Crewmate,Player 5: lime
+web_1059c6bd8a14456fbcc42bea759fec4c,48388,3,1,Player 3: red,ai,Crewmate,Pink
+web_1059c6bd8a14456fbcc42bea759fec4c,48401,3,1,Black,human,Crewmate,Pink
+web_1059c6bd8a14456fbcc42bea759fec4c,48406,3,1,White,human,Crewmate,Player 3: red
+web_1059c6bd8a14456fbcc42bea759fec4c,48416,3,1,Green,human,Crewmate,Pink
+web_1059c6bd8a14456fbcc42bea759fec4c,48423,3,1,Pink,human,Impostor,Black
+web_10d5fc30bfb94dbb85538c340cbef572,63323,30,1,Player 3: black,ai,Crewmate,Player 5: yellow
+web_10d5fc30bfb94dbb85538c340cbef572,63324,30,1,Player 4: green,ai,Crewmate,Player 5: yellow
+web_10d5fc30bfb94dbb85538c340cbef572,63325,30,1,Player 5: yellow,ai,Impostor,Player 3: black
+web_10d5fc30bfb94dbb85538c340cbef572,63326,30,1,Player 2: lime,ai,Crewmate,Player 5: yellow
+web_10d5fc30bfb94dbb85538c340cbef572,63365,30,1,Red,human,Crewmate,
+web_10e5e0447fdd4c6687f784bc468daff5,78840,27,1,Player 4: purple,ai,Crewmate,
+web_10e5e0447fdd4c6687f784bc468daff5,78843,27,1,Player 2: white,ai,Impostor,
+web_10e5e0447fdd4c6687f784bc468daff5,78844,27,1,Player 5: orange,ai,Crewmate,
+web_10e5e0447fdd4c6687f784bc468daff5,78881,27,1,Green,human,Crewmate,Player 2: white
+web_117380a55eab4b1e8eb70c4e5fdf3f06,88822,36,1,Player 5: pink,ai,Crewmate,
+web_117380a55eab4b1e8eb70c4e5fdf3f06,88837,36,1,Black,human,Crewmate,Orange
+web_117380a55eab4b1e8eb70c4e5fdf3f06,88845,36,1,Orange,human,Impostor,Black
+web_117380a55eab4b1e8eb70c4e5fdf3f06,88874,36,1,Cyan,human,Crewmate,
+web_117380a55eab4b1e8eb70c4e5fdf3f06,89261,103,2,Player 5: pink,ai,Crewmate,
+web_117380a55eab4b1e8eb70c4e5fdf3f06,89273,103,2,Orange,human,Impostor,Cyan
+web_117380a55eab4b1e8eb70c4e5fdf3f06,89275,103,2,Cyan,human,Crewmate,Orange
+web_11970b35baa74dcd8ab8b8c81cf81f1b,22434,13,1,Yellow,human,Impostor,Purple
+web_11970b35baa74dcd8ab8b8c81cf81f1b,22436,13,1,Cyan,human,Crewmate,Yellow
+web_11970b35baa74dcd8ab8b8c81cf81f1b,22440,13,1,Purple,human,Crewmate,Yellow
+web_12844bf2c8db4908a741e445a7909a92,73049,74,1,Player 4: blue,ai,Impostor,Orange
+web_12844bf2c8db4908a741e445a7909a92,73050,74,1,Player 2: white,ai,Crewmate,Orange
+web_12844bf2c8db4908a741e445a7909a92,73060,74,1,Orange,human,Crewmate,
+web_12844bf2c8db4908a741e445a7909a92,73082,74,1,Yellow,human,Crewmate,Player 2: white
+web_13842f4bc3944c6088fb47c370cccaa3,60897,18,1,Player 2: pink,ai,Crewmate,
+web_13842f4bc3944c6088fb47c370cccaa3,60905,18,1,Brown,human,Impostor,Green
+web_13842f4bc3944c6088fb47c370cccaa3,60912,18,1,Green,human,Crewmate,Brown
+web_13842f4bc3944c6088fb47c370cccaa3,61326,36,2,Player 2: pink,ai,Crewmate,Brown
+web_13842f4bc3944c6088fb47c370cccaa3,61331,36,2,Brown,human,Impostor,Green
+web_13842f4bc3944c6088fb47c370cccaa3,61335,36,2,Green,human,Crewmate,Brown
+web_1385a22700fb4d0ab2c40dc08373ec98,54012,9,1,Player 5: cyan,ai,Crewmate,Purple
+web_1385a22700fb4d0ab2c40dc08373ec98,54014,9,1,Player 4: yellow,ai,Crewmate,
+web_1385a22700fb4d0ab2c40dc08373ec98,54015,9,1,Player 3: lime,ai,Impostor,
+web_1385a22700fb4d0ab2c40dc08373ec98,54048,9,1,Pink,human,Crewmate,Purple
+web_1385a22700fb4d0ab2c40dc08373ec98,54072,9,1,Purple,human,Crewmate,Player 5: cyan
+web_1385a22700fb4d0ab2c40dc08373ec98,55470,80,2,Player 4: yellow,ai,Crewmate,Player 3: lime
+web_1385a22700fb4d0ab2c40dc08373ec98,55475,80,2,Player 3: lime,ai,Impostor,Player 4: yellow
+web_1385a22700fb4d0ab2c40dc08373ec98,55481,80,2,Player 5: cyan,ai,Crewmate,
+web_13cd10118fc448d29f8d529678e1e15c,9872,22,1,Cyan,human,Crewmate,Orange
+web_13cd10118fc448d29f8d529678e1e15c,9875,22,1,Orange,human,Crewmate,Cyan
+web_13cd10118fc448d29f8d529678e1e15c,9881,22,1,White,human,Impostor,Cyan
+web_13cd10118fc448d29f8d529678e1e15c,9883,22,1,Blue,human,Crewmate,Cyan
+web_13cd10118fc448d29f8d529678e1e15c,10232,24,2,Blue,human,Crewmate,White
+web_13cd10118fc448d29f8d529678e1e15c,10235,24,2,White,human,Impostor,Orange
+web_13cd10118fc448d29f8d529678e1e15c,10237,24,2,Orange,human,Crewmate,White
+web_14fdeccde8f443d0b6b61f553c2e20c7,32086,15,1,Black,human,Impostor,
+web_14fdeccde8f443d0b6b61f553c2e20c7,32095,15,1,Pink,human,Crewmate,Black
+web_16b101e9d1c04b56948e71b6844aa73e,61451,27,1,Player 4: yellow,ai,Crewmate,Player 5: blue
+web_16b101e9d1c04b56948e71b6844aa73e,61452,27,1,Player 5: blue,ai,Impostor,
+web_16b101e9d1c04b56948e71b6844aa73e,61461,27,1,Pink,human,Crewmate,Player 4: yellow
+web_16b101e9d1c04b56948e71b6844aa73e,61465,27,1,Black,human,Crewmate,Player 5: blue
+web_183dae2c83e84af0be2a65d977d1ae05,62368,37,1,Player 2: blue,ai,Crewmate,
+web_183dae2c83e84af0be2a65d977d1ae05,62369,37,1,Player 3: white,ai,Crewmate,
+web_183dae2c83e84af0be2a65d977d1ae05,62380,37,1,Pink,human,Crewmate,Red
+web_183dae2c83e84af0be2a65d977d1ae05,62398,37,1,Orange,human,Crewmate,Red
+web_183dae2c83e84af0be2a65d977d1ae05,62404,37,1,Red,human,Impostor,
+web_19195b424f5547d2bede3648e971c602,45307,19,1,Player 2: red,ai,Crewmate,
+web_19195b424f5547d2bede3648e971c602,45323,19,1,White,human,Crewmate,Player 2: red
+web_19195b424f5547d2bede3648e971c602,45329,19,1,Cyan,human,Crewmate,Black
+web_19195b424f5547d2bede3648e971c602,45357,19,1,Black,human,Impostor,Player 2: red
+web_19552c7b324343dcaca5e9ec5935ae0b,44084,34,1,Player 4: blue,ai,Crewmate,Brown
+web_19552c7b324343dcaca5e9ec5935ae0b,44085,34,1,Player 3: black,ai,Crewmate,
+web_19552c7b324343dcaca5e9ec5935ae0b,44091,34,1,Brown,human,Impostor,Player 4: blue
+web_197bf743b0004358ae875776df5a7d05,89538,42,1,Player 5: red,ai,Crewmate,
+web_197bf743b0004358ae875776df5a7d05,89539,42,1,Player 4: white,ai,Crewmate,
+web_197bf743b0004358ae875776df5a7d05,89540,42,1,Player 3: cyan,ai,Crewmate,
+web_197bf743b0004358ae875776df5a7d05,89544,42,1,Pink,human,Impostor,Player 4: white
+web_1bc2c59a16534010b7a067719684d942,80187,58,1,Player 3: pink,ai,Crewmate,
+web_1bc2c59a16534010b7a067719684d942,80188,58,1,Player 2: blue,ai,Crewmate,
+web_1bc2c59a16534010b7a067719684d942,80189,58,1,Player 4: orange,ai,Crewmate,
+web_1bc2c59a16534010b7a067719684d942,80218,58,1,White,human,Impostor,Player 3: pink
+web_1cc86dee17b14a37ba4ad2ec7a5857e2,14666,5,1,Brown,human,Crewmate,
+web_1cc86dee17b14a37ba4ad2ec7a5857e2,14668,5,1,Black,human,Crewmate,
+web_1cc86dee17b14a37ba4ad2ec7a5857e2,14670,5,1,White,human,Crewmate,
+web_1cc86dee17b14a37ba4ad2ec7a5857e2,14672,5,1,Cyan,human,Impostor,
+web_1cc86dee17b14a37ba4ad2ec7a5857e2,14674,5,1,Orange,human,Crewmate,White
+web_1cc86dee17b14a37ba4ad2ec7a5857e2,14951,48,2,Brown,human,Crewmate,Cyan
+web_1cc86dee17b14a37ba4ad2ec7a5857e2,14959,48,2,Black,human,Crewmate,Cyan
+web_1cc86dee17b14a37ba4ad2ec7a5857e2,14961,48,2,Orange,human,Crewmate,Cyan
+web_1cc86dee17b14a37ba4ad2ec7a5857e2,14965,48,2,Cyan,human,Impostor,Brown
+web_1e40ed2ae7014fc782b85928e60d9d09,72578,48,1,Player 5: lime,ai,Impostor,
+web_1e40ed2ae7014fc782b85928e60d9d09,72580,48,1,Player 4: black,ai,Crewmate,
+web_1e40ed2ae7014fc782b85928e60d9d09,72598,48,1,Purple,human,Crewmate,Player 4: black
+web_1e40ed2ae7014fc782b85928e60d9d09,72634,48,1,Blue,human,Crewmate,
+web_1e8dcdb90a664c9faaadc7b762c75e28,53535,59,1,Player 4: red,ai,Crewmate,
+web_1e8dcdb90a664c9faaadc7b762c75e28,53545,59,1,Green,human,Crewmate,
+web_1e8dcdb90a664c9faaadc7b762c75e28,53548,59,1,Lime,human,Impostor,
+web_1e8dcdb90a664c9faaadc7b762c75e28,53551,59,1,White,human,Crewmate,
+web_1e8dcdb90a664c9faaadc7b762c75e28,54079,69,2,Green,human,Crewmate,Lime
+web_1e8dcdb90a664c9faaadc7b762c75e28,54086,69,2,Lime,human,Impostor,Green
+web_1e8dcdb90a664c9faaadc7b762c75e28,54101,69,2,White,human,Crewmate,Green
+web_1f629a94eb4b470eaffa843332921609,33702,3,1,Blue,human,Crewmate,White
+web_1f629a94eb4b470eaffa843332921609,33708,3,1,White,human,Impostor,Black
+web_1f629a94eb4b470eaffa843332921609,33710,3,1,Black,human,Crewmate,Blue
+web_1f629a94eb4b470eaffa843332921609,33719,3,1,Cyan,human,Crewmate,White
+web_203693ef3fc44a98b53ef03e4110aa62,38991,64,1,Player 5: red,ai,Crewmate,
+web_203693ef3fc44a98b53ef03e4110aa62,38999,64,1,Blue,human,Crewmate,Orange
+web_203693ef3fc44a98b53ef03e4110aa62,39010,64,1,Pink,human,Impostor,Blue
+web_203693ef3fc44a98b53ef03e4110aa62,39012,64,1,Black,human,Crewmate,
+web_203693ef3fc44a98b53ef03e4110aa62,39014,64,1,Orange,human,Crewmate,
+web_203693ef3fc44a98b53ef03e4110aa62,39755,190,2,Player 5: red,ai,Crewmate,
+web_203693ef3fc44a98b53ef03e4110aa62,39762,190,2,Pink,human,Impostor,Black
+web_203693ef3fc44a98b53ef03e4110aa62,39765,190,2,Orange,human,Crewmate,Player 5: red
+web_203693ef3fc44a98b53ef03e4110aa62,39778,190,2,Black,human,Crewmate,
+web_20ca69eee57e4770a108f6700a52467f,58052,27,1,Player 2: lime,ai,Crewmate,
+web_20ca69eee57e4770a108f6700a52467f,58054,27,1,Player 4: orange,ai,Crewmate,
+web_20ca69eee57e4770a108f6700a52467f,58058,27,1,Green,human,Crewmate,
+web_20ca69eee57e4770a108f6700a52467f,58060,27,1,Pink,human,Crewmate,
+web_20ca69eee57e4770a108f6700a52467f,58073,27,1,Black,human,Impostor,
+web_20ca69eee57e4770a108f6700a52467f,58451,68,2,Player 2: lime,ai,Crewmate,
+web_20ca69eee57e4770a108f6700a52467f,58452,68,2,Player 4: orange,ai,Crewmate,
+web_20ca69eee57e4770a108f6700a52467f,58474,68,2,Green,human,Crewmate,Player 4: orange
+web_20ca69eee57e4770a108f6700a52467f,58479,68,2,Black,human,Impostor,Player 2: lime
+web_20ca69eee57e4770a108f6700a52467f,58497,68,2,Pink,human,Crewmate,
+web_21675ff875324cb1959d4d4841368ee5,34685,25,1,Lime,human,Impostor,Pink
+web_21675ff875324cb1959d4d4841368ee5,34694,25,1,Blue,human,Crewmate,Lime
+web_23add1799bc04d83a17d7432365d2ef9,21903,26,1,Brown,human,Crewmate,Cyan
+web_23add1799bc04d83a17d7432365d2ef9,21905,26,1,Orange,human,Crewmate,Cyan
+web_23add1799bc04d83a17d7432365d2ef9,21907,26,1,Black,human,Crewmate,Cyan
+web_23add1799bc04d83a17d7432365d2ef9,21911,26,1,Cyan,human,Impostor,Black
+web_23add1799bc04d83a17d7432365d2ef9,21913,26,1,Pink,human,Crewmate,
+web_23cf6eec786341328b9059d7f9c26a7a,51877,2,1,Player 5: black,ai,Crewmate,
+web_23cf6eec786341328b9059d7f9c26a7a,51892,2,1,Lime,human,Crewmate,White
+web_23cf6eec786341328b9059d7f9c26a7a,51903,2,1,Brown,human,Impostor,Player 5: black
+web_23cf6eec786341328b9059d7f9c26a7a,51907,2,1,White,human,Crewmate,Lime
+web_23cf6eec786341328b9059d7f9c26a7a,51926,2,1,Blue,human,Crewmate,White
+web_242cee926bb446758a8548f8d51cd069,87894,32,1,Player 4: lime,ai,Crewmate,Player 5: red
+web_242cee926bb446758a8548f8d51cd069,87898,32,1,Player 5: red,ai,Impostor,Player 4: lime
+web_242cee926bb446758a8548f8d51cd069,87899,32,1,Player 3: purple,ai,Crewmate,
+web_242cee926bb446758a8548f8d51cd069,87914,32,1,Pink,human,Crewmate,Player 5: red
+web_253b645d851d4543a2451437793aaf9e,40862,20,1,Player 2: blue,ai,Impostor,
+web_253b645d851d4543a2451437793aaf9e,40879,20,1,Black,human,Crewmate,Player 2: blue
+web_253b645d851d4543a2451437793aaf9e,40883,20,1,Orange,human,Crewmate,
+web_253b645d851d4543a2451437793aaf9e,40902,20,1,Purple,human,Crewmate,Player 2: blue
+web_25c49f7e46834fab83343701804cdfec,35201,64,1,Cyan,human,Impostor,
+web_25c49f7e46834fab83343701804cdfec,35203,64,1,Red,human,Crewmate,Cyan
+web_25c49f7e46834fab83343701804cdfec,35205,64,1,White,human,Crewmate,Cyan
+web_26044236555a467aaccfd5981a0baf61,80284,91,1,Player 3: pink,ai,Crewmate,Player 4: lime
+web_26044236555a467aaccfd5981a0baf61,80292,91,1,Player 2: blue,ai,Crewmate,
+web_26044236555a467aaccfd5981a0baf61,80293,91,1,Player 4: lime,ai,Impostor,
+web_26044236555a467aaccfd5981a0baf61,80309,91,1,Green,human,Crewmate,Player 4: lime
+web_2626a4380ce4430e996c208d7bbbe98d,41987,18,1,Player 2: yellow,ai,Crewmate,
+web_2626a4380ce4430e996c208d7bbbe98d,41988,18,1,Player 5: blue,ai,Crewmate,
+web_2626a4380ce4430e996c208d7bbbe98d,41989,18,1,Player 4: white,ai,Impostor,
+web_264591b860d44d5fb4105b3b9832e875,31248,192,1,Red,human,Crewmate,Yellow
+web_264591b860d44d5fb4105b3b9832e875,31250,192,1,Lime,human,Crewmate,Red
+web_264591b860d44d5fb4105b3b9832e875,31258,192,1,Yellow,human,Impostor,Red
+web_264591b860d44d5fb4105b3b9832e875,31265,192,1,Cyan,human,Crewmate,Red
+web_2748cbda382541b59a1531afe48292c3,42032,10,1,Player 4: yellow,ai,Crewmate,
+web_2748cbda382541b59a1531afe48292c3,42037,10,1,Lime,human,Impostor,Orange
+web_2748cbda382541b59a1531afe48292c3,42043,10,1,Orange,human,Crewmate,Lime
+web_2748cbda382541b59a1531afe48292c3,42046,10,1,Green,human,Crewmate,Orange
+web_28d47badeb72436fb64be1d2c44012f0,87739,2,1,Player 3: red,ai,Crewmate,Lime
+web_28d47badeb72436fb64be1d2c44012f0,87741,2,1,Player 4: brown,ai,Crewmate,Lime
+web_28d47badeb72436fb64be1d2c44012f0,87743,2,1,Player 2: green,ai,Crewmate,Lime
+web_28d47badeb72436fb64be1d2c44012f0,87772,2,1,Lime,human,Impostor,Player 3: red
+web_28ffeb6f33ee43eeae17d42fd435e1bd,81784,28,1,Player 4: yellow,ai,Crewmate,Player 3: pink
+web_28ffeb6f33ee43eeae17d42fd435e1bd,81785,28,1,Player 2: black,ai,Crewmate,Player 3: pink
+web_28ffeb6f33ee43eeae17d42fd435e1bd,81786,28,1,Player 3: pink,ai,Impostor,
+web_28ffeb6f33ee43eeae17d42fd435e1bd,81793,28,1,Blue,human,Crewmate,Player 3: pink
+web_290dc43a96a04677923997c6dfa7eb38,55303,4,1,Player 2: pink,ai,Crewmate,Green
+web_290dc43a96a04677923997c6dfa7eb38,55309,4,1,Player 5: black,ai,Crewmate,Green
+web_290dc43a96a04677923997c6dfa7eb38,55326,4,1,Green,human,Crewmate,Cyan
+web_290dc43a96a04677923997c6dfa7eb38,55330,4,1,Red,human,Impostor,Green
+web_290dc43a96a04677923997c6dfa7eb38,55332,4,1,Cyan,human,Crewmate,Green
+web_290dc43a96a04677923997c6dfa7eb38,56357,92,2,Player 2: pink,ai,Crewmate,Red
+web_290dc43a96a04677923997c6dfa7eb38,56372,92,2,Red,human,Impostor,Player 2: pink
+web_290dc43a96a04677923997c6dfa7eb38,56374,92,2,Cyan,human,Crewmate,Player 2: pink
+web_2b74de1879de449b899b1c1e5c0e7b4c,70465,21,1,Player 4: green,ai,Impostor,Player 2: black
+web_2b74de1879de449b899b1c1e5c0e7b4c,70473,21,1,Player 2: black,ai,Crewmate,
+web_2b74de1879de449b899b1c1e5c0e7b4c,70513,21,1,Red,human,Crewmate,Player 4: green
+web_2b74de1879de449b899b1c1e5c0e7b4c,70534,21,1,Purple,human,Crewmate,Player 2: black
+web_2bbeb647f0894054809f5c92c3a05d94,86325,59,1,Player 3: pink,ai,Crewmate,Brown
+web_2bbeb647f0894054809f5c92c3a05d94,86326,59,1,Player 2: red,ai,Crewmate,Brown
+web_2bbeb647f0894054809f5c92c3a05d94,86334,59,1,Player 5: black,ai,Crewmate,Brown
+web_2bbeb647f0894054809f5c92c3a05d94,86359,59,1,Brown,human,Impostor,
+web_2c0bb89e37c34ebdbd50007e7d456445,72466,29,1,Player 4: brown,ai,Crewmate,Player 2: white
+web_2c0bb89e37c34ebdbd50007e7d456445,72469,29,1,Player 5: orange,ai,Crewmate,Player 2: white
+web_2c0bb89e37c34ebdbd50007e7d456445,72471,29,1,Player 2: white,ai,Impostor,
+web_2c0bb89e37c34ebdbd50007e7d456445,72508,29,1,Red,human,Crewmate,Player 2: white
+web_2c0bb89e37c34ebdbd50007e7d456445,72540,29,1,Green,human,Crewmate,Player 2: white
+web_2d8b87f396a046cf8ac0f9a7098dd943,62185,37,1,Player 5: white,ai,Crewmate,
+web_2d8b87f396a046cf8ac0f9a7098dd943,62197,37,1,Green,human,Crewmate,Orange
+web_2d8b87f396a046cf8ac0f9a7098dd943,62206,37,1,Yellow,human,Crewmate,Orange
+web_2d8b87f396a046cf8ac0f9a7098dd943,62210,37,1,Orange,human,Impostor,Yellow
+web_2ffb460a513d4a598528e58097a63492,17743,39,1,Black,human,Crewmate,Pink
+web_2ffb460a513d4a598528e58097a63492,17745,39,1,Pink,human,Impostor,Black
+web_2ffb460a513d4a598528e58097a63492,17750,39,1,Brown,human,Crewmate,Yellow
+web_2ffb460a513d4a598528e58097a63492,17755,39,1,Yellow,human,Crewmate,Pink
+web_302bacf76f5b47c5a4d5f78d1f91e994,66230,45,1,Player 4: purple,ai,Crewmate,Black
+web_302bacf76f5b47c5a4d5f78d1f91e994,66255,45,1,Yellow,human,Crewmate,Player 4: purple
+web_302bacf76f5b47c5a4d5f78d1f91e994,66257,45,1,Blue,human,Impostor,Yellow
+web_302bacf76f5b47c5a4d5f78d1f91e994,66265,45,1,Black,human,Crewmate,Blue
+web_302bacf76f5b47c5a4d5f78d1f91e994,66777,51,2,Black,human,Crewmate,Blue
+web_302bacf76f5b47c5a4d5f78d1f91e994,66779,51,2,Blue,human,Impostor,Yellow
+web_302bacf76f5b47c5a4d5f78d1f91e994,66787,51,2,Yellow,human,Crewmate,Blue
+web_30365cfd943648ef9ed728780ecb885f,61763,47,1,Player 4: purple,ai,Impostor,Player 3: orange
+web_30365cfd943648ef9ed728780ecb885f,61765,47,1,Player 3: orange,ai,Crewmate,Player 4: purple
+web_30365cfd943648ef9ed728780ecb885f,61779,47,1,Green,human,Crewmate,Player 4: purple
+web_30365cfd943648ef9ed728780ecb885f,61788,47,1,Cyan,human,Crewmate,Player 4: purple
+web_31307f1b38934d168b4fd805987ad34a,43755,1,1,Player 5: pink,ai,Impostor,
+web_31307f1b38934d168b4fd805987ad34a,43756,1,1,Player 3: green,ai,Crewmate,
+web_31307f1b38934d168b4fd805987ad34a,43757,1,1,Player 4: blue,ai,Crewmate,
+web_31307f1b38934d168b4fd805987ad34a,43763,1,1,Cyan,human,Crewmate,
+web_31307f1b38934d168b4fd805987ad34a,43924,26,2,Player 3: green,ai,Crewmate,Player 5: pink
+web_31307f1b38934d168b4fd805987ad34a,43925,26,2,Player 5: pink,ai,Impostor,
+web_31307f1b38934d168b4fd805987ad34a,43926,26,2,Player 4: blue,ai,Crewmate,
+web_3173aaff21bf4898acd0c70fc67301f0,35938,75,1,Black,human,Crewmate,Green
+web_3173aaff21bf4898acd0c70fc67301f0,35946,75,1,Green,human,Crewmate,Black
+web_3173aaff21bf4898acd0c70fc67301f0,35949,75,1,Purple,human,Impostor,Black
+web_317d543acb1741f09d355100da3805ec,71701,10,1,Player 3: pink,ai,Crewmate,Purple
+web_317d543acb1741f09d355100da3805ec,71710,10,1,Player 5: brown,ai,Crewmate,Purple
+web_317d543acb1741f09d355100da3805ec,71712,10,1,Player 2: red,ai,Crewmate,Purple
+web_317d543acb1741f09d355100da3805ec,71736,10,1,Purple,human,Impostor,Player 2: red
+web_317d543acb1741f09d355100da3805ec,71741,10,1,Yellow,human,Crewmate,Purple
+web_32218c82a0684b79b72ae488a30acd45,79140,11,1,Player 2: cyan,ai,Crewmate,Black
+web_32218c82a0684b79b72ae488a30acd45,79142,11,1,Player 5: purple,ai,Crewmate,
+web_32218c82a0684b79b72ae488a30acd45,79143,11,1,Player 4: orange,ai,Crewmate,
+web_32218c82a0684b79b72ae488a30acd45,79164,11,1,Black,human,Impostor,
+web_325f420ce28d4c97858e7a109731237d,68738,29,1,Player 5: orange,ai,Crewmate,
+web_325f420ce28d4c97858e7a109731237d,68739,29,1,Player 3: lime,ai,Crewmate,
+web_325f420ce28d4c97858e7a109731237d,68754,29,1,Black,human,Crewmate,Player 5: orange
+web_325f420ce28d4c97858e7a109731237d,68758,29,1,Brown,human,Crewmate,Black
+web_325f420ce28d4c97858e7a109731237d,68762,29,1,Cyan,human,Impostor,Black
+web_329c960e42284ba8894ae9824bcb364d,40679,13,1,Player 2: pink,ai,Crewmate,
+web_329c960e42284ba8894ae9824bcb364d,40690,13,1,Cyan,human,Crewmate,White
+web_329c960e42284ba8894ae9824bcb364d,40693,13,1,Green,human,Impostor,
+web_329c960e42284ba8894ae9824bcb364d,40698,13,1,Yellow,human,Crewmate,Cyan
+web_329c960e42284ba8894ae9824bcb364d,40700,13,1,White,human,Crewmate,Cyan
+web_329c960e42284ba8894ae9824bcb364d,41096,41,2,Player 2: pink,ai,Crewmate,
+web_329c960e42284ba8894ae9824bcb364d,41109,41,2,Yellow,human,Crewmate,Player 2: pink
+web_329c960e42284ba8894ae9824bcb364d,41161,41,2,Green,human,Impostor,
+web_338dfe3c980a4f5c89071422bc8c0176,67299,5,1,Player 3: blue,ai,Crewmate,
+web_338dfe3c980a4f5c89071422bc8c0176,67300,5,1,Player 2: red,ai,Impostor,
+web_338dfe3c980a4f5c89071422bc8c0176,67308,5,1,Pink,human,Crewmate,
+web_338dfe3c980a4f5c89071422bc8c0176,67310,5,1,Yellow,human,Crewmate,
+web_338dfe3c980a4f5c89071422bc8c0176,67312,5,1,Purple,human,Crewmate,
+web_338dfe3c980a4f5c89071422bc8c0176,67942,92,2,Player 3: blue,ai,Crewmate,
+web_338dfe3c980a4f5c89071422bc8c0176,67943,92,2,Player 2: red,ai,Impostor,
+web_338dfe3c980a4f5c89071422bc8c0176,67960,92,2,Pink,human,Crewmate,Player 2: red
+web_338dfe3c980a4f5c89071422bc8c0176,67963,92,2,Purple,human,Crewmate,Player 2: red
+web_338dfe3c980a4f5c89071422bc8c0176,67965,92,2,Yellow,human,Crewmate,Player 2: red
+web_35f0ac811514493da6579397a0d75bfa,68941,3,1,Player 5: orange,ai,Crewmate,
+web_35f0ac811514493da6579397a0d75bfa,68942,3,1,Player 3: black,ai,Impostor,
+web_35f0ac811514493da6579397a0d75bfa,68984,3,1,White,human,Crewmate,Player 5: orange
+web_35f0ac811514493da6579397a0d75bfa,69020,3,1,Blue,human,Crewmate,
+web_3653019f2c6745eeab0f153a0757ec7f,13384,2,1,Player 4: purple,ai,Crewmate,Orange
+web_3653019f2c6745eeab0f153a0757ec7f,13385,2,1,Player 5: brown,ai,Crewmate,Orange
+web_3653019f2c6745eeab0f153a0757ec7f,13389,2,1,Yellow,human,Crewmate,Orange
+web_3653019f2c6745eeab0f153a0757ec7f,13392,2,1,Orange,human,Impostor,Yellow
+web_37a42c5126b84ac89e1b6c0b91ad6618,41513,27,1,Player 3: green,ai,Crewmate,
+web_37a42c5126b84ac89e1b6c0b91ad6618,41521,27,1,Black,human,Crewmate,Brown
+web_37a42c5126b84ac89e1b6c0b91ad6618,41533,27,1,Brown,human,Impostor,
+web_37caa0ba8de748319e785b3b797de004,54356,1,1,Player 5: purple,ai,Crewmate,White
+web_37caa0ba8de748319e785b3b797de004,54373,1,1,Brown,human,Crewmate,White
+web_37caa0ba8de748319e785b3b797de004,54382,1,1,Yellow,human,Crewmate,White
+web_37caa0ba8de748319e785b3b797de004,54389,1,1,Green,human,Crewmate,White
+web_37caa0ba8de748319e785b3b797de004,54393,1,1,White,human,Impostor,Player 5: purple
+web_39ed2ee61f73430ba435157704bc1ecd,43160,18,1,Player 2: blue,ai,Crewmate,
+web_39ed2ee61f73430ba435157704bc1ecd,43161,18,1,Player 3: lime,ai,Crewmate,
+web_39ed2ee61f73430ba435157704bc1ecd,43162,18,1,Player 4: orange,ai,Impostor,
+web_39ed2ee61f73430ba435157704bc1ecd,43163,18,1,Player 5: yellow,ai,Crewmate,
+web_39ed2ee61f73430ba435157704bc1ecd,43545,91,2,Player 5: yellow,ai,Crewmate,
+web_39ed2ee61f73430ba435157704bc1ecd,43546,91,2,Player 2: blue,ai,Crewmate,
+web_39ed2ee61f73430ba435157704bc1ecd,43547,91,2,Player 4: orange,ai,Impostor,
+web_3a5e708ac7544080a9c610fc3645e4d3,11329,8,1,Player 5: white,ai,Impostor,Yellow
+web_3a5e708ac7544080a9c610fc3645e4d3,11331,8,1,Lime,human,Crewmate,Yellow
+web_3a5e708ac7544080a9c610fc3645e4d3,11333,8,1,Orange,human,Crewmate,Yellow
+web_3a5e708ac7544080a9c610fc3645e4d3,11335,8,1,Yellow,human,Crewmate,Lime
+web_3b9efac22bdb49bb887679ce03e58009,43676,1,1,Player 3: cyan,ai,Crewmate,
+web_3b9efac22bdb49bb887679ce03e58009,43677,1,1,Player 5: purple,ai,Crewmate,
+web_3b9efac22bdb49bb887679ce03e58009,43679,1,1,Player 4: lime,ai,Crewmate,
+web_3b9efac22bdb49bb887679ce03e58009,43685,1,1,Blue,human,Crewmate,Player 3: cyan
+web_3b9efac22bdb49bb887679ce03e58009,43687,1,1,Red,human,Impostor,
+web_3ca1860c44304a5c9b8161a30d5880ad,45296,1,1,Player 4: purple,ai,Impostor,Yellow
+web_3ca1860c44304a5c9b8161a30d5880ad,45299,1,1,Orange,human,Crewmate,
+web_3ca1860c44304a5c9b8161a30d5880ad,45302,1,1,Yellow,human,Crewmate,Blue
+web_3ca1860c44304a5c9b8161a30d5880ad,45319,1,1,Blue,human,Crewmate,Player 4: purple
+web_3ca1860c44304a5c9b8161a30d5880ad,45337,1,1,Brown,human,Crewmate,
+web_3ca1860c44304a5c9b8161a30d5880ad,45916,42,2,Player 4: purple,ai,Impostor,
+web_3ca1860c44304a5c9b8161a30d5880ad,45925,42,2,Yellow,human,Crewmate,Blue
+web_3ca1860c44304a5c9b8161a30d5880ad,45927,42,2,Orange,human,Crewmate,Yellow
+web_3ca1860c44304a5c9b8161a30d5880ad,45930,42,2,Blue,human,Crewmate,Yellow
+web_3ce4891ef13a42788900b28c4af2e6a8,86850,1,1,Player 2: red,ai,Crewmate,
+web_3ce4891ef13a42788900b28c4af2e6a8,86851,1,1,Player 5: white,ai,Crewmate,
+web_3ce4891ef13a42788900b28c4af2e6a8,86852,1,1,Player 3: brown,ai,Crewmate,
+web_3ce4891ef13a42788900b28c4af2e6a8,86858,1,1,Player 4: lime,ai,Impostor,
+web_3ce4891ef13a42788900b28c4af2e6a8,87964,94,2,Player 5: white,ai,Crewmate,Player 4: lime
+web_3ce4891ef13a42788900b28c4af2e6a8,87967,94,2,Player 4: lime,ai,Impostor,
+web_3ce4891ef13a42788900b28c4af2e6a8,87968,94,2,Player 3: brown,ai,Crewmate,
+web_3cf6049c80f644d98bfd6f7d3b34d54b,69418,21,1,Player 5: purple,ai,Crewmate,Lime
+web_3cf6049c80f644d98bfd6f7d3b34d54b,69424,21,1,Player 3: cyan,ai,Crewmate,Lime
+web_3cf6049c80f644d98bfd6f7d3b34d54b,69449,21,1,White,human,Crewmate,Lime
+web_3cf6049c80f644d98bfd6f7d3b34d54b,69452,21,1,Pink,human,Crewmate,Lime
+web_3cf6049c80f644d98bfd6f7d3b34d54b,69456,21,1,Lime,human,Impostor,
+web_3d2c2f23c818404ea77ceef5ffcf36e1,57371,20,1,Player 2: red,ai,Crewmate,Player 5: cyan
+web_3d2c2f23c818404ea77ceef5ffcf36e1,57372,20,1,Player 3: black,ai,Crewmate,Player 5: cyan
+web_3d2c2f23c818404ea77ceef5ffcf36e1,57373,20,1,Player 4: green,ai,Crewmate,Player 5: cyan
+web_3d2c2f23c818404ea77ceef5ffcf36e1,57374,20,1,Player 5: cyan,ai,Impostor,
+web_3d4eb5f58e4643be8e7a7193bb518d36,32666,7,1,Blue,human,Crewmate,
+web_3d4eb5f58e4643be8e7a7193bb518d36,32672,7,1,White,human,Crewmate,Purple
+web_3d4eb5f58e4643be8e7a7193bb518d36,32676,7,1,Purple,human,Impostor,Cyan
+web_3d4eb5f58e4643be8e7a7193bb518d36,32680,7,1,Cyan,human,Crewmate,Purple
+web_3d7e9eb877f441ba8010a723ee37d2c2,56182,84,1,Player 2: orange,ai,Impostor,Yellow
+web_3d7e9eb877f441ba8010a723ee37d2c2,56183,84,1,Player 4: red,ai,Crewmate,Yellow
+web_3d7e9eb877f441ba8010a723ee37d2c2,56200,84,1,Brown,human,Crewmate,Yellow
+web_3d7e9eb877f441ba8010a723ee37d2c2,56203,84,1,Yellow,human,Crewmate,Player 4: red
+web_3dfe6803919c4e86a59083699cfccf35,65807,26,1,Player 5: lime,ai,Crewmate,
+web_3dfe6803919c4e86a59083699cfccf35,65808,26,1,Player 4: orange,ai,Impostor,
+web_3dfe6803919c4e86a59083699cfccf35,65829,26,1,Brown,human,Crewmate,Cyan
+web_3dfe6803919c4e86a59083699cfccf35,65831,26,1,Cyan,human,Crewmate,Brown
+web_3dfe6803919c4e86a59083699cfccf35,66228,28,2,Player 4: orange,ai,Impostor,
+web_3dfe6803919c4e86a59083699cfccf35,66229,28,2,Player 5: lime,ai,Crewmate,
+web_3dfe6803919c4e86a59083699cfccf35,66248,28,2,Brown,human,Crewmate,Cyan
+web_3dfe6803919c4e86a59083699cfccf35,66253,28,2,Cyan,human,Crewmate,Brown
+web_3e2bca658e5d4c28a566e434a60056d6,85647,46,1,Player 4: purple,ai,Impostor,Player 3: black
+web_3e2bca658e5d4c28a566e434a60056d6,85648,46,1,Player 5: lime,ai,Crewmate,
+web_3e2bca658e5d4c28a566e434a60056d6,85651,46,1,Player 3: black,ai,Crewmate,
+web_3e5b977320894f5f841a6e9eea51405d,36160,10,1,Player 5: lime,ai,Crewmate,Green
+web_3e5b977320894f5f841a6e9eea51405d,36176,10,1,Red,human,Crewmate,Green
+web_3e5b977320894f5f841a6e9eea51405d,36180,10,1,Green,human,Impostor,Player 5: lime
+web_3f6746e334a945749aab2caaccc060dc,41135,37,1,Player 5: white,ai,Crewmate,
+web_3f6746e334a945749aab2caaccc060dc,41165,37,1,Orange,human,Impostor,Lime
+web_3f6746e334a945749aab2caaccc060dc,41167,37,1,Lime,human,Crewmate,
+web_3f9af6de5d8847dab7b03f7ababbb90e,71420,3,1,Player 4: blue,ai,Crewmate,
+web_3f9af6de5d8847dab7b03f7ababbb90e,71421,3,1,Player 5: green,ai,Crewmate,
+web_3f9af6de5d8847dab7b03f7ababbb90e,71422,3,1,Player 3: lime,ai,Impostor,
+web_3f9af6de5d8847dab7b03f7ababbb90e,71440,3,1,Yellow,human,Crewmate,
+web_3f9af6de5d8847dab7b03f7ababbb90e,71463,3,1,Cyan,human,Crewmate,Player 4: blue
+web_3f9af6de5d8847dab7b03f7ababbb90e,72730,84,2,Player 3: lime,ai,Impostor,
+web_3f9af6de5d8847dab7b03f7ababbb90e,72745,84,2,Yellow,human,Crewmate,Cyan
+web_3f9af6de5d8847dab7b03f7ababbb90e,72764,84,2,Cyan,human,Crewmate,Yellow
+web_3fdd5613adab4608adb57115dc084a9b,19871,40,1,White,human,Crewmate,Orange
+web_3fdd5613adab4608adb57115dc084a9b,19873,40,1,Purple,human,Crewmate,Orange
+web_3fdd5613adab4608adb57115dc084a9b,19875,40,1,Orange,human,Impostor,White
+web_3fdd5613adab4608adb57115dc084a9b,19877,40,1,Pink,human,Crewmate,Orange
+web_3fdd5613adab4608adb57115dc084a9b,19880,40,1,Green,human,Crewmate,Orange
+web_40395c1ed89840bba405a1e35d35dc92,68012,10,1,Player 3: orange,ai,Crewmate,
+web_40395c1ed89840bba405a1e35d35dc92,68021,10,1,Player 5: brown,ai,Crewmate,
+web_40395c1ed89840bba405a1e35d35dc92,68034,10,1,Blue,human,Crewmate,Yellow
+web_40395c1ed89840bba405a1e35d35dc92,68041,10,1,Yellow,human,Impostor,
+web_40395c1ed89840bba405a1e35d35dc92,68049,10,1,Black,human,Crewmate,Yellow
+web_41c5890f43454dc8af1719441b9e4992,71453,10,1,Player 4: lime,ai,Crewmate,Blue
+web_41c5890f43454dc8af1719441b9e4992,71457,10,1,Player 5: red,ai,Crewmate,Blue
+web_41c5890f43454dc8af1719441b9e4992,71465,10,1,Player 2: brown,ai,Crewmate,Blue
+web_41c5890f43454dc8af1719441b9e4992,71481,10,1,Blue,human,Impostor,
+web_41c5890f43454dc8af1719441b9e4992,71489,10,1,Yellow,human,Crewmate,Blue
+web_43257168dc554d16b88dd00e77d7433b,30735,2,1,White,human,Crewmate,Brown
+web_43257168dc554d16b88dd00e77d7433b,30745,2,1,Red,human,Crewmate,Brown
+web_43257168dc554d16b88dd00e77d7433b,30754,2,1,Yellow,human,Impostor,Brown
+web_43257168dc554d16b88dd00e77d7433b,30781,2,1,Brown,human,Crewmate,
+web_43257168dc554d16b88dd00e77d7433b,30782,2,1,Lime,human,Crewmate,
+web_435d63bc06d64916b5836c5725ec5dbd,70689,73,1,Player 3: yellow,ai,Crewmate,
+web_435d63bc06d64916b5836c5725ec5dbd,70690,73,1,Player 4: red,ai,Crewmate,
+web_435d63bc06d64916b5836c5725ec5dbd,70693,73,1,Player 5: blue,ai,Impostor,
+web_43868544b0cc42adbbd2460da40ec667,72336,28,1,Player 3: cyan,ai,Impostor,Player 2: white
+web_43868544b0cc42adbbd2460da40ec667,72341,28,1,Player 2: white,ai,Crewmate,
+web_43868544b0cc42adbbd2460da40ec667,72351,28,1,Player 5: red,ai,Crewmate,
+web_43868544b0cc42adbbd2460da40ec667,72370,28,1,Lime,human,Crewmate,Player 2: white
+web_43df549f0f7845fba749059269daf100,17886,31,1,Player 4: white,ai,Impostor,Player 5: lime
+web_43df549f0f7845fba749059269daf100,17887,31,1,Player 5: lime,ai,Crewmate,
+web_43df549f0f7845fba749059269daf100,17898,31,1,Black,human,Crewmate,Player 5: lime
+web_43df549f0f7845fba749059269daf100,17919,31,1,Cyan,human,Crewmate,
+web_4444254fdb4d45efb9a481fc2e55a45a,87298,65,1,Player 2: purple,ai,Impostor,
+web_4444254fdb4d45efb9a481fc2e55a45a,87300,65,1,Player 4: green,ai,Crewmate,
+web_4444254fdb4d45efb9a481fc2e55a45a,87302,65,1,Player 5: red,ai,Crewmate,
+web_4444254fdb4d45efb9a481fc2e55a45a,87320,65,1,Blue,human,Crewmate,Player 2: purple
+web_44d63832be2b415abcb5bb6575a33711,78268,50,1,Player 2: purple,ai,Impostor,Brown
+web_44d63832be2b415abcb5bb6575a33711,78269,50,1,Player 4: blue,ai,Crewmate,
+web_44d63832be2b415abcb5bb6575a33711,78280,50,1,Brown,human,Crewmate,Player 2: purple
+web_44d63832be2b415abcb5bb6575a33711,78335,50,1,Green,human,Crewmate,
+web_44d63832be2b415abcb5bb6575a33711,78727,52,2,Player 2: purple,ai,Impostor,Brown
+web_44d63832be2b415abcb5bb6575a33711,78734,52,2,Player 4: blue,ai,Crewmate,
+web_44d63832be2b415abcb5bb6575a33711,78751,52,2,Brown,human,Crewmate,Player 2: purple
+web_44d63832be2b415abcb5bb6575a33711,78807,52,2,Green,human,Crewmate,
+web_452367fd192347d382a5ce96a075c523,80256,23,1,Player 5: lime,ai,Crewmate,Player 2: white
+web_452367fd192347d382a5ce96a075c523,80257,23,1,Player 4: pink,ai,Impostor,Player 2: white
+web_452367fd192347d382a5ce96a075c523,80258,23,1,Player 2: white,ai,Crewmate,Player 4: pink
+web_452367fd192347d382a5ce96a075c523,80269,23,1,Green,human,Crewmate,Player 2: white
+web_4593c3325d5a4dde8db3b4d87a4dbf7a,82289,17,1,Player 4: green,ai,Crewmate,
+web_4593c3325d5a4dde8db3b4d87a4dbf7a,82290,17,1,Player 3: red,ai,Crewmate,
+web_4593c3325d5a4dde8db3b4d87a4dbf7a,82291,17,1,Player 2: blue,ai,Crewmate,
+web_4593c3325d5a4dde8db3b4d87a4dbf7a,82306,17,1,White,human,Impostor,Player 4: green
+web_4593c3325d5a4dde8db3b4d87a4dbf7a,82582,19,2,Player 3: red,ai,Crewmate,White
+web_4593c3325d5a4dde8db3b4d87a4dbf7a,82583,19,2,Player 2: blue,ai,Crewmate,
+web_4593c3325d5a4dde8db3b4d87a4dbf7a,82592,19,2,White,human,Impostor,Player 3: red
+web_45e746ccf00048ad8738ba9835418651,57418,1,1,Player 4: cyan,ai,Crewmate,
+web_45e746ccf00048ad8738ba9835418651,57419,1,1,Player 5: white,ai,Crewmate,
+web_45e746ccf00048ad8738ba9835418651,57420,1,1,Player 3: lime,ai,Crewmate,
+web_45e746ccf00048ad8738ba9835418651,57424,1,1,Brown,human,Impostor,Player 5: white
+web_45e746ccf00048ad8738ba9835418651,57427,1,1,Red,human,Crewmate,
+web_46798bf15571451db32a3b88a8063e6f,73981,45,1,Player 3: cyan,ai,Impostor,Purple
+web_46798bf15571451db32a3b88a8063e6f,73984,45,1,Player 2: orange,ai,Crewmate,
+web_46798bf15571451db32a3b88a8063e6f,73986,45,1,Player 5: pink,ai,Crewmate,
+web_46798bf15571451db32a3b88a8063e6f,74002,45,1,Purple,human,Crewmate,Green
+web_46798bf15571451db32a3b88a8063e6f,74007,45,1,Green,human,Crewmate,Purple
+web_46798bf15571451db32a3b88a8063e6f,74952,131,2,Player 5: pink,ai,Crewmate,
+web_46798bf15571451db32a3b88a8063e6f,74953,131,2,Player 3: cyan,ai,Impostor,
+web_46798bf15571451db32a3b88a8063e6f,74977,131,2,Green,human,Crewmate,Player 3: cyan
+web_46800aa60a43443ba92194486c047d68,74511,7,1,Player 2: purple,ai,Crewmate,White
+web_46800aa60a43443ba92194486c047d68,74512,7,1,Player 5: red,ai,Crewmate,White
+web_46800aa60a43443ba92194486c047d68,74514,7,1,Player 3: green,ai,Crewmate,White
+web_46800aa60a43443ba92194486c047d68,74538,7,1,White,human,Impostor,Player 3: green
+web_46800aa60a43443ba92194486c047d68,74599,7,1,Brown,human,Crewmate,
+web_46e3c201e2e94abaa891eafe27701fa5,32452,11,1,Green,human,Crewmate,Lime
+web_46e3c201e2e94abaa891eafe27701fa5,32454,11,1,Lime,human,Impostor,Pink
+web_46e3c201e2e94abaa891eafe27701fa5,32458,11,1,Pink,human,Crewmate,Lime
+web_46e3c201e2e94abaa891eafe27701fa5,32465,11,1,Brown,human,Crewmate,
+web_470a5ceb44c749ef8c1b7132ebc2436a,46855,96,1,Player 2: orange,ai,Crewmate,
+web_470a5ceb44c749ef8c1b7132ebc2436a,46858,96,1,Player 5: brown,ai,Impostor,
+web_470a5ceb44c749ef8c1b7132ebc2436a,46888,96,1,Red,human,Crewmate,
+web_470a5ceb44c749ef8c1b7132ebc2436a,46893,96,1,White,human,Crewmate,Red
+web_470a5ceb44c749ef8c1b7132ebc2436a,47231,98,2,Player 5: brown,ai,Impostor,
+web_470a5ceb44c749ef8c1b7132ebc2436a,47233,98,2,Player 2: orange,ai,Crewmate,
+web_470a5ceb44c749ef8c1b7132ebc2436a,47269,98,2,White,human,Crewmate,Player 5: brown
+web_476a3e19ac134222836e40531588bcd2,49319,30,1,Player 2: cyan,ai,Impostor,
+web_476a3e19ac134222836e40531588bcd2,49346,30,1,Orange,human,Crewmate,Player 2: cyan
+web_476a3e19ac134222836e40531588bcd2,49354,30,1,Lime,human,Crewmate,Player 2: cyan
+web_476a3e19ac134222836e40531588bcd2,49356,30,1,Black,human,Crewmate,Player 2: cyan
+web_476cb78c6a03419f80f2562c5d53bb3c,83078,22,1,Player 5: green,ai,Crewmate,Player 4: lime
+web_476cb78c6a03419f80f2562c5d53bb3c,83080,22,1,Player 4: lime,ai,Impostor,Player 2: cyan
+web_476cb78c6a03419f80f2562c5d53bb3c,83081,22,1,Player 3: brown,ai,Crewmate,
+web_476cb78c6a03419f80f2562c5d53bb3c,83082,22,1,Player 2: cyan,ai,Crewmate,
+web_476cb78c6a03419f80f2562c5d53bb3c,83090,22,1,Orange,human,Crewmate,Player 4: lime
+web_4775bddfb5fe492c96bf302a272f7b9d,56902,56,1,Player 4: white,ai,Crewmate,Player 5: blue
+web_4775bddfb5fe492c96bf302a272f7b9d,56903,56,1,Player 5: blue,ai,Impostor,Player 2: brown
+web_4775bddfb5fe492c96bf302a272f7b9d,56904,56,1,Player 2: brown,ai,Crewmate,Player 5: blue
+web_4775bddfb5fe492c96bf302a272f7b9d,56916,56,1,Cyan,human,Crewmate,
+web_477ad3d0e2884ef99d77cc85ec5dfed3,23452,105,1,Lime,human,Crewmate,White
+web_477ad3d0e2884ef99d77cc85ec5dfed3,23459,105,1,Brown,human,Crewmate,
+web_478014909f4840c6bcae6c3e27cde26a,57816,7,1,Player 2: lime,ai,Crewmate,White
+web_478014909f4840c6bcae6c3e27cde26a,57818,7,1,Player 3: blue,ai,Crewmate,White
+web_478014909f4840c6bcae6c3e27cde26a,57831,7,1,Purple,human,Crewmate,White
+web_478014909f4840c6bcae6c3e27cde26a,57835,7,1,White,human,Impostor,Player 2: lime
+web_478014909f4840c6bcae6c3e27cde26a,57837,7,1,Cyan,human,Crewmate,
+web_47d789f714884fbea179a8094a90f113,37612,3,1,Black,human,Impostor,Cyan
+web_47d789f714884fbea179a8094a90f113,37615,3,1,Cyan,human,Crewmate,Black
+web_47d789f714884fbea179a8094a90f113,37619,3,1,Purple,human,Crewmate,Cyan
+web_47d789f714884fbea179a8094a90f113,37650,3,1,Lime,human,Crewmate,Cyan
+web_49a9092b98694cf3827286bef3bf5590,34179,66,1,Red,human,Impostor,Pink
+web_49a9092b98694cf3827286bef3bf5590,34181,66,1,Cyan,human,Crewmate,Red
+web_49a9092b98694cf3827286bef3bf5590,34183,66,1,Pink,human,Crewmate,Red
+web_49a9092b98694cf3827286bef3bf5590,34196,66,1,Purple,human,Crewmate,
+web_49eb649e89404ef0a6483a7b93b0a2fe,40059,29,1,Player 4: white,ai,Crewmate,
+web_49eb649e89404ef0a6483a7b93b0a2fe,40060,29,1,Player 3: orange,ai,Crewmate,
+web_49eb649e89404ef0a6483a7b93b0a2fe,40065,29,1,Purple,human,Impostor,Player 3: orange
+web_4a0a44545428477ea71ea266f4f7bbb9,13241,23,1,Player 2: pink,ai,Crewmate,Player 5: black
+web_4a0a44545428477ea71ea266f4f7bbb9,13242,23,1,Player 5: black,ai,Impostor,Player 2: pink
+web_4a0a44545428477ea71ea266f4f7bbb9,13243,23,1,Player 3: purple,ai,Crewmate,
+web_4a0a44545428477ea71ea266f4f7bbb9,13244,23,1,Player 4: cyan,ai,Crewmate,
+web_4a0a44545428477ea71ea266f4f7bbb9,13279,25,2,Player 2: pink,ai,Crewmate,Player 5: black
+web_4a0a44545428477ea71ea266f4f7bbb9,13280,25,2,Player 4: cyan,ai,Crewmate,
+web_4a0a44545428477ea71ea266f4f7bbb9,13281,25,2,Player 3: purple,ai,Crewmate,Player 4: cyan
+web_4a0a44545428477ea71ea266f4f7bbb9,13282,25,2,Player 5: black,ai,Impostor,
+web_4a0a44545428477ea71ea266f4f7bbb9,13416,75,3,Player 2: pink,ai,Crewmate,Player 5: black
+web_4a0a44545428477ea71ea266f4f7bbb9,13417,75,3,Player 5: black,ai,Impostor,Player 2: pink
+web_4a0a44545428477ea71ea266f4f7bbb9,13418,75,3,Player 4: cyan,ai,Crewmate,
+web_4a3dc232a5854be7a017c96acb7bcbfd,29427,97,1,Black,human,Crewmate,Yellow
+web_4a3dc232a5854be7a017c96acb7bcbfd,29429,97,1,Brown,human,Impostor,Black
+web_4a3dc232a5854be7a017c96acb7bcbfd,29431,97,1,Yellow,human,Crewmate,Brown
+web_4b517866272b4196bdf101a2714fac6d,61784,11,1,Player 2: black,ai,Crewmate,Cyan
+web_4b517866272b4196bdf101a2714fac6d,61787,11,1,Player 3: blue,ai,Crewmate,
+web_4b517866272b4196bdf101a2714fac6d,61811,11,1,Cyan,human,Crewmate,Player 2: black
+web_4b517866272b4196bdf101a2714fac6d,61820,11,1,Pink,human,Crewmate,Cyan
+web_4b517866272b4196bdf101a2714fac6d,61832,11,1,Purple,human,Impostor,Cyan
+web_4b517866272b4196bdf101a2714fac6d,62152,22,2,Player 3: blue,ai,Crewmate,
+web_4b517866272b4196bdf101a2714fac6d,62153,22,2,Player 2: black,ai,Crewmate,Pink
+web_4b517866272b4196bdf101a2714fac6d,62183,22,2,Pink,human,Crewmate,Player 3: blue
+web_4b517866272b4196bdf101a2714fac6d,62227,22,2,Purple,human,Impostor,
+web_4b517866272b4196bdf101a2714fac6d,62609,48,3,Player 2: black,ai,Crewmate,
+web_4b517866272b4196bdf101a2714fac6d,62612,48,3,Player 3: blue,ai,Crewmate,
+web_4b517866272b4196bdf101a2714fac6d,62682,48,3,Purple,human,Impostor,
+web_4b7cacfa219d42dbbe478ed52d8a7740,76280,89,1,Player 3: purple,ai,Crewmate,
+web_4b7cacfa219d42dbbe478ed52d8a7740,76309,89,1,Pink,human,Impostor,White
+web_4b7cacfa219d42dbbe478ed52d8a7740,76311,89,1,White,human,Crewmate,Pink
+web_4c6d09b293434a0ca17b201c94d0a037,86317,73,1,Player 4: orange,ai,Crewmate,Player 2: lime
+web_4c6d09b293434a0ca17b201c94d0a037,86318,73,1,Player 2: lime,ai,Impostor,
+web_4c6d09b293434a0ca17b201c94d0a037,86322,73,1,Player 5: white,ai,Crewmate,
+web_4c6d09b293434a0ca17b201c94d0a037,86353,73,1,Red,human,Crewmate,Player 4: orange
+web_4c6d09b293434a0ca17b201c94d0a037,86770,76,2,Player 2: lime,ai,Impostor,Player 4: orange
+web_4c6d09b293434a0ca17b201c94d0a037,86776,76,2,Player 4: orange,ai,Crewmate,
+web_4c6d09b293434a0ca17b201c94d0a037,86799,76,2,Red,human,Crewmate,Player 2: lime
+web_4c924a8fc322481b96fcba551a552738,22219,29,1,Player 4: pink,ai,Crewmate,Cyan
+web_4c924a8fc322481b96fcba551a552738,22228,29,1,Cyan,human,Impostor,
+web_4c924a8fc322481b96fcba551a552738,22234,29,1,Brown,human,Crewmate,Cyan
+web_4c924a8fc322481b96fcba551a552738,22243,29,1,Lime,human,Crewmate,Cyan
+web_4cf2ad8ba0b34348a6bab8129589d104,79429,6,1,Player 5: blue,ai,Crewmate,Cyan
+web_4cf2ad8ba0b34348a6bab8129589d104,79430,6,1,Player 3: yellow,ai,Crewmate,
+web_4cf2ad8ba0b34348a6bab8129589d104,79431,6,1,Player 4: white,ai,Crewmate,
+web_4cf2ad8ba0b34348a6bab8129589d104,79440,6,1,Cyan,human,Impostor,
+web_4d1de7c23e9f408294dd730c8e5c674a,78420,2,1,Player 3: blue,ai,Crewmate,Purple
+web_4d1de7c23e9f408294dd730c8e5c674a,78422,2,1,Player 2: pink,ai,Crewmate,Purple
+web_4d1de7c23e9f408294dd730c8e5c674a,78424,2,1,Player 4: black,ai,Crewmate,Purple
+web_4d1de7c23e9f408294dd730c8e5c674a,78433,2,1,Brown,human,Crewmate,Purple
+web_4d1de7c23e9f408294dd730c8e5c674a,78449,2,1,Purple,human,Impostor,
+web_4dd1ea057a024800a19d69900c3f0196,55579,30,1,Player 2: green,ai,Crewmate,
+web_4dd1ea057a024800a19d69900c3f0196,55586,30,1,Player 3: lime,ai,Impostor,
+web_4dd1ea057a024800a19d69900c3f0196,55625,30,1,Cyan,human,Crewmate,
+web_4de2d7130004434aa83ccc0caf4c1a5d,42408,16,1,Player 2: orange,ai,Crewmate,
+web_4de2d7130004434aa83ccc0caf4c1a5d,42409,16,1,Player 4: black,ai,Crewmate,
+web_4de2d7130004434aa83ccc0caf4c1a5d,42410,16,1,Player 5: cyan,ai,Impostor,
+web_4de2d7130004434aa83ccc0caf4c1a5d,42426,16,1,Red,human,Crewmate,
+web_4de2d7130004434aa83ccc0caf4c1a5d,42548,19,2,Player 2: orange,ai,Crewmate,Player 5: cyan
+web_4de2d7130004434aa83ccc0caf4c1a5d,42549,19,2,Player 4: black,ai,Crewmate,
+web_4de2d7130004434aa83ccc0caf4c1a5d,42550,19,2,Player 5: cyan,ai,Impostor,
+web_4e596abcc7ac4412a6fc13acabe0eaba,79041,9,1,Player 3: lime,ai,Crewmate,Orange
+web_4e596abcc7ac4412a6fc13acabe0eaba,79043,9,1,Player 4: pink,ai,Crewmate,Orange
+web_4e596abcc7ac4412a6fc13acabe0eaba,79046,9,1,Player 5: purple,ai,Crewmate,Orange
+web_4e596abcc7ac4412a6fc13acabe0eaba,79066,9,1,Cyan,human,Crewmate,Player 3: lime
+web_4e596abcc7ac4412a6fc13acabe0eaba,79079,9,1,Orange,human,Impostor,Player 3: lime
+web_4e6712baa0bd4ad88d135e40ad229491,40220,2,1,Player 3: black,ai,Crewmate,
+web_4e6712baa0bd4ad88d135e40ad229491,40222,2,1,Brown,human,Crewmate,Player 3: black
+web_4e6712baa0bd4ad88d135e40ad229491,40225,2,1,White,human,Crewmate,Player 3: black
+web_4e6712baa0bd4ad88d135e40ad229491,40227,2,1,Yellow,human,Crewmate,
+web_4e6712baa0bd4ad88d135e40ad229491,40230,2,1,Cyan,human,Impostor,
+web_4e6712baa0bd4ad88d135e40ad229491,40305,14,2,White,human,Crewmate,Cyan
+web_4e6712baa0bd4ad88d135e40ad229491,40307,14,2,Yellow,human,Crewmate,Cyan
+web_4e6712baa0bd4ad88d135e40ad229491,40309,14,2,Cyan,human,Impostor,White
+web_4ef518d47fc34169ab9b8a8f04b6c89f,74942,34,1,Player 3: yellow,ai,Crewmate,
+web_4ef518d47fc34169ab9b8a8f04b6c89f,74943,34,1,Player 5: white,ai,Crewmate,Player 3: yellow
+web_4ef518d47fc34169ab9b8a8f04b6c89f,74946,34,1,Player 4: black,ai,Impostor,
+web_5073042e8f0c4b52999ff7d5662d16ec,58901,34,1,Player 5: brown,ai,Crewmate,
+web_5073042e8f0c4b52999ff7d5662d16ec,58911,34,1,White,human,Crewmate,Player 5: brown
+web_5073042e8f0c4b52999ff7d5662d16ec,58917,34,1,Purple,human,Impostor,Player 5: brown
+web_516f35755ae04332aa734d0c344bfe36,28456,2,1,Player 5: white,ai,Crewmate,
+web_516f35755ae04332aa734d0c344bfe36,28457,2,1,Player 4: black,ai,Crewmate,
+web_516f35755ae04332aa734d0c344bfe36,28466,2,1,Pink,human,Crewmate,Lime
+web_516f35755ae04332aa734d0c344bfe36,28476,2,1,Green,human,Crewmate,Player 4: black
+web_516f35755ae04332aa734d0c344bfe36,28489,2,1,Lime,human,Impostor,Pink
+web_516f35755ae04332aa734d0c344bfe36,29013,4,2,Player 5: white,ai,Crewmate,
+web_516f35755ae04332aa734d0c344bfe36,29017,4,2,Player 4: black,ai,Crewmate,
+web_516f35755ae04332aa734d0c344bfe36,29037,4,2,Pink,human,Crewmate,Player 4: black
+web_516f35755ae04332aa734d0c344bfe36,29095,4,2,Lime,human,Impostor,
+web_516f35755ae04332aa734d0c344bfe36,29096,4,2,Green,human,Crewmate,
+web_52e6147bed4d45898c873fc8a1126353,19406,88,1,Player 4: black,ai,Crewmate,
+web_52e6147bed4d45898c873fc8a1126353,19407,88,1,Player 3: lime,ai,Crewmate,Player 5: white
+web_52e6147bed4d45898c873fc8a1126353,19408,88,1,Player 5: white,ai,Impostor,
+web_52e6fecc512549f498807ede1fe68a78,59401,9,1,Player 2: white,ai,Impostor,Purple
+web_52e6fecc512549f498807ede1fe68a78,59402,9,1,Player 3: lime,ai,Crewmate,
+web_52e6fecc512549f498807ede1fe68a78,59410,9,1,Purple,human,Crewmate,Player 2: white
+web_52e6fecc512549f498807ede1fe68a78,59422,9,1,Red,human,Crewmate,Purple
+web_52e6fecc512549f498807ede1fe68a78,59426,9,1,Brown,human,Crewmate,Red
+web_52e6fecc512549f498807ede1fe68a78,59714,32,2,Player 3: lime,ai,Crewmate,Player 2: white
+web_52e6fecc512549f498807ede1fe68a78,59715,32,2,Player 2: white,ai,Impostor,
+web_52e6fecc512549f498807ede1fe68a78,59723,32,2,Red,human,Crewmate,Player 2: white
+web_534677a6530147aa9063f54479106db7,46559,10,1,Player 2: green,ai,Crewmate,
+web_534677a6530147aa9063f54479106db7,46577,10,1,Purple,human,Crewmate,Lime
+web_534677a6530147aa9063f54479106db7,46579,10,1,Blue,human,Impostor,Player 2: green
+web_534677a6530147aa9063f54479106db7,46589,10,1,Lime,human,Crewmate,
+web_534677a6530147aa9063f54479106db7,46971,12,2,Player 2: green,ai,Crewmate,Blue
+web_534677a6530147aa9063f54479106db7,46979,12,2,Blue,human,Impostor,Player 2: green
+web_534677a6530147aa9063f54479106db7,46984,12,2,Purple,human,Crewmate,Lime
+web_534677a6530147aa9063f54479106db7,46992,12,2,Lime,human,Crewmate,Purple
+web_53782abf647c45b6a9274e2ab9427b20,69211,24,1,Player 3: cyan,ai,Crewmate,Green
+web_53782abf647c45b6a9274e2ab9427b20,69234,24,1,Green,human,Impostor,Player 3: cyan
+web_53dec2b4a5f649f4a4161290cf9e4a66,73962,34,1,Player 4: blue,ai,Crewmate,Orange
+web_53dec2b4a5f649f4a4161290cf9e4a66,73964,34,1,Player 2: red,ai,Crewmate,Orange
+web_53dec2b4a5f649f4a4161290cf9e4a66,73970,34,1,Player 3: green,ai,Crewmate,
+web_53dec2b4a5f649f4a4161290cf9e4a66,74009,34,1,Orange,human,Impostor,Player 2: red
+web_53dec2b4a5f649f4a4161290cf9e4a66,74025,34,1,Black,human,Crewmate,Orange
+web_540adfb43026495cb02d17d667ba5fe8,45608,14,1,Player 5: purple,ai,Crewmate,
+web_540adfb43026495cb02d17d667ba5fe8,45627,14,1,Brown,human,Crewmate,
+web_540adfb43026495cb02d17d667ba5fe8,45629,14,1,Pink,human,Crewmate,Blue
+web_540adfb43026495cb02d17d667ba5fe8,45640,14,1,Blue,human,Crewmate,
+web_540adfb43026495cb02d17d667ba5fe8,45647,14,1,Red,human,Impostor,Blue
+web_540adfb43026495cb02d17d667ba5fe8,46023,56,2,Brown,human,Crewmate,Red
+web_540adfb43026495cb02d17d667ba5fe8,46027,56,2,Red,human,Impostor,Pink
+web_540adfb43026495cb02d17d667ba5fe8,46035,56,2,Pink,human,Crewmate,Brown
+web_54924add0caa488f8376ca61f3e81e0d,68329,20,1,Player 4: green,ai,Crewmate,Purple
+web_54924add0caa488f8376ca61f3e81e0d,68332,20,1,Player 5: pink,ai,Crewmate,Purple
+web_54924add0caa488f8376ca61f3e81e0d,68340,20,1,Lime,human,Crewmate,Player 5: pink
+web_54924add0caa488f8376ca61f3e81e0d,68354,20,1,Purple,human,Impostor,Player 5: pink
+web_54924add0caa488f8376ca61f3e81e0d,68385,20,1,Orange,human,Crewmate,Purple
+web_552ae337b3af46f2be60deea98b6697b,72158,74,1,Player 5: white,ai,Crewmate,
+web_552ae337b3af46f2be60deea98b6697b,72159,74,1,Player 3: blue,ai,Impostor,
+web_552ae337b3af46f2be60deea98b6697b,72204,74,1,Cyan,human,Crewmate,Pink
+web_552ae337b3af46f2be60deea98b6697b,72209,74,1,Pink,human,Crewmate,Player 3: blue
+web_552ae337b3af46f2be60deea98b6697b,72894,106,2,Player 3: blue,ai,Impostor,Cyan
+web_552ae337b3af46f2be60deea98b6697b,72898,106,2,Player 5: white,ai,Crewmate,
+web_552ae337b3af46f2be60deea98b6697b,72924,106,2,Cyan,human,Crewmate,Player 3: blue
+web_566cf3312cab49bab2c8de21acfd2158,80190,35,1,Player 2: white,ai,Crewmate,
+web_566cf3312cab49bab2c8de21acfd2158,80193,35,1,Player 4: red,ai,Crewmate,
+web_566cf3312cab49bab2c8de21acfd2158,80194,35,1,Player 3: purple,ai,Impostor,
+web_566cf3312cab49bab2c8de21acfd2158,80213,35,1,Yellow,human,Crewmate,Player 3: purple
+web_587dc7638a684b098f5f67623cbf9b6a,14488,21,1,Player 5: blue,ai,Crewmate,Cyan
+web_587dc7638a684b098f5f67623cbf9b6a,14490,21,1,Pink,human,Crewmate,Player 5: blue
+web_587dc7638a684b098f5f67623cbf9b6a,14497,21,1,Black,human,Crewmate,
+web_587dc7638a684b098f5f67623cbf9b6a,14498,21,1,Cyan,human,Impostor,
+web_587dc7638a684b098f5f67623cbf9b6a,14523,24,2,Player 5: blue,ai,Crewmate,Black
+web_587dc7638a684b098f5f67623cbf9b6a,14525,24,2,Black,human,Crewmate,Player 5: blue
+web_587dc7638a684b098f5f67623cbf9b6a,14527,24,2,Cyan,human,Impostor,Player 5: blue
+web_587dc7638a684b098f5f67623cbf9b6a,14535,24,2,Pink,human,Crewmate,
+web_58e53546a271465f9b23d9dceef822e0,12479,8,1,Player 5: orange,ai,Crewmate,Yellow
+web_58e53546a271465f9b23d9dceef822e0,12480,8,1,Player 4: pink,ai,Crewmate,Yellow
+web_58e53546a271465f9b23d9dceef822e0,12486,8,1,Yellow,human,Crewmate,Player 5: orange
+web_58e53546a271465f9b23d9dceef822e0,12489,8,1,White,human,Impostor,Player 5: orange
+web_58e53546a271465f9b23d9dceef822e0,12573,13,2,Player 5: orange,ai,Crewmate,Yellow
+web_58e53546a271465f9b23d9dceef822e0,12574,13,2,Player 4: pink,ai,Crewmate,Yellow
+web_58e53546a271465f9b23d9dceef822e0,12580,13,2,Yellow,human,Crewmate,Player 5: orange
+web_58e53546a271465f9b23d9dceef822e0,12588,13,2,White,human,Impostor,Player 5: orange
+web_58e53546a271465f9b23d9dceef822e0,12660,23,3,Player 4: pink,ai,Crewmate,Yellow
+web_58e53546a271465f9b23d9dceef822e0,12662,23,3,Yellow,human,Crewmate,White
+web_58e53546a271465f9b23d9dceef822e0,12665,23,3,White,human,Impostor,Player 4: pink
+web_59b2bf8f8d15447bb6bfec618a1604a8,48742,19,1,Player 2: lime,ai,Impostor,
+web_59b2bf8f8d15447bb6bfec618a1604a8,48743,19,1,Player 5: brown,ai,Crewmate,
+web_59b2bf8f8d15447bb6bfec618a1604a8,48759,19,1,Purple,human,Crewmate,Pink
+web_59b2bf8f8d15447bb6bfec618a1604a8,48765,19,1,Green,human,Crewmate,Purple
+web_59b2bf8f8d15447bb6bfec618a1604a8,48769,19,1,Pink,human,Crewmate,
+web_59b2bf8f8d15447bb6bfec618a1604a8,49712,111,2,Player 5: brown,ai,Crewmate,Player 2: lime
+web_59b2bf8f8d15447bb6bfec618a1604a8,49716,111,2,Player 2: lime,ai,Impostor,Player 5: brown
+web_59b2bf8f8d15447bb6bfec618a1604a8,49740,111,2,Purple,human,Crewmate,Player 2: lime
+web_59b2bf8f8d15447bb6bfec618a1604a8,49744,111,2,Green,human,Crewmate,Player 2: lime
+web_59b2bf8f8d15447bb6bfec618a1604a8,49782,111,2,Pink,human,Crewmate,
+web_5aa07758080f4a358b9070b2c4056268,80738,86,1,Player 5: yellow,ai,Crewmate,
+web_5aa07758080f4a358b9070b2c4056268,80739,86,1,Player 4: cyan,ai,Impostor,Blue
+web_5aa07758080f4a358b9070b2c4056268,80782,86,1,Blue,human,Crewmate,
+web_5ab6aa7a3f0b4dd6a11dafb3f66361b6,12077,35,1,Player 5: black,ai,Crewmate,Red
+web_5ab6aa7a3f0b4dd6a11dafb3f66361b6,12078,35,1,Player 4: blue,ai,Impostor,Red
+web_5ab6aa7a3f0b4dd6a11dafb3f66361b6,12081,35,1,Yellow,human,Crewmate,Player 4: blue
+web_5ab6aa7a3f0b4dd6a11dafb3f66361b6,12083,35,1,Red,human,Crewmate,Player 4: blue
+web_5ab6aa7a3f0b4dd6a11dafb3f66361b6,12085,35,1,White,human,Crewmate,Player 4: blue
+web_5b615985cf294af1894890db79fd0cbd,51334,26,1,Player 4: white,ai,Crewmate,
+web_5b615985cf294af1894890db79fd0cbd,51352,26,1,Purple,human,Crewmate,Cyan
+web_5b615985cf294af1894890db79fd0cbd,51361,26,1,Lime,human,Crewmate,Cyan
+web_5b615985cf294af1894890db79fd0cbd,51369,26,1,Black,human,Crewmate,Cyan
+web_5b615985cf294af1894890db79fd0cbd,51375,26,1,Cyan,human,Impostor,Black
+web_5ca3b7d5769944ccae6aad4bcb250060,70765,115,1,Player 5: purple,ai,Crewmate,Player 3: red
+web_5ca3b7d5769944ccae6aad4bcb250060,70771,115,1,Player 3: red,ai,Impostor,
+web_5ca3b7d5769944ccae6aad4bcb250060,70774,115,1,Player 4: white,ai,Crewmate,
+web_5cb67094c04b4d948e768ba6c612e093,86827,50,1,Player 3: black,ai,Impostor,Player 5: pink
+web_5cb67094c04b4d948e768ba6c612e093,86831,50,1,Player 4: cyan,ai,Crewmate,
+web_5cb67094c04b4d948e768ba6c612e093,86832,50,1,Player 5: pink,ai,Crewmate,
+web_5cb67094c04b4d948e768ba6c612e093,86848,50,1,Blue,human,Crewmate,Player 5: pink
+web_5cb67094c04b4d948e768ba6c612e093,87213,54,2,Player 3: black,ai,Impostor,
+web_5cb67094c04b4d948e768ba6c612e093,87214,54,2,Player 4: cyan,ai,Crewmate,Blue
+web_5cb67094c04b4d948e768ba6c612e093,87226,54,2,Blue,human,Crewmate,Player 4: cyan
+web_5d1fabb74ff247c082bde35c358310de,87028,99,1,Player 4: white,ai,Crewmate,
+web_5d1fabb74ff247c082bde35c358310de,87030,99,1,Player 2: lime,ai,Crewmate,
+web_5d1fabb74ff247c082bde35c358310de,87053,99,1,Pink,human,Impostor,Player 2: lime
+web_5d843d52f23c4bac840ad329aecb659f,29571,9,1,Pink,human,Crewmate,Lime
+web_5d843d52f23c4bac840ad329aecb659f,29575,9,1,Cyan,human,Crewmate,Brown
+web_5d843d52f23c4bac840ad329aecb659f,29577,9,1,Brown,human,Crewmate,Lime
+web_5d843d52f23c4bac840ad329aecb659f,29582,9,1,Yellow,human,Crewmate,Lime
+web_5d843d52f23c4bac840ad329aecb659f,29587,9,1,Lime,human,Impostor,Pink
+web_5d8793052f9f4b7fb6d10a950e47c932,82394,49,1,Player 5: purple,ai,Crewmate,Player 4: pink
+web_5d8793052f9f4b7fb6d10a950e47c932,82395,49,1,Player 3: cyan,ai,Crewmate,Player 4: pink
+web_5d8793052f9f4b7fb6d10a950e47c932,82396,49,1,Player 2: green,ai,Crewmate,Player 4: pink
+web_5d8793052f9f4b7fb6d10a950e47c932,82397,49,1,Player 4: pink,ai,Impostor,
+web_5d8793052f9f4b7fb6d10a950e47c932,82413,49,1,Blue,human,Crewmate,Player 3: cyan
+web_5e3c4a8ddec04ccb9e20e1676bf9c936,27751,4,1,Cyan,human,Crewmate,Blue
+web_5e3c4a8ddec04ccb9e20e1676bf9c936,27753,4,1,Blue,human,Crewmate,Cyan
+web_5e3c4a8ddec04ccb9e20e1676bf9c936,27761,4,1,Yellow,human,Crewmate,Black
+web_5e3c4a8ddec04ccb9e20e1676bf9c936,27765,4,1,Pink,human,Impostor,
+web_5e3c4a8ddec04ccb9e20e1676bf9c936,27846,4,1,Black,human,Crewmate,
+web_5e3c4a8ddec04ccb9e20e1676bf9c936,28662,45,2,Cyan,human,Crewmate,Pink
+web_5e3c4a8ddec04ccb9e20e1676bf9c936,28665,45,2,Blue,human,Crewmate,Pink
+web_5e3c4a8ddec04ccb9e20e1676bf9c936,28673,45,2,Yellow,human,Crewmate,Pink
+web_5e3c4a8ddec04ccb9e20e1676bf9c936,28704,45,2,Pink,human,Impostor,Yellow
+web_5e3c4a8ddec04ccb9e20e1676bf9c936,28747,45,2,Black,human,Crewmate,
+web_5e600490ca23413d89e981f67a8ce8ea,63555,35,1,Player 5: green,ai,Crewmate,Orange
+web_5e600490ca23413d89e981f67a8ce8ea,63556,35,1,Player 4: white,ai,Impostor,Player 5: green
+web_5e600490ca23413d89e981f67a8ce8ea,63565,35,1,Orange,human,Crewmate,Player 5: green
+web_5e600490ca23413d89e981f67a8ce8ea,63587,35,1,Red,human,Crewmate,
+web_5f4e8320c9cf47a39b3520d4a537c60f,60700,25,1,Player 4: blue,ai,Crewmate,
+web_5f4e8320c9cf47a39b3520d4a537c60f,60701,25,1,Player 3: cyan,ai,Impostor,Player 4: blue
+web_5f4e8320c9cf47a39b3520d4a537c60f,60712,25,1,Brown,human,Crewmate,Player 3: cyan
+web_5f4e8320c9cf47a39b3520d4a537c60f,60719,25,1,Yellow,human,Crewmate,Player 4: blue
+web_5fda666d4dd0480989afaddd706a7768,8933,1,1,Purple,human,Crewmate,Yellow
+web_5fda666d4dd0480989afaddd706a7768,8935,1,1,Cyan,human,Crewmate,
+web_5fda666d4dd0480989afaddd706a7768,8937,1,1,Lime,human,Impostor,Cyan
+web_5fda666d4dd0480989afaddd706a7768,8953,1,1,Yellow,human,Crewmate,
+web_5fda666d4dd0480989afaddd706a7768,9289,4,2,Purple,human,Crewmate,Lime
+web_5fda666d4dd0480989afaddd706a7768,9292,4,2,Lime,human,Impostor,Purple
+web_5fda666d4dd0480989afaddd706a7768,9299,4,2,Yellow,human,Crewmate,Lime
+web_602632d6dc4c4555bc5f50128a6670e9,15343,36,1,Player 4: red,ai,Impostor,Black
+web_602632d6dc4c4555bc5f50128a6670e9,15352,36,1,Yellow,human,Crewmate,Player 4: red
+web_602632d6dc4c4555bc5f50128a6670e9,15356,36,1,Black,human,Crewmate,Player 4: red
+web_6126ab0e7bcd4ad893b32c0eb0268394,26971,19,1,White,human,Crewmate,Pink
+web_6126ab0e7bcd4ad893b32c0eb0268394,26975,19,1,Pink,human,Crewmate,White
+web_6126ab0e7bcd4ad893b32c0eb0268394,26981,19,1,Red,human,Crewmate,
+web_61a73372dd4945f3ae553ea02e3d7712,74286,49,1,Player 2: white,ai,Crewmate,
+web_61a73372dd4945f3ae553ea02e3d7712,74288,49,1,Player 5: blue,ai,Crewmate,
+web_61a73372dd4945f3ae553ea02e3d7712,74293,49,1,Player 3: brown,ai,Crewmate,
+web_61a73372dd4945f3ae553ea02e3d7712,74322,49,1,Purple,human,Impostor,Player 2: white
+web_61a73372dd4945f3ae553ea02e3d7712,74776,51,2,Player 5: blue,ai,Crewmate,Player 3: brown
+web_61a73372dd4945f3ae553ea02e3d7712,74777,51,2,Player 3: brown,ai,Crewmate,
+web_61a73372dd4945f3ae553ea02e3d7712,74802,51,2,Purple,human,Impostor,Player 3: brown
+web_61c39b12e6df431f83752b14b3ed53e0,50099,52,1,Player 5: pink,ai,Impostor,Green
+web_61c39b12e6df431f83752b14b3ed53e0,50100,52,1,Player 3: purple,ai,Crewmate,
+web_61c39b12e6df431f83752b14b3ed53e0,50115,52,1,Green,human,Crewmate,Cyan
+web_61c39b12e6df431f83752b14b3ed53e0,50127,52,1,Cyan,human,Crewmate,Green
+web_6214ef7895604617a6584fdb59af24e7,33581,12,1,Blue,human,Crewmate,
+web_6214ef7895604617a6584fdb59af24e7,33585,12,1,Green,human,Crewmate,Blue
+web_6214ef7895604617a6584fdb59af24e7,33587,12,1,Cyan,human,Impostor,
+web_6214ef7895604617a6584fdb59af24e7,33591,12,1,Brown,human,Crewmate,Green
+web_62ca4ee094bf451db2fdbe25a4a6133f,51126,32,1,Yellow,human,Crewmate,Blue
+web_62ca4ee094bf451db2fdbe25a4a6133f,51128,32,1,Blue,human,Impostor,Yellow
+web_62ca4ee094bf451db2fdbe25a4a6133f,51130,32,1,Lime,human,Crewmate,Yellow
+web_62ca4ee094bf451db2fdbe25a4a6133f,51142,32,1,Black,human,Crewmate,Blue
+web_62ca4ee094bf451db2fdbe25a4a6133f,51554,43,2,Yellow,human,Crewmate,Blue
+web_62ca4ee094bf451db2fdbe25a4a6133f,51558,43,2,Lime,human,Crewmate,Yellow
+web_62ca4ee094bf451db2fdbe25a4a6133f,51560,43,2,Blue,human,Impostor,Yellow
+web_62fc1c5e83874286859a0319602520ad,75377,44,1,Player 3: purple,ai,Crewmate,
+web_62fc1c5e83874286859a0319602520ad,75380,44,1,Player 5: pink,ai,Impostor,
+web_62fc1c5e83874286859a0319602520ad,75412,44,1,Lime,human,Crewmate,Player 3: purple
+web_63921d57e1904eaca1e35eb07fb1ebf3,10930,30,1,Player 4: lime,ai,Impostor,Black
+web_63921d57e1904eaca1e35eb07fb1ebf3,10931,30,1,Player 5: cyan,ai,Crewmate,Black
+web_63921d57e1904eaca1e35eb07fb1ebf3,10935,30,1,Black,human,Crewmate,Player 4: lime
+web_63921d57e1904eaca1e35eb07fb1ebf3,10937,30,1,Brown,human,Crewmate,Black
+web_63bd7f046e8443a48a3b922d2b99582b,80998,71,1,Player 2: yellow,ai,Crewmate,
+web_63bd7f046e8443a48a3b922d2b99582b,80999,71,1,Player 4: black,ai,Impostor,
+web_63bd7f046e8443a48a3b922d2b99582b,81000,71,1,Player 5: cyan,ai,Crewmate,
+web_6463a782334b43ffbf3dbe5ea5967790,50908,106,1,Player 3: orange,ai,Crewmate,
+web_6463a782334b43ffbf3dbe5ea5967790,50919,106,1,Red,human,Impostor,
+web_6463a782334b43ffbf3dbe5ea5967790,50921,106,1,Purple,human,Crewmate,
+web_6463a782334b43ffbf3dbe5ea5967790,50931,106,1,Cyan,human,Crewmate,Red
+web_6545dafe5f5943908ca2031aedd70ca8,51447,1,1,Player 4: cyan,ai,Crewmate,
+web_6545dafe5f5943908ca2031aedd70ca8,51455,1,1,Red,human,Crewmate,
+web_6545dafe5f5943908ca2031aedd70ca8,51464,1,1,Black,human,Impostor,
+web_6545dafe5f5943908ca2031aedd70ca8,51475,1,1,Blue,human,Crewmate,Red
+web_657ea002d72c45eab97458fbface5add,43570,30,1,Player 5: white,ai,Crewmate,Red
+web_657ea002d72c45eab97458fbface5add,43571,30,1,Player 2: black,ai,Crewmate,
+web_657ea002d72c45eab97458fbface5add,43572,30,1,Player 3: lime,ai,Impostor,Red
+web_657ea002d72c45eab97458fbface5add,43573,30,1,Player 4: cyan,ai,Crewmate,
+web_657ea002d72c45eab97458fbface5add,43586,30,1,Red,human,Crewmate,Player 3: lime
+web_657edaaaef424276a8e31f5d2561944c,13620,1,1,Player 5: white,ai,Crewmate,Green
+web_657edaaaef424276a8e31f5d2561944c,13621,1,1,Player 4: yellow,ai,Crewmate,
+web_657edaaaef424276a8e31f5d2561944c,13624,1,1,Brown,human,Crewmate,Orange
+web_657edaaaef424276a8e31f5d2561944c,13626,1,1,Green,human,Crewmate,Brown
+web_657edaaaef424276a8e31f5d2561944c,13628,1,1,Orange,human,Impostor,Brown
+web_657edaaaef424276a8e31f5d2561944c,13726,7,2,Player 5: white,ai,Crewmate,Green
+web_657edaaaef424276a8e31f5d2561944c,13728,7,2,Orange,human,Impostor,Player 5: white
+web_657edaaaef424276a8e31f5d2561944c,13731,7,2,Green,human,Crewmate,Orange
+web_65aed512d9df407da140a3da44564228,83555,50,1,Player 3: red,ai,Impostor,
+web_65aed512d9df407da140a3da44564228,83556,50,1,Player 2: blue,ai,Crewmate,
+web_65aed512d9df407da140a3da44564228,83573,50,1,Cyan,human,Crewmate,Player 2: blue
+web_65c9471584d04cf7a3be97580dc0bdcf,81762,84,1,Player 5: cyan,ai,Crewmate,
+web_65c9471584d04cf7a3be97580dc0bdcf,81763,84,1,Player 4: blue,ai,Crewmate,
+web_65c9471584d04cf7a3be97580dc0bdcf,81769,84,1,Yellow,human,Impostor,Player 4: blue
+web_66ae6456b7214faa873a74ed1aabd8fe,49916,11,1,Player 5: pink,ai,Crewmate,
+web_66ae6456b7214faa873a74ed1aabd8fe,49928,11,1,White,human,Impostor,Black
+web_66ae6456b7214faa873a74ed1aabd8fe,49932,11,1,Orange,human,Crewmate,Blue
+web_66ae6456b7214faa873a74ed1aabd8fe,49934,11,1,Blue,human,Crewmate,White
+web_66ae6456b7214faa873a74ed1aabd8fe,49939,11,1,Black,human,Crewmate,Blue
+web_67753e96260b472a8e8d0997dd5b7bd6,82612,46,1,Player 2: blue,ai,Impostor,
+web_67753e96260b472a8e8d0997dd5b7bd6,82614,46,1,Player 5: lime,ai,Crewmate,
+web_67753e96260b472a8e8d0997dd5b7bd6,82615,46,1,Player 4: orange,ai,Crewmate,
+web_67753e96260b472a8e8d0997dd5b7bd6,82642,46,1,Pink,human,Crewmate,
+web_67753e96260b472a8e8d0997dd5b7bd6,83111,118,2,Player 5: lime,ai,Crewmate,
+web_67753e96260b472a8e8d0997dd5b7bd6,83112,118,2,Player 2: blue,ai,Impostor,
+web_67753e96260b472a8e8d0997dd5b7bd6,83113,118,2,Player 4: orange,ai,Crewmate,
+web_67753e96260b472a8e8d0997dd5b7bd6,83144,118,2,Pink,human,Crewmate,
+web_67753e96260b472a8e8d0997dd5b7bd6,83388,123,3,Player 2: blue,ai,Impostor,Player 4: orange
+web_67753e96260b472a8e8d0997dd5b7bd6,83390,123,3,Player 4: orange,ai,Crewmate,
+web_67753e96260b472a8e8d0997dd5b7bd6,83402,123,3,Pink,human,Crewmate,Player 2: blue
+web_67fad9b589684d0d916e905f2bca6661,77809,18,1,Player 4: green,ai,Impostor,Red
+web_67fad9b589684d0d916e905f2bca6661,77810,18,1,Player 5: black,ai,Crewmate,
+web_67fad9b589684d0d916e905f2bca6661,77831,18,1,Pink,human,Crewmate,Red
+web_67fad9b589684d0d916e905f2bca6661,77838,18,1,Red,human,Crewmate,Pink
+web_68752de9e9ca496d898d1b03dd5f9b22,7930,87,1,Blue,human,Crewmate,Brown
+web_68752de9e9ca496d898d1b03dd5f9b22,7932,87,1,Brown,human,Impostor,Green
+web_68752de9e9ca496d898d1b03dd5f9b22,7937,87,1,Green,human,Crewmate,Blue
+web_68752de9e9ca496d898d1b03dd5f9b22,8165,91,2,Blue,human,Crewmate,Green
+web_68752de9e9ca496d898d1b03dd5f9b22,8171,91,2,Brown,human,Impostor,Green
+web_68752de9e9ca496d898d1b03dd5f9b22,8173,91,2,Green,human,Crewmate,Blue
+web_68e3f4e6d6fd4382bc3d190bbf931ab2,54273,12,1,Player 2: orange,ai,Crewmate,
+web_68e3f4e6d6fd4382bc3d190bbf931ab2,54299,12,1,Blue,human,Crewmate,Cyan
+web_68e3f4e6d6fd4382bc3d190bbf931ab2,54303,12,1,Cyan,human,Crewmate,Blue
+web_68e3f4e6d6fd4382bc3d190bbf931ab2,54305,12,1,Purple,human,Crewmate,Cyan
+web_68e3f4e6d6fd4382bc3d190bbf931ab2,54329,12,1,Black,human,Impostor,Player 2: orange
+web_68e3f4e6d6fd4382bc3d190bbf931ab2,55010,16,2,Player 2: orange,ai,Crewmate,
+web_68e3f4e6d6fd4382bc3d190bbf931ab2,55028,16,2,Blue,human,Crewmate,Black
+web_68e3f4e6d6fd4382bc3d190bbf931ab2,55033,16,2,Purple,human,Crewmate,Black
+web_68e3f4e6d6fd4382bc3d190bbf931ab2,55081,16,2,Black,human,Impostor,Purple
+web_69fd6dbb1ff9482581b3498f3193d4ad,24458,24,1,Player 5: black,ai,Crewmate,
+web_69fd6dbb1ff9482581b3498f3193d4ad,24460,24,1,Player 4: green,ai,Crewmate,
+web_69fd6dbb1ff9482581b3498f3193d4ad,24474,24,1,Blue,human,Impostor,Player 4: green
+web_6a28ae13fa26412983cf8c9fb46a60e6,25687,93,1,Purple,human,Crewmate,
+web_6a28ae13fa26412983cf8c9fb46a60e6,25689,93,1,Blue,human,Crewmate,
+web_6a28ae13fa26412983cf8c9fb46a60e6,25693,93,1,Black,human,Crewmate,
+web_6a28ae13fa26412983cf8c9fb46a60e6,25731,93,1,Cyan,human,Crewmate,Blue
+web_6a28ae13fa26412983cf8c9fb46a60e6,25735,93,1,Brown,human,Impostor,Cyan
+web_6a28ae13fa26412983cf8c9fb46a60e6,26113,96,2,Purple,human,Crewmate,Brown
+web_6a28ae13fa26412983cf8c9fb46a60e6,26116,96,2,Black,human,Crewmate,Cyan
+web_6a28ae13fa26412983cf8c9fb46a60e6,26134,96,2,Cyan,human,Crewmate,Blue
+web_6a28ae13fa26412983cf8c9fb46a60e6,26174,96,2,Blue,human,Crewmate,
+web_6a28ae13fa26412983cf8c9fb46a60e6,26176,96,2,Brown,human,Impostor,
+web_6ba084f092aa4ffdb4bc142fa6b74a95,88019,16,1,Player 3: black,ai,Crewmate,Cyan
+web_6ba084f092aa4ffdb4bc142fa6b74a95,88020,16,1,Player 5: brown,ai,Crewmate,Player 3: black
+web_6ba084f092aa4ffdb4bc142fa6b74a95,88021,16,1,Player 2: pink,ai,Crewmate,
+web_6ba084f092aa4ffdb4bc142fa6b74a95,88036,16,1,Cyan,human,Impostor,Player 3: black
+web_6c60d2a5f4b24341aa8788094189f6ba,19174,1,1,Player 2: brown,ai,Crewmate,
+web_6c60d2a5f4b24341aa8788094189f6ba,19175,1,1,Player 4: blue,ai,Crewmate,
+web_6c60d2a5f4b24341aa8788094189f6ba,19176,1,1,Player 5: cyan,ai,Crewmate,
+web_6c60d2a5f4b24341aa8788094189f6ba,19177,1,1,Player 3: red,ai,Impostor,
+web_6ca3a96c5e324cd6a7ae3cee3c43020e,73415,42,1,Player 2: white,ai,Crewmate,Player 5: purple
+web_6ca3a96c5e324cd6a7ae3cee3c43020e,73416,42,1,Player 5: purple,ai,Impostor,
+web_6ca3a96c5e324cd6a7ae3cee3c43020e,73469,42,1,Orange,human,Crewmate,Player 5: purple
+web_6cb0333d923b49869a53b4bcd7a5fa0b,65267,30,1,Player 4: white,ai,Crewmate,
+web_6cb0333d923b49869a53b4bcd7a5fa0b,65268,30,1,Player 3: green,ai,Crewmate,Cyan
+web_6cb0333d923b49869a53b4bcd7a5fa0b,65284,30,1,Blue,human,Crewmate,Player 3: green
+web_6cb0333d923b49869a53b4bcd7a5fa0b,65286,30,1,Cyan,human,Impostor,Blue
+web_6cb0333d923b49869a53b4bcd7a5fa0b,65553,32,2,Player 3: green,ai,Crewmate,
+web_6cb0333d923b49869a53b4bcd7a5fa0b,65554,32,2,Player 4: white,ai,Crewmate,
+web_6cb0333d923b49869a53b4bcd7a5fa0b,65571,32,2,Blue,human,Crewmate,Player 4: white
+web_6cb0333d923b49869a53b4bcd7a5fa0b,65574,32,2,Cyan,human,Impostor,Player 4: white
+web_6d01e246a66a4f2a976c39d179383442,31275,21,1,Player 4: blue,ai,Crewmate,Player 3: orange
+web_6d01e246a66a4f2a976c39d179383442,31276,21,1,Player 5: pink,ai,Crewmate,Player 3: orange
+web_6d01e246a66a4f2a976c39d179383442,31277,21,1,Player 3: orange,ai,Impostor,
+web_6d01e246a66a4f2a976c39d179383442,31288,21,1,Red,human,Crewmate,Player 3: orange
+web_6d01e246a66a4f2a976c39d179383442,31292,21,1,Yellow,human,Crewmate,Player 3: orange
+web_6d604d1bcbd642a887a267406381fd9f,57300,27,1,Player 3: pink,ai,Crewmate,Player 2: blue
+web_6d604d1bcbd642a887a267406381fd9f,57301,27,1,Player 5: green,ai,Crewmate,Player 2: blue
+web_6d604d1bcbd642a887a267406381fd9f,57302,27,1,Player 2: blue,ai,Impostor,Player 5: green
+web_6d604d1bcbd642a887a267406381fd9f,57303,27,1,Player 4: brown,ai,Crewmate,
+web_6d604d1bcbd642a887a267406381fd9f,57318,27,1,White,human,Crewmate,
+web_6d7cab2c1ec449d9b59045c96add9307,42249,85,1,Player 5: purple,ai,Crewmate,
+web_6d7cab2c1ec449d9b59045c96add9307,42250,85,1,Player 3: red,ai,Crewmate,
+web_6d7cab2c1ec449d9b59045c96add9307,42251,85,1,Player 4: brown,ai,Impostor,
+web_6d7cab2c1ec449d9b59045c96add9307,42346,88,2,Player 4: brown,ai,Impostor,Player 5: purple
+web_6d7cab2c1ec449d9b59045c96add9307,42347,88,2,Player 5: purple,ai,Crewmate,
+web_6d7cab2c1ec449d9b59045c96add9307,42348,88,2,Player 3: red,ai,Crewmate,
+web_6f348479dc744ed98f3fe8b539ac13a6,78122,38,1,Player 2: red,ai,Crewmate,Player 5: brown
+web_6f348479dc744ed98f3fe8b539ac13a6,78128,38,1,Player 3: orange,ai,Crewmate,Player 5: brown
+web_6f348479dc744ed98f3fe8b539ac13a6,78132,38,1,Player 5: brown,ai,Impostor,Player 3: orange
+web_6f348479dc744ed98f3fe8b539ac13a6,78153,38,1,Cyan,human,Crewmate,Player 5: brown
+web_6f348479dc744ed98f3fe8b539ac13a6,78163,38,1,Pink,human,Crewmate,Player 3: orange
+web_702f3f37f2e343efbffd9a4e854a4d14,77595,5,1,Player 3: orange,ai,Crewmate,Yellow
+web_702f3f37f2e343efbffd9a4e854a4d14,77600,5,1,Player 4: cyan,ai,Crewmate,Yellow
+web_702f3f37f2e343efbffd9a4e854a4d14,77609,5,1,Player 5: brown,ai,Crewmate,
+web_702f3f37f2e343efbffd9a4e854a4d14,77630,5,1,Yellow,human,Impostor,Player 3: orange
+web_717cdc8288e7411f9a5e04a125e0e0be,60769,21,1,Player 2: green,ai,Crewmate,
+web_717cdc8288e7411f9a5e04a125e0e0be,60771,21,1,Player 3: brown,ai,Impostor,
+web_717cdc8288e7411f9a5e04a125e0e0be,60789,21,1,Yellow,human,Crewmate,Lime
+web_717cdc8288e7411f9a5e04a125e0e0be,60793,21,1,Lime,human,Crewmate,Player 3: brown
+web_717cdc8288e7411f9a5e04a125e0e0be,61374,85,2,Player 3: brown,ai,Impostor,Lime
+web_717cdc8288e7411f9a5e04a125e0e0be,61375,85,2,Player 2: green,ai,Crewmate,Lime
+web_717cdc8288e7411f9a5e04a125e0e0be,61386,85,2,Lime,human,Crewmate,Player 3: brown
+web_720b252bd4a94f358cf07127b338dd43,64897,20,1,Player 3: white,ai,Crewmate,
+web_720b252bd4a94f358cf07127b338dd43,64898,20,1,Player 4: pink,ai,Impostor,
+web_720b252bd4a94f358cf07127b338dd43,64914,20,1,Lime,human,Crewmate,Red
+web_720b252bd4a94f358cf07127b338dd43,64958,20,1,Red,human,Crewmate,
+web_72f9fc178a3a4f0bac52dbd6c4a15083,44821,30,1,Player 2: pink,ai,Crewmate,Player 4: brown
+web_72f9fc178a3a4f0bac52dbd6c4a15083,44822,30,1,Player 3: purple,ai,Crewmate,Player 4: brown
+web_72f9fc178a3a4f0bac52dbd6c4a15083,44823,30,1,Player 4: brown,ai,Impostor,
+web_72f9fc178a3a4f0bac52dbd6c4a15083,44824,30,1,Player 5: lime,ai,Crewmate,
+web_72f9fc178a3a4f0bac52dbd6c4a15083,44829,30,1,White,human,Crewmate,Player 4: brown
+web_737048669ff44e2aa426b1dc1f10cf9b,37641,73,1,Black,human,Crewmate,Green
+web_737048669ff44e2aa426b1dc1f10cf9b,37644,73,1,Blue,human,Crewmate,Purple
+web_737048669ff44e2aa426b1dc1f10cf9b,37646,73,1,Green,human,Crewmate,Purple
+web_737048669ff44e2aa426b1dc1f10cf9b,37662,73,1,Red,human,Crewmate,Purple
+web_757edd5fcc65437eba1d82ac911eac2f,53623,40,1,Player 4: green,ai,Crewmate,
+web_757edd5fcc65437eba1d82ac911eac2f,53644,40,1,White,human,Impostor,Purple
+web_757edd5fcc65437eba1d82ac911eac2f,53656,40,1,Lime,human,Crewmate,Purple
+web_757edd5fcc65437eba1d82ac911eac2f,53680,40,1,Purple,human,Crewmate,Lime
+web_75da711c56d64bb495b7ac75bffda863,64264,19,1,Player 3: black,ai,Crewmate,Pink
+web_75da711c56d64bb495b7ac75bffda863,64270,19,1,White,human,Crewmate,Pink
+web_75da711c56d64bb495b7ac75bffda863,64303,19,1,Pink,human,Impostor,Player 3: black
+web_75da711c56d64bb495b7ac75bffda863,64322,19,1,Green,human,Crewmate,
+web_7677bfe1483a47a79a88a0f8d90f75fc,24133,13,1,Player 5: blue,ai,Impostor,
+web_7677bfe1483a47a79a88a0f8d90f75fc,24134,13,1,Player 4: white,ai,Crewmate,
+web_7677bfe1483a47a79a88a0f8d90f75fc,24135,13,1,Player 3: yellow,ai,Crewmate,
+web_7677bfe1483a47a79a88a0f8d90f75fc,24144,13,1,Cyan,human,Crewmate,Player 4: white
+web_7677bfe1483a47a79a88a0f8d90f75fc,24154,13,1,Black,human,Crewmate,
+web_7677bfe1483a47a79a88a0f8d90f75fc,24360,16,2,Player 3: yellow,ai,Crewmate,Cyan
+web_7677bfe1483a47a79a88a0f8d90f75fc,24361,16,2,Player 5: blue,ai,Impostor,
+web_7677bfe1483a47a79a88a0f8d90f75fc,24367,16,2,Cyan,human,Crewmate,Black
+web_7677bfe1483a47a79a88a0f8d90f75fc,24373,16,2,Black,human,Crewmate,Player 5: blue
+web_777a49ec21b84656a962066943b9e330,76686,1,1,Player 2: lime,ai,Crewmate,
+web_777a49ec21b84656a962066943b9e330,76688,1,1,Player 5: brown,ai,Impostor,Yellow
+web_777a49ec21b84656a962066943b9e330,76691,1,1,Player 4: cyan,ai,Crewmate,
+web_777a49ec21b84656a962066943b9e330,76734,1,1,Orange,human,Crewmate,Yellow
+web_777a49ec21b84656a962066943b9e330,76737,1,1,Yellow,human,Crewmate,Player 2: lime
+web_77df17273d94429fa4b36c2b5a0252f9,16297,31,1,Purple,human,Impostor,White
+web_77df17273d94429fa4b36c2b5a0252f9,16299,31,1,Green,human,Crewmate,Brown
+web_77df17273d94429fa4b36c2b5a0252f9,16301,31,1,Brown,human,Crewmate,White
+web_77df17273d94429fa4b36c2b5a0252f9,16303,31,1,White,human,Crewmate,Brown
+web_77df17273d94429fa4b36c2b5a0252f9,16510,46,2,Brown,human,Crewmate,White
+web_77df17273d94429fa4b36c2b5a0252f9,16512,46,2,Purple,human,Impostor,White
+web_77df17273d94429fa4b36c2b5a0252f9,16514,46,2,White,human,Crewmate,Brown
+web_78d72617f95b4093aa7c42d2c548851a,58137,28,1,Player 3: green,ai,Impostor,
+web_78d72617f95b4093aa7c42d2c548851a,58150,28,1,Cyan,human,Crewmate,Purple
+web_78d72617f95b4093aa7c42d2c548851a,58164,28,1,Purple,human,Crewmate,Player 3: green
+web_79099b20d1c145af86337c84de57e15a,11909,31,1,Player 4: yellow,ai,Crewmate,Purple
+web_79099b20d1c145af86337c84de57e15a,11910,31,1,Player 3: lime,ai,Impostor,Purple
+web_79099b20d1c145af86337c84de57e15a,11911,31,1,Player 5: orange,ai,Crewmate,Purple
+web_79099b20d1c145af86337c84de57e15a,11915,31,1,Purple,human,Crewmate,Player 3: lime
+web_79099b20d1c145af86337c84de57e15a,11918,31,1,Red,human,Crewmate,Purple
+web_79099b20d1c145af86337c84de57e15a,11943,34,2,Player 4: yellow,ai,Crewmate,
+web_79099b20d1c145af86337c84de57e15a,11944,34,2,Player 3: lime,ai,Impostor,
+web_79099b20d1c145af86337c84de57e15a,11945,34,2,Player 5: orange,ai,Crewmate,
+web_79099b20d1c145af86337c84de57e15a,11949,34,2,Red,human,Crewmate,Player 4: yellow
+web_7a9ffdfa84064a50b75e10abf67acd78,25540,16,1,Brown,human,Crewmate,
+web_7a9ffdfa84064a50b75e10abf67acd78,25544,16,1,Cyan,human,Impostor,
+web_7a9ffdfa84064a50b75e10abf67acd78,25546,16,1,Blue,human,Crewmate,
+web_7a9ffdfa84064a50b75e10abf67acd78,25558,16,1,Lime,human,Crewmate,Brown
+web_7afb789f764d4a5e85efb95eb7999c79,61253,48,1,Player 2: lime,ai,Crewmate,
+web_7afb789f764d4a5e85efb95eb7999c79,61267,48,1,Yellow,human,Impostor,Player 2: lime
+web_7afb789f764d4a5e85efb95eb7999c79,61273,48,1,Green,human,Crewmate,
+web_7afb789f764d4a5e85efb95eb7999c79,61281,48,1,Brown,human,Crewmate,Player 2: lime
+web_7c50a7f15e86461eb45a58adac9e1f48,63690,23,1,Player 4: orange,ai,Impostor,Purple
+web_7c50a7f15e86461eb45a58adac9e1f48,63691,23,1,Player 5: white,ai,Crewmate,Purple
+web_7c50a7f15e86461eb45a58adac9e1f48,63703,23,1,Black,human,Crewmate,Purple
+web_7c50a7f15e86461eb45a58adac9e1f48,63712,23,1,Purple,human,Crewmate,Player 4: orange
+web_7c50a7f15e86461eb45a58adac9e1f48,63717,23,1,Brown,human,Crewmate,Player 5: white
+web_7c50a7f15e86461eb45a58adac9e1f48,64072,26,2,Player 5: white,ai,Crewmate,
+web_7c50a7f15e86461eb45a58adac9e1f48,64075,26,2,Player 4: orange,ai,Impostor,
+web_7c50a7f15e86461eb45a58adac9e1f48,64095,26,2,Brown,human,Crewmate,Player 5: white
+web_7c50a7f15e86461eb45a58adac9e1f48,64097,26,2,Black,human,Crewmate,Brown
+web_7c50a7f15e86461eb45a58adac9e1f48,65116,131,3,Player 4: orange,ai,Impostor,
+web_7c50a7f15e86461eb45a58adac9e1f48,65132,131,3,Brown,human,Crewmate,Player 4: orange
+web_7c50a7f15e86461eb45a58adac9e1f48,65157,131,3,Black,human,Crewmate,Player 4: orange
+web_7c9bd24f8f99464ca032c343d5daad6f,67207,67,1,Player 2: pink,ai,Impostor,Orange
+web_7c9bd24f8f99464ca032c343d5daad6f,67217,67,1,White,human,Crewmate,Player 2: pink
+web_7c9bd24f8f99464ca032c343d5daad6f,67220,67,1,Orange,human,Crewmate,Player 2: pink
+web_7d395538eedc4d1f93f0382c35cb49a6,42930,130,1,Player 5: green,ai,Crewmate,Player 4: lime
+web_7d395538eedc4d1f93f0382c35cb49a6,42932,130,1,Player 4: lime,ai,Impostor,Player 5: green
+web_7d395538eedc4d1f93f0382c35cb49a6,42933,130,1,Player 3: pink,ai,Crewmate,
+web_7d395538eedc4d1f93f0382c35cb49a6,42939,130,1,Cyan,human,Crewmate,Player 4: lime
+web_7d395538eedc4d1f93f0382c35cb49a6,42945,130,1,White,human,Crewmate,Player 3: pink
+web_7dc8907c88f849dc857632006ceebc1a,44412,59,1,Player 4: orange,ai,Crewmate,
+web_7dc8907c88f849dc857632006ceebc1a,44413,59,1,Player 3: green,ai,Impostor,Cyan
+web_7dc8907c88f849dc857632006ceebc1a,44414,59,1,Player 5: black,ai,Crewmate,
+web_7dc8907c88f849dc857632006ceebc1a,44415,59,1,Player 2: yellow,ai,Crewmate,
+web_7dc8907c88f849dc857632006ceebc1a,44420,59,1,Cyan,human,Crewmate,Player 3: green
+web_7ddab57319b04c2a92ac89b5ac9ac3cd,47874,23,1,Lime,human,Crewmate,Pink
+web_7ddab57319b04c2a92ac89b5ac9ac3cd,47876,23,1,White,human,Impostor,Pink
+web_7ddab57319b04c2a92ac89b5ac9ac3cd,47886,23,1,Brown,human,Crewmate,Pink
+web_7ddab57319b04c2a92ac89b5ac9ac3cd,47923,23,1,Pink,human,Crewmate,
+web_7de5692baf9544eb9d5a8e3486bfca74,67370,6,1,Player 4: brown,ai,Crewmate,White
+web_7de5692baf9544eb9d5a8e3486bfca74,67377,6,1,Orange,human,Crewmate,White
+web_7de5692baf9544eb9d5a8e3486bfca74,67390,6,1,White,human,Impostor,Red
+web_7de5692baf9544eb9d5a8e3486bfca74,67392,6,1,Red,human,Crewmate,White
+web_7dfda123af624889ad27fdb81bede48b,63889,29,1,Player 2: lime,ai,Crewmate,
+web_7dfda123af624889ad27fdb81bede48b,63890,29,1,Player 5: pink,ai,Impostor,
+web_7dfda123af624889ad27fdb81bede48b,63911,29,1,White,human,Crewmate,Player 2: lime
+web_7dfda123af624889ad27fdb81bede48b,63913,29,1,Purple,human,Crewmate,Player 2: lime
+web_7e3906b3191d4a0ba839bb1c00f38f3f,50515,14,1,Player 2: cyan,ai,Crewmate,Green
+web_7e3906b3191d4a0ba839bb1c00f38f3f,50535,14,1,White,human,Crewmate,Player 2: cyan
+web_7e3906b3191d4a0ba839bb1c00f38f3f,50538,14,1,Yellow,human,Crewmate,Player 2: cyan
+web_7e3906b3191d4a0ba839bb1c00f38f3f,50540,14,1,Green,human,Impostor,Player 2: cyan
+web_7ea5797ee0e74cf7950348f159fd07b6,62765,7,1,Player 3: brown,ai,Crewmate,
+web_7ea5797ee0e74cf7950348f159fd07b6,62771,7,1,Player 5: pink,ai,Impostor,
+web_7ea5797ee0e74cf7950348f159fd07b6,62791,7,1,Lime,human,Crewmate,Player 5: pink
+web_7ea5797ee0e74cf7950348f159fd07b6,62805,7,1,Black,human,Crewmate,
+web_7feb0104293c48a988b84253f1b33b10,15038,9,1,Blue,human,Crewmate,Cyan
+web_7feb0104293c48a988b84253f1b33b10,15042,9,1,Orange,human,Crewmate,Cyan
+web_7feb0104293c48a988b84253f1b33b10,15044,9,1,Yellow,human,Crewmate,
+web_7feb0104293c48a988b84253f1b33b10,15046,9,1,Cyan,human,Crewmate,Yellow
+web_7feb0104293c48a988b84253f1b33b10,15067,9,1,Purple,human,Impostor,
+web_7feb0104293c48a988b84253f1b33b10,15770,210,2,Yellow,human,Crewmate,Purple
+web_7feb0104293c48a988b84253f1b33b10,15772,210,2,Blue,human,Crewmate,Purple
+web_7feb0104293c48a988b84253f1b33b10,15775,210,2,Orange,human,Crewmate,Purple
+web_7feb0104293c48a988b84253f1b33b10,15792,210,2,Purple,human,Impostor,
+web_8076dd203d83498d9e35144a76767739,83483,2,1,Player 2: brown,ai,Crewmate,Red
+web_8076dd203d83498d9e35144a76767739,83484,2,1,Player 4: black,ai,Crewmate,Red
+web_8076dd203d83498d9e35144a76767739,83485,2,1,Player 3: blue,ai,Crewmate,Red
+web_8076dd203d83498d9e35144a76767739,83503,2,1,Red,human,Impostor,Player 4: black
+web_81f0b3bf4b364ab9acda75b04d796a9f,87998,19,1,Player 4: brown,ai,Impostor,
+web_81f0b3bf4b364ab9acda75b04d796a9f,88000,19,1,Player 5: green,ai,Crewmate,
+web_81f0b3bf4b364ab9acda75b04d796a9f,88001,19,1,Player 3: pink,ai,Crewmate,
+web_81f0b3bf4b364ab9acda75b04d796a9f,88002,19,1,Player 2: yellow,ai,Crewmate,
+web_81f0b3bf4b364ab9acda75b04d796a9f,88411,61,2,Player 2: yellow,ai,Crewmate,
+web_81f0b3bf4b364ab9acda75b04d796a9f,88412,61,2,Player 3: pink,ai,Crewmate,
+web_81f0b3bf4b364ab9acda75b04d796a9f,88415,61,2,Player 4: brown,ai,Impostor,
+web_83da8b176c2144d588f5b83b18d6c284,47248,12,1,Player 3: brown,ai,Crewmate,
+web_83da8b176c2144d588f5b83b18d6c284,47257,12,1,Black,human,Crewmate,Orange
+web_83da8b176c2144d588f5b83b18d6c284,47259,12,1,Orange,human,Crewmate,Player 3: brown
+web_83da8b176c2144d588f5b83b18d6c284,47263,12,1,Lime,human,Crewmate,Player 3: brown
+web_83da8b176c2144d588f5b83b18d6c284,47271,12,1,Blue,human,Impostor,
+web_853706a2c1e344fe8179cfae7c3ee00e,12202,6,1,Yellow,human,Crewmate,Lime
+web_853706a2c1e344fe8179cfae7c3ee00e,12204,6,1,Blue,human,Crewmate,Lime
+web_853706a2c1e344fe8179cfae7c3ee00e,12208,6,1,Lime,human,Impostor,
+web_853dbbf2ea974755baf0fa9c2668934b,33551,27,1,Brown,human,Crewmate,White
+web_853dbbf2ea974755baf0fa9c2668934b,33556,27,1,Orange,human,Crewmate,White
+web_853dbbf2ea974755baf0fa9c2668934b,33558,27,1,Purple,human,Crewmate,White
+web_853dbbf2ea974755baf0fa9c2668934b,33561,27,1,White,human,Impostor,
+web_853dbbf2ea974755baf0fa9c2668934b,33565,27,1,Yellow,human,Crewmate,
+web_85b45af71b364c67a10792f64b4f8fd2,12294,6,1,Player 5: purple,ai,Crewmate,Cyan
+web_85b45af71b364c67a10792f64b4f8fd2,12295,6,1,Player 4: pink,ai,Crewmate,Cyan
+web_85b45af71b364c67a10792f64b4f8fd2,12296,6,1,Player 3: blue,ai,Crewmate,Cyan
+web_85b45af71b364c67a10792f64b4f8fd2,12300,6,1,Cyan,human,Impostor,Player 3: blue
+web_862c5419acec4a2298f2c9c0be6aa33e,13129,13,1,Player 4: brown,ai,Crewmate,White
+web_862c5419acec4a2298f2c9c0be6aa33e,13130,13,1,Player 5: cyan,ai,Crewmate,White
+web_862c5419acec4a2298f2c9c0be6aa33e,13133,13,1,White,human,Crewmate,Lime
+web_862c5419acec4a2298f2c9c0be6aa33e,13136,13,1,Lime,human,Impostor,White
+web_862c5419acec4a2298f2c9c0be6aa33e,13165,15,2,Player 5: cyan,ai,Crewmate,Lime
+web_862c5419acec4a2298f2c9c0be6aa33e,13166,15,2,Player 4: brown,ai,Crewmate,Lime
+web_862c5419acec4a2298f2c9c0be6aa33e,13169,15,2,Lime,human,Impostor,Player 5: cyan
+web_86331b84a5344bff88a1afc7aedf690a,56625,62,1,Player 5: black,ai,Crewmate,
+web_86331b84a5344bff88a1afc7aedf690a,56626,62,1,Player 3: lime,ai,Crewmate,
+web_86331b84a5344bff88a1afc7aedf690a,56627,62,1,Player 4: pink,ai,Impostor,
+web_863bcb07ed984f65a78832e05f03b658,81168,25,1,Player 3: lime,ai,Crewmate,Player 2: green
+web_863bcb07ed984f65a78832e05f03b658,81170,25,1,Player 2: green,ai,Impostor,Player 3: lime
+web_863bcb07ed984f65a78832e05f03b658,81171,25,1,Player 4: blue,ai,Crewmate,
+web_863bcb07ed984f65a78832e05f03b658,81187,25,1,White,human,Crewmate,
+web_863bcb07ed984f65a78832e05f03b658,81606,35,2,Player 2: green,ai,Impostor,Player 4: blue
+web_863bcb07ed984f65a78832e05f03b658,81608,35,2,Player 4: blue,ai,Crewmate,
+web_863bcb07ed984f65a78832e05f03b658,81625,35,2,White,human,Crewmate,Player 2: green
+web_86e69cb48fb9484a9749c36232ec8056,38919,82,1,Pink,human,Crewmate,Green
+web_86e69cb48fb9484a9749c36232ec8056,38923,82,1,Green,human,Crewmate,Black
+web_86e69cb48fb9484a9749c36232ec8056,38930,82,1,Brown,human,Crewmate,Lime
+web_86e69cb48fb9484a9749c36232ec8056,38933,82,1,Black,human,Impostor,Brown
+web_8700378bb4a149e386195829b99493de,30912,87,1,Pink,human,Crewmate,Red
+web_8700378bb4a149e386195829b99493de,30921,87,1,Red,human,Crewmate,
+web_8700378bb4a149e386195829b99493de,30928,87,1,Brown,human,Crewmate,
+web_87a7a00896544ff6a20332b749152dc9,85437,30,1,Player 3: black,ai,Crewmate,Pink
+web_87a7a00896544ff6a20332b749152dc9,85438,30,1,Player 4: red,ai,Crewmate,Pink
+web_87a7a00896544ff6a20332b749152dc9,85443,30,1,Player 2: lime,ai,Crewmate,
+web_87a7a00896544ff6a20332b749152dc9,85455,30,1,Pink,human,Impostor,Player 4: red
+web_87ac90d2f6c7491c8477eb0831a7cbe0,9157,55,1,Player 4: brown,ai,Crewmate,Cyan
+web_87ac90d2f6c7491c8477eb0831a7cbe0,9158,55,1,Player 5: lime,ai,Crewmate,
+web_87ac90d2f6c7491c8477eb0831a7cbe0,9160,55,1,Player 2: orange,ai,Crewmate,Cyan
+web_87ac90d2f6c7491c8477eb0831a7cbe0,9188,55,1,Cyan,human,Impostor,Player 2: orange
+web_87b588c7311e4e3e95e26c9d288fe2d2,89432,21,1,Player 2: red,ai,Crewmate,Player 4: green
+web_87b588c7311e4e3e95e26c9d288fe2d2,89433,21,1,Player 3: purple,ai,Crewmate,Player 4: green
+web_87b588c7311e4e3e95e26c9d288fe2d2,89434,21,1,Player 4: green,ai,Impostor,Player 2: red
+web_87b588c7311e4e3e95e26c9d288fe2d2,89438,21,1,Black,human,Crewmate,Player 4: green
+web_87cf85fac507440490abdcd8be372b90,27353,18,1,Player 4: lime,ai,Crewmate,
+web_87cf85fac507440490abdcd8be372b90,27354,18,1,Player 5: cyan,ai,Impostor,
+web_87cf85fac507440490abdcd8be372b90,27363,18,1,Green,human,Crewmate,White
+web_87cf85fac507440490abdcd8be372b90,27377,18,1,White,human,Crewmate,
+web_87cf85fac507440490abdcd8be372b90,27392,18,1,Black,human,Crewmate,
+web_882b1f1937314b68a24364d651f66d61,9612,35,1,Player 2: purple,ai,Crewmate,
+web_882b1f1937314b68a24364d651f66d61,9613,35,1,Player 3: lime,ai,Crewmate,Yellow
+web_882b1f1937314b68a24364d651f66d61,9616,35,1,Player 5: white,ai,Crewmate,
+web_882b1f1937314b68a24364d651f66d61,9628,35,1,Yellow,human,Impostor,Player 5: white
+web_8837bdd0a2d245a28e657207bda53cda,19055,37,1,Player 2: black,ai,Crewmate,Cyan
+web_8837bdd0a2d245a28e657207bda53cda,19056,37,1,Player 3: blue,ai,Crewmate,Cyan
+web_8837bdd0a2d245a28e657207bda53cda,19058,37,1,Player 4: purple,ai,Crewmate,Cyan
+web_8837bdd0a2d245a28e657207bda53cda,19072,37,1,Cyan,human,Impostor,Player 3: blue
+web_896fae3e920d4305ab4983b993d62baa,33760,25,1,Blue,human,Crewmate,Red
+web_896fae3e920d4305ab4983b993d62baa,33764,25,1,Red,human,Impostor,Blue
+web_8a63a686ecbc48c4aafad9726fbd7e6e,20617,73,1,Player 5: blue,ai,Crewmate,Orange
+web_8a63a686ecbc48c4aafad9726fbd7e6e,20624,73,1,Player 4: yellow,ai,Crewmate,
+web_8a63a686ecbc48c4aafad9726fbd7e6e,20648,73,1,Orange,human,Impostor,Player 5: blue
+web_8a63a686ecbc48c4aafad9726fbd7e6e,20661,73,1,White,human,Crewmate,Player 4: yellow
+web_8a63a686ecbc48c4aafad9726fbd7e6e,21140,86,2,Player 4: yellow,ai,Crewmate,Orange
+web_8a63a686ecbc48c4aafad9726fbd7e6e,21163,86,2,White,human,Crewmate,Orange
+web_8a63a686ecbc48c4aafad9726fbd7e6e,21167,86,2,Orange,human,Impostor,White
+web_8a66e61d1bf049ecbf05f7beae5f183a,47170,70,1,Player 2: green,ai,Impostor,
+web_8a66e61d1bf049ecbf05f7beae5f183a,47188,70,1,Black,human,Crewmate,Player 2: green
+web_8a66e61d1bf049ecbf05f7beae5f183a,47195,70,1,Pink,human,Crewmate,Player 2: green
+web_8a8394af9f214fa8835c7c225e58fe76,22728,22,1,Player 4: brown,ai,Crewmate,
+web_8a8394af9f214fa8835c7c225e58fe76,22733,22,1,Yellow,human,Crewmate,Player 4: brown
+web_8a8394af9f214fa8835c7c225e58fe76,22736,22,1,Blue,human,Impostor,Orange
+web_8af31e2d099e49e3a139a221093e4e7a,44891,20,1,Player 4: black,ai,Crewmate,Player 5: pink
+web_8af31e2d099e49e3a139a221093e4e7a,44892,20,1,Player 3: purple,ai,Crewmate,Player 5: pink
+web_8af31e2d099e49e3a139a221093e4e7a,44893,20,1,Player 2: lime,ai,Crewmate,
+web_8af31e2d099e49e3a139a221093e4e7a,44894,20,1,Player 5: pink,ai,Impostor,
+web_8b9fc72bc75642c990557fa81ae033f6,53464,5,1,Player 4: pink,ai,Crewmate,Orange
+web_8b9fc72bc75642c990557fa81ae033f6,53467,5,1,Black,human,Crewmate,Orange
+web_8b9fc72bc75642c990557fa81ae033f6,53471,5,1,Purple,human,Crewmate,Orange
+web_8b9fc72bc75642c990557fa81ae033f6,53480,5,1,Cyan,human,Crewmate,Orange
+web_8b9fc72bc75642c990557fa81ae033f6,53485,5,1,Orange,human,Impostor,Cyan
+web_8c2c579c4bfb4a878edcfd595db66473,30985,10,1,Black,human,Crewmate,Yellow
+web_8c2c579c4bfb4a878edcfd595db66473,30989,10,1,Lime,human,Impostor,Black
+web_8c2c579c4bfb4a878edcfd595db66473,31002,10,1,Yellow,human,Crewmate,Black
+web_8c2c579c4bfb4a878edcfd595db66473,31006,10,1,Orange,human,Crewmate,Black
+web_8c3f2d2eda8a4dc9b087ce5a5f57de92,27254,34,1,Player 4: red,ai,Crewmate,Yellow
+web_8c3f2d2eda8a4dc9b087ce5a5f57de92,27262,34,1,Lime,human,Crewmate,Yellow
+web_8c3f2d2eda8a4dc9b087ce5a5f57de92,27268,34,1,Green,human,Crewmate,Yellow
+web_8c3f2d2eda8a4dc9b087ce5a5f57de92,27277,34,1,Yellow,human,Impostor,Player 4: red
+web_8d6a04700e0143248b9cde3b17cab196,36007,2,1,Player 5: brown,ai,Crewmate,Lime
+web_8d6a04700e0143248b9cde3b17cab196,36023,2,1,Lime,human,Impostor,Yellow
+web_8d6a04700e0143248b9cde3b17cab196,36027,2,1,Black,human,Crewmate,Player 5: brown
+web_8d6a04700e0143248b9cde3b17cab196,36037,2,1,Yellow,human,Crewmate,Lime
+web_8d7f5ed2133649389a1d62a15713ea39,73821,20,1,Player 2: green,ai,Crewmate,Cyan
+web_8d7f5ed2133649389a1d62a15713ea39,73822,20,1,Player 4: blue,ai,Crewmate,Cyan
+web_8d7f5ed2133649389a1d62a15713ea39,73829,20,1,Player 5: yellow,ai,Crewmate,Cyan
+web_8d7f5ed2133649389a1d62a15713ea39,73854,20,1,Red,human,Crewmate,Cyan
+web_8d7f5ed2133649389a1d62a15713ea39,73873,20,1,Cyan,human,Impostor,Player 5: yellow
+web_8d8dfecee1794842b44e740c1cbdc4de,42221,1,1,Player 5: lime,ai,Crewmate,
+web_8d8dfecee1794842b44e740c1cbdc4de,42222,1,1,Player 4: white,ai,Crewmate,
+web_8d8dfecee1794842b44e740c1cbdc4de,42227,1,1,Pink,human,Crewmate,Player 4: white
+web_8d8dfecee1794842b44e740c1cbdc4de,42230,1,1,Purple,human,Crewmate,Player 4: white
+web_8d8dfecee1794842b44e740c1cbdc4de,42233,1,1,Yellow,human,Impostor,
+web_8d8dfecee1794842b44e740c1cbdc4de,42362,11,2,Player 5: lime,ai,Crewmate,
+web_8d8dfecee1794842b44e740c1cbdc4de,42367,11,2,Pink,human,Crewmate,Player 5: lime
+web_8d8dfecee1794842b44e740c1cbdc4de,42370,11,2,Purple,human,Crewmate,Player 5: lime
+web_8d8dfecee1794842b44e740c1cbdc4de,42377,11,2,Yellow,human,Impostor,
+web_8eb71b6d23a34a47a88e60496f0c4b7a,67780,14,1,Player 5: blue,ai,Crewmate,
+web_8eb71b6d23a34a47a88e60496f0c4b7a,67786,14,1,Cyan,human,Impostor,Brown
+web_8eb71b6d23a34a47a88e60496f0c4b7a,67791,14,1,Brown,human,Crewmate,Cyan
+web_8ebb7d64f7c5495bb8caa544f727dcb6,70724,41,1,Player 3: cyan,ai,Impostor,Player 2: white
+web_8ebb7d64f7c5495bb8caa544f727dcb6,70730,41,1,Player 2: white,ai,Crewmate,
+web_8ebb7d64f7c5495bb8caa544f727dcb6,70756,41,1,Yellow,human,Crewmate,Player 2: white
+web_8ebb7d64f7c5495bb8caa544f727dcb6,70763,41,1,Green,human,Crewmate,Player 2: white
+web_8eef5e5cce5643d699d46a8949f07253,79102,39,1,Player 5: red,ai,Crewmate,
+web_8eef5e5cce5643d699d46a8949f07253,79103,39,1,Player 2: green,ai,Crewmate,
+web_8eef5e5cce5643d699d46a8949f07253,79111,39,1,Blue,human,Impostor,
+web_8eef5e5cce5643d699d46a8949f07253,79133,39,1,Orange,human,Crewmate,Blue
+web_8f67f98577044feca7f4c54237945c69,74846,6,1,Player 3: cyan,ai,Crewmate,Blue
+web_8f67f98577044feca7f4c54237945c69,74850,6,1,Player 4: purple,ai,Crewmate,Blue
+web_8f67f98577044feca7f4c54237945c69,74872,6,1,Black,human,Crewmate,Player 4: purple
+web_8f67f98577044feca7f4c54237945c69,74883,6,1,Blue,human,Impostor,Player 4: purple
+web_8f67f98577044feca7f4c54237945c69,75346,8,2,Player 3: cyan,ai,Crewmate,Blue
+web_8f67f98577044feca7f4c54237945c69,75352,8,2,Player 4: purple,ai,Crewmate,
+web_8f67f98577044feca7f4c54237945c69,75386,8,2,Black,human,Crewmate,Blue
+web_8f67f98577044feca7f4c54237945c69,75403,8,2,Blue,human,Impostor,Player 4: purple
+web_8fb89af3b3d44b718c3a9bab35a018c9,87918,32,1,Player 5: blue,ai,Impostor,Player 3: yellow
+web_8fb89af3b3d44b718c3a9bab35a018c9,87920,32,1,Player 2: pink,ai,Crewmate,Player 5: blue
+web_8fb89af3b3d44b718c3a9bab35a018c9,87921,32,1,Player 3: yellow,ai,Crewmate,
+web_8fb89af3b3d44b718c3a9bab35a018c9,87948,32,1,Orange,human,Crewmate,Player 3: yellow
+web_90c8983d1a1841a28d3f03a9167cc27f,86635,31,1,Player 4: pink,ai,Impostor,
+web_90c8983d1a1841a28d3f03a9167cc27f,86638,31,1,Player 3: cyan,ai,Crewmate,
+web_90c8983d1a1841a28d3f03a9167cc27f,86641,31,1,Player 2: blue,ai,Crewmate,
+web_90c8983d1a1841a28d3f03a9167cc27f,86683,31,1,Black,human,Crewmate,Player 4: pink
+web_90ef40f73407420bb97b0a3a748d4b29,21254,151,1,Brown,human,Impostor,
+web_90ef40f73407420bb97b0a3a748d4b29,21257,151,1,Green,human,Crewmate,Orange
+web_90ef40f73407420bb97b0a3a748d4b29,21262,151,1,Cyan,human,Crewmate,Orange
+web_90ef40f73407420bb97b0a3a748d4b29,21267,151,1,Orange,human,Crewmate,Cyan
+web_90ef40f73407420bb97b0a3a748d4b29,21734,206,2,Green,human,Crewmate,Brown
+web_90ef40f73407420bb97b0a3a748d4b29,21737,206,2,Cyan,human,Crewmate,Brown
+web_90ef40f73407420bb97b0a3a748d4b29,21760,206,2,Brown,human,Impostor,
+web_91242f29bb6a48f893d758612e9502a1,21339,43,1,Player 5: purple,ai,Impostor,Player 4: cyan
+web_91242f29bb6a48f893d758612e9502a1,21340,43,1,Player 4: cyan,ai,Crewmate,Player 5: purple
+web_91242f29bb6a48f893d758612e9502a1,21341,43,1,Player 2: lime,ai,Crewmate,
+web_91242f29bb6a48f893d758612e9502a1,21363,43,1,Blue,human,Crewmate,Player 5: purple
+web_91668441152743eb8a323565814c2949,8213,33,1,Player 3: blue,ai,Impostor,Player 5: cyan
+web_91668441152743eb8a323565814c2949,8214,33,1,Player 5: cyan,ai,Crewmate,
+web_91668441152743eb8a323565814c2949,8215,33,1,Player 4: black,ai,Crewmate,
+web_91c6f92dfd044af88857c0736fc4aef9,17225,60,1,Player 5: yellow,ai,Impostor,Player 4: pink
+web_91c6f92dfd044af88857c0736fc4aef9,17226,60,1,Player 4: pink,ai,Crewmate,
+web_91c6f92dfd044af88857c0736fc4aef9,17237,60,1,Cyan,human,Crewmate,Player 4: pink
+web_920bfd1be170441284385eedfdec730a,22495,16,1,Orange,human,Impostor,Green
+web_920bfd1be170441284385eedfdec730a,22497,16,1,Black,human,Crewmate,Green
+web_920bfd1be170441284385eedfdec730a,22499,16,1,Green,human,Crewmate,Orange
+web_921eed578a0643cfb123cdcf0adac10a,15521,26,1,Player 5: lime,ai,Crewmate,Black
+web_921eed578a0643cfb123cdcf0adac10a,15527,26,1,Yellow,human,Crewmate,Brown
+web_921eed578a0643cfb123cdcf0adac10a,15533,26,1,Brown,human,Impostor,Player 5: lime
+web_921eed578a0643cfb123cdcf0adac10a,15537,26,1,Black,human,Crewmate,Brown
+web_92a1304225904dd7a2f8e71de3e94bf9,89631,22,1,Player 4: yellow,ai,Crewmate,
+web_92a1304225904dd7a2f8e71de3e94bf9,89632,22,1,Player 3: lime,ai,Crewmate,
+web_92a1304225904dd7a2f8e71de3e94bf9,89633,22,1,Player 5: white,ai,Impostor,
+web_92a1304225904dd7a2f8e71de3e94bf9,89661,25,2,Player 3: lime,ai,Crewmate,Player 5: white
+web_92a1304225904dd7a2f8e71de3e94bf9,89662,25,2,Player 4: yellow,ai,Crewmate,Player 5: white
+web_92a1304225904dd7a2f8e71de3e94bf9,89663,25,2,Player 5: white,ai,Impostor,Player 3: lime
+web_930a2b6b234c4e84aacae51a5c71c42d,67346,27,1,Player 2: purple,ai,Crewmate,
+web_930a2b6b234c4e84aacae51a5c71c42d,67347,27,1,Player 3: brown,ai,Crewmate,
+web_930a2b6b234c4e84aacae51a5c71c42d,67360,27,1,Lime,human,Crewmate,
+web_930a2b6b234c4e84aacae51a5c71c42d,67364,27,1,White,human,Crewmate,Player 2: purple
+web_930a2b6b234c4e84aacae51a5c71c42d,67366,27,1,Yellow,human,Impostor,Player 2: purple
+web_930a2b6b234c4e84aacae51a5c71c42d,67806,56,2,Player 3: brown,ai,Crewmate,
+web_930a2b6b234c4e84aacae51a5c71c42d,67815,56,2,White,human,Crewmate,Yellow
+web_930a2b6b234c4e84aacae51a5c71c42d,67820,56,2,Lime,human,Crewmate,Yellow
+web_930a2b6b234c4e84aacae51a5c71c42d,67825,56,2,Yellow,human,Impostor,Lime
+web_947b6076726c45df9f84d0501528f380,14819,24,1,Yellow,human,Impostor,Brown
+web_947b6076726c45df9f84d0501528f380,14821,24,1,Cyan,human,Crewmate,Yellow
+web_947b6076726c45df9f84d0501528f380,14828,24,1,Brown,human,Crewmate,Cyan
+web_947b6076726c45df9f84d0501528f380,14831,24,1,Pink,human,Crewmate,Yellow
+web_947b6076726c45df9f84d0501528f380,14833,24,1,Red,human,Crewmate,
+web_94a873d612794a9c9bc86058bfb5f4d0,41098,11,1,Player 4: green,ai,Crewmate,
+web_94a873d612794a9c9bc86058bfb5f4d0,41115,11,1,Lime,human,Crewmate,Red
+web_94a873d612794a9c9bc86058bfb5f4d0,41117,11,1,Purple,human,Crewmate,Player 4: green
+web_94a873d612794a9c9bc86058bfb5f4d0,41119,11,1,Black,human,Crewmate,Player 4: green
+web_94a873d612794a9c9bc86058bfb5f4d0,41123,11,1,Red,human,Impostor,Black
+web_94a873d612794a9c9bc86058bfb5f4d0,41364,15,2,Purple,human,Crewmate,Red
+web_94a873d612794a9c9bc86058bfb5f4d0,41367,15,2,Black,human,Crewmate,Red
+web_94a873d612794a9c9bc86058bfb5f4d0,41369,15,2,Lime,human,Crewmate,Red
+web_94a873d612794a9c9bc86058bfb5f4d0,41374,15,2,Red,human,Impostor,Black
+web_950b760d592d4037bff058fcf7b6c357,58730,21,1,Player 3: white,ai,Crewmate,
+web_950b760d592d4037bff058fcf7b6c357,58734,21,1,Player 5: purple,ai,Crewmate,
+web_950b760d592d4037bff058fcf7b6c357,58760,21,1,Yellow,human,Impostor,Player 5: purple
+web_9593f15973644d3b8c6dc2168f1713d7,59794,53,1,Player 5: purple,ai,Crewmate,
+web_9593f15973644d3b8c6dc2168f1713d7,59811,53,1,Red,human,Impostor,Player 5: purple
+web_9593f15973644d3b8c6dc2168f1713d7,59813,53,1,Orange,human,Crewmate,Red
+web_95a52fb6b7e04f00bc0a89c0238fbfb1,65358,10,1,Player 3: green,ai,Impostor,
+web_95a52fb6b7e04f00bc0a89c0238fbfb1,65360,10,1,Player 2: red,ai,Crewmate,
+web_95a52fb6b7e04f00bc0a89c0238fbfb1,65371,10,1,Blue,human,Crewmate,Cyan
+web_95a52fb6b7e04f00bc0a89c0238fbfb1,65394,10,1,Cyan,human,Crewmate,Player 3: green
+web_95a52fb6b7e04f00bc0a89c0238fbfb1,65415,10,1,White,human,Crewmate,
+web_95a52fb6b7e04f00bc0a89c0238fbfb1,65862,23,2,Player 2: red,ai,Crewmate,
+web_95a52fb6b7e04f00bc0a89c0238fbfb1,65863,23,2,Player 3: green,ai,Impostor,
+web_95a52fb6b7e04f00bc0a89c0238fbfb1,65920,23,2,Cyan,human,Crewmate,Blue
+web_95a52fb6b7e04f00bc0a89c0238fbfb1,65937,23,2,Blue,human,Crewmate,
+web_95d19c4cdac34b499478f53aba96a0f0,10896,108,1,Player 5: red,ai,Impostor,Purple
+web_95d19c4cdac34b499478f53aba96a0f0,10906,108,1,Purple,human,Crewmate,Blue
+web_95d19c4cdac34b499478f53aba96a0f0,10908,108,1,Blue,human,Crewmate,Purple
+web_95f335b7b9244f78a8930cf38de0370a,47645,1,1,Player 4: blue,ai,Crewmate,
+web_95f335b7b9244f78a8930cf38de0370a,47655,1,1,Red,human,Impostor,Pink
+web_95f335b7b9244f78a8930cf38de0370a,47678,1,1,Purple,human,Crewmate,Red
+web_95f335b7b9244f78a8930cf38de0370a,47686,1,1,Pink,human,Crewmate,Red
+web_961b42c243884f09b57768863df3da1d,37336,94,1,Brown,human,Crewmate,Cyan
+web_961b42c243884f09b57768863df3da1d,37343,94,1,Green,human,Crewmate,Brown
+web_961b42c243884f09b57768863df3da1d,37356,94,1,Yellow,human,Crewmate,Brown
+web_9688f83a4edc4f9699a3b43cfee5110d,85472,33,1,Player 4: pink,ai,Crewmate,Blue
+web_9688f83a4edc4f9699a3b43cfee5110d,85473,33,1,Player 5: black,ai,Crewmate,
+web_9688f83a4edc4f9699a3b43cfee5110d,85474,33,1,Player 2: green,ai,Impostor,Blue
+web_9688f83a4edc4f9699a3b43cfee5110d,85475,33,1,Player 3: yellow,ai,Crewmate,
+web_9688f83a4edc4f9699a3b43cfee5110d,85546,33,1,Blue,human,Crewmate,Player 4: pink
+web_9688f83a4edc4f9699a3b43cfee5110d,86001,57,2,Player 2: green,ai,Impostor,Player 5: black
+web_9688f83a4edc4f9699a3b43cfee5110d,86003,57,2,Player 4: pink,ai,Crewmate,
+web_9688f83a4edc4f9699a3b43cfee5110d,86004,57,2,Player 5: black,ai,Crewmate,
+web_9688f83a4edc4f9699a3b43cfee5110d,86005,57,2,Player 3: yellow,ai,Crewmate,
+web_97379997a7e04d91895f6c0e59c8d127,59102,93,1,Player 3: white,ai,Crewmate,
+web_97379997a7e04d91895f6c0e59c8d127,59103,93,1,Player 5: brown,ai,Impostor,
+web_97379997a7e04d91895f6c0e59c8d127,59116,93,1,Orange,human,Crewmate,Cyan
+web_97379997a7e04d91895f6c0e59c8d127,59118,93,1,Cyan,human,Crewmate,Orange
+web_97379997a7e04d91895f6c0e59c8d127,59581,148,2,Player 3: white,ai,Crewmate,
+web_97379997a7e04d91895f6c0e59c8d127,59582,148,2,Player 5: brown,ai,Impostor,
+web_97379997a7e04d91895f6c0e59c8d127,59594,148,2,Orange,human,Crewmate,Player 5: brown
+web_974bc44df3d54ed7adf9aed80d10f84f,68740,40,1,Player 4: blue,ai,Crewmate,
+web_974bc44df3d54ed7adf9aed80d10f84f,68741,40,1,Player 3: red,ai,Impostor,Black
+web_974bc44df3d54ed7adf9aed80d10f84f,68751,40,1,White,human,Crewmate,Player 3: red
+web_974bc44df3d54ed7adf9aed80d10f84f,68756,40,1,Black,human,Crewmate,Player 3: red
+web_97e6138a6b6b4c759934fdb81de1033e,44997,54,1,Player 3: cyan,ai,Impostor,
+web_97e6138a6b6b4c759934fdb81de1033e,44998,54,1,Player 5: black,ai,Crewmate,
+web_97e6138a6b6b4c759934fdb81de1033e,44999,54,1,Player 4: lime,ai,Crewmate,
+web_97e6138a6b6b4c759934fdb81de1033e,45005,54,1,Purple,human,Crewmate,
+web_97e6138a6b6b4c759934fdb81de1033e,45139,58,2,Player 5: black,ai,Crewmate,Purple
+web_97e6138a6b6b4c759934fdb81de1033e,45140,58,2,Player 3: cyan,ai,Impostor,Purple
+web_97e6138a6b6b4c759934fdb81de1033e,45141,58,2,Player 4: lime,ai,Crewmate,
+web_97e6138a6b6b4c759934fdb81de1033e,45172,58,2,Purple,human,Crewmate,
+web_98b3029f29cb413f97d17c0a064ed0ff,41821,1,1,Player 5: brown,ai,Impostor,
+web_98b3029f29cb413f97d17c0a064ed0ff,41827,1,1,Purple,human,Crewmate,Player 5: brown
+web_98b3029f29cb413f97d17c0a064ed0ff,41831,1,1,Red,human,Crewmate,
+web_98b3029f29cb413f97d17c0a064ed0ff,41837,1,1,White,human,Crewmate,Player 5: brown
+web_98b3029f29cb413f97d17c0a064ed0ff,41865,1,1,Cyan,human,Crewmate,
+web_9a4e1eeda2b54edea9361ce1e7f60e02,87023,75,1,Player 4: red,ai,Crewmate,
+web_9a4e1eeda2b54edea9361ce1e7f60e02,87025,75,1,Player 5: lime,ai,Impostor,
+web_9a4e1eeda2b54edea9361ce1e7f60e02,87027,75,1,Player 2: yellow,ai,Crewmate,
+web_9b5a21d1912541a3904f4bdc240d0f21,57254,59,1,Player 2: brown,ai,Crewmate,Player 4: black
+web_9b5a21d1912541a3904f4bdc240d0f21,57255,59,1,Player 3: lime,ai,Crewmate,Player 4: black
+web_9b5a21d1912541a3904f4bdc240d0f21,57257,59,1,Player 4: black,ai,Impostor,
+web_9b5a21d1912541a3904f4bdc240d0f21,57264,59,1,Orange,human,Crewmate,Player 4: black
+web_9bb053d1e8c64763b9cda6cb63dd96f0,27531,1,1,Pink,human,Crewmate,Green
+web_9bb053d1e8c64763b9cda6cb63dd96f0,27540,1,1,Green,human,Crewmate,
+web_9bb053d1e8c64763b9cda6cb63dd96f0,27544,1,1,Brown,human,Crewmate,White
+web_9bb053d1e8c64763b9cda6cb63dd96f0,27551,1,1,Red,human,Crewmate,Pink
+web_9bb053d1e8c64763b9cda6cb63dd96f0,27592,1,1,White,human,Impostor,
+web_9bb053d1e8c64763b9cda6cb63dd96f0,27890,3,2,Pink,human,Crewmate,Green
+web_9bb053d1e8c64763b9cda6cb63dd96f0,27892,3,2,Green,human,Crewmate,Pink
+web_9bb053d1e8c64763b9cda6cb63dd96f0,27900,3,2,White,human,Impostor,Pink
+web_9bb053d1e8c64763b9cda6cb63dd96f0,27903,3,2,Red,human,Crewmate,Pink
+web_9bb053d1e8c64763b9cda6cb63dd96f0,27911,3,2,Brown,human,Crewmate,Pink
+web_9bbceba895b2493bb4ba01869b4cb609,23360,1,1,Player 5: yellow,ai,Crewmate,Orange
+web_9bbceba895b2493bb4ba01869b4cb609,23364,1,1,Orange,human,Impostor,Black
+web_9bbceba895b2493bb4ba01869b4cb609,23366,1,1,Black,human,Crewmate,Blue
+web_9bbceba895b2493bb4ba01869b4cb609,23368,1,1,Green,human,Crewmate,Orange
+web_9bc23b57041349b996dbed79e99c5b9d,23695,42,1,Red,human,Crewmate,Purple
+web_9bc23b57041349b996dbed79e99c5b9d,23697,42,1,Brown,human,Crewmate,Purple
+web_9bc23b57041349b996dbed79e99c5b9d,23699,42,1,White,human,Crewmate,Red
+web_9bc23b57041349b996dbed79e99c5b9d,23733,42,1,Purple,human,Impostor,
+web_9bc23b57041349b996dbed79e99c5b9d,23735,42,1,Yellow,human,Crewmate,
+web_9bf3e3c3702340ba8de0a5b1b68d4038,76192,25,1,Player 2: lime,ai,Impostor,
+web_9bf3e3c3702340ba8de0a5b1b68d4038,76197,25,1,Player 5: cyan,ai,Crewmate,
+web_9bf3e3c3702340ba8de0a5b1b68d4038,76209,25,1,Player 4: yellow,ai,Crewmate,
+web_9bf3e3c3702340ba8de0a5b1b68d4038,76234,25,1,Black,human,Crewmate,Player 4: yellow
+web_9caedceaf57a46499a770171c4b8801d,64119,52,1,Player 3: white,ai,Impostor,
+web_9caedceaf57a46499a770171c4b8801d,64122,52,1,Player 4: green,ai,Crewmate,
+web_9caedceaf57a46499a770171c4b8801d,64137,52,1,Pink,human,Crewmate,Player 3: white
+web_9caedceaf57a46499a770171c4b8801d,64147,52,1,Black,human,Crewmate,
+web_9ceae6def56e41209bc65c9193097dfe,58044,56,1,Player 4: red,ai,Crewmate,Orange
+web_9ceae6def56e41209bc65c9193097dfe,58046,56,1,Yellow,human,Crewmate,Orange
+web_9ceae6def56e41209bc65c9193097dfe,58048,56,1,Black,human,Crewmate,Yellow
+web_9ceae6def56e41209bc65c9193097dfe,58050,56,1,Orange,human,Impostor,Yellow
+web_9ceae6def56e41209bc65c9193097dfe,58335,74,2,Player 4: red,ai,Crewmate,Yellow
+web_9ceae6def56e41209bc65c9193097dfe,58345,74,2,Yellow,human,Crewmate,Orange
+web_9ceae6def56e41209bc65c9193097dfe,58349,74,2,Orange,human,Impostor,Yellow
+web_9d35d9e5117940abbce287c9318cf97a,48744,15,1,Blue,human,Crewmate,
+web_9d35d9e5117940abbce287c9318cf97a,48751,15,1,Green,human,Crewmate,Purple
+web_9d35d9e5117940abbce287c9318cf97a,48755,15,1,Purple,human,Impostor,Green
+web_9d35d9e5117940abbce287c9318cf97a,48762,15,1,Orange,human,Crewmate,Purple
+web_9d445bbd28904f5889f24b0aa5f8fa0f,50186,13,1,Yellow,human,Crewmate,Orange
+web_9d445bbd28904f5889f24b0aa5f8fa0f,50189,13,1,Red,human,Crewmate,Orange
+web_9d445bbd28904f5889f24b0aa5f8fa0f,50193,13,1,Blue,human,Impostor,Orange
+web_9d445bbd28904f5889f24b0aa5f8fa0f,50246,13,1,Orange,human,Crewmate,
+web_9dece793cc5a4dd7955304d39b5450e4,8901,105,1,Red,human,Crewmate,
+web_9dece793cc5a4dd7955304d39b5450e4,8903,105,1,Yellow,human,Crewmate,Black
+web_9dece793cc5a4dd7955304d39b5450e4,8906,105,1,Pink,human,Impostor,
+web_9dece793cc5a4dd7955304d39b5450e4,8910,105,1,Lime,human,Crewmate,Pink
+web_9dece793cc5a4dd7955304d39b5450e4,8915,105,1,Black,human,Crewmate,
+web_9dece793cc5a4dd7955304d39b5450e4,9440,154,2,Yellow,human,Crewmate,Pink
+web_9dece793cc5a4dd7955304d39b5450e4,9442,154,2,Lime,human,Crewmate,Pink
+web_9dece793cc5a4dd7955304d39b5450e4,9444,154,2,Pink,human,Impostor,Yellow
+web_9e2ad643c81841338aa146d27caba3a2,82827,35,1,Player 3: black,ai,Crewmate,Player 5: green
+web_9e2ad643c81841338aa146d27caba3a2,82830,35,1,Player 4: red,ai,Crewmate,Player 5: green
+web_9e2ad643c81841338aa146d27caba3a2,82831,35,1,Player 5: green,ai,Impostor,Player 3: black
+web_9e2ad643c81841338aa146d27caba3a2,82841,35,1,Orange,human,Crewmate,Player 5: green
+web_9e54f9dfcbc7417c9ef2979bae93f226,56317,14,1,Player 2: purple,ai,Impostor,
+web_9e54f9dfcbc7417c9ef2979bae93f226,56320,14,1,Player 5: lime,ai,Crewmate,
+web_9e54f9dfcbc7417c9ef2979bae93f226,56335,14,1,White,human,Crewmate,Red
+web_9e54f9dfcbc7417c9ef2979bae93f226,56342,14,1,Red,human,Crewmate,
+web_9e848de4968c4f6abbf5cc2ca58366ac,44628,38,1,Player 2: green,ai,Crewmate,Player 4: white
+web_9e848de4968c4f6abbf5cc2ca58366ac,44629,38,1,Player 3: brown,ai,Crewmate,
+web_9e848de4968c4f6abbf5cc2ca58366ac,44630,38,1,Player 4: white,ai,Impostor,Player 2: green
+web_9e848de4968c4f6abbf5cc2ca58366ac,44631,38,1,Player 5: red,ai,Crewmate,
+web_9e848de4968c4f6abbf5cc2ca58366ac,44661,41,2,Player 2: green,ai,Crewmate,Player 4: white
+web_9e848de4968c4f6abbf5cc2ca58366ac,44662,41,2,Player 5: red,ai,Crewmate,Player 4: white
+web_9e848de4968c4f6abbf5cc2ca58366ac,44663,41,2,Player 3: brown,ai,Crewmate,
+web_9e848de4968c4f6abbf5cc2ca58366ac,44664,41,2,Player 4: white,ai,Impostor,
+web_9e907cc9869a44cfb750e90072e83389,50946,59,1,Player 3: blue,ai,Crewmate,
+web_9e907cc9869a44cfb750e90072e83389,50956,59,1,Lime,human,Impostor,Player 3: blue
+web_9e907cc9869a44cfb750e90072e83389,50958,59,1,Cyan,human,Crewmate,Lime
+web_9e907cc9869a44cfb750e90072e83389,50960,59,1,Purple,human,Crewmate,Lime
+web_9ed9366866c64468aaa5677e831744c5,76435,86,1,Player 4: purple,ai,Crewmate,
+web_9ed9366866c64468aaa5677e831744c5,76437,86,1,Player 5: orange,ai,Crewmate,
+web_9ed9366866c64468aaa5677e831744c5,76462,86,1,Brown,human,Crewmate,Yellow
+web_9ed9366866c64468aaa5677e831744c5,76475,86,1,Yellow,human,Impostor,Brown
+web_9ed9366866c64468aaa5677e831744c5,77042,89,2,Player 4: purple,ai,Crewmate,
+web_9ed9366866c64468aaa5677e831744c5,77043,89,2,Player 5: orange,ai,Crewmate,
+web_9ed9366866c64468aaa5677e831744c5,77060,89,2,Brown,human,Crewmate,Yellow
+web_9ed9366866c64468aaa5677e831744c5,77073,89,2,Yellow,human,Impostor,Player 5: orange
+web_9ed9366866c64468aaa5677e831744c5,77864,124,3,Player 4: purple,ai,Crewmate,
+web_9ed9366866c64468aaa5677e831744c5,77876,124,3,Brown,human,Crewmate,Yellow
+web_9ed9366866c64468aaa5677e831744c5,77883,124,3,Yellow,human,Impostor,Brown
+web_9ef9bee0c68a430d93b6d2b85c9a83e2,7352,29,1,Black,human,Crewmate,Yellow
+web_9ef9bee0c68a430d93b6d2b85c9a83e2,7360,29,1,Green,human,Crewmate,Yellow
+web_9ef9bee0c68a430d93b6d2b85c9a83e2,7362,29,1,Yellow,human,Impostor,Green
+web_9f0fd90a26c44d819933a064046b6525,28438,45,1,Brown,human,Crewmate,Purple
+web_9f0fd90a26c44d819933a064046b6525,28474,45,1,Purple,human,Crewmate,Red
+web_9f0fd90a26c44d819933a064046b6525,28501,45,1,Red,human,Impostor,
+web_9f46ec93204a4267839ef125cfdd9a65,85506,27,1,Player 5: green,ai,Crewmate,Player 2: yellow
+web_9f46ec93204a4267839ef125cfdd9a65,85513,27,1,Player 2: yellow,ai,Impostor,Player 3: white
+web_9f46ec93204a4267839ef125cfdd9a65,85514,27,1,Player 4: brown,ai,Crewmate,Player 2: yellow
+web_9f46ec93204a4267839ef125cfdd9a65,85516,27,1,Player 3: white,ai,Crewmate,Player 2: yellow
+web_a00954b61fc94047bb1aae8d641a5cf4,48101,42,1,Purple,human,Crewmate,Cyan
+web_a00954b61fc94047bb1aae8d641a5cf4,48103,42,1,Red,human,Impostor,Purple
+web_a00954b61fc94047bb1aae8d641a5cf4,48107,42,1,Cyan,human,Crewmate,Purple
+web_a143882f989045d8b7b8ade9c08c6e68,45890,44,1,Player 4: cyan,ai,Crewmate,
+web_a143882f989045d8b7b8ade9c08c6e68,45908,44,1,Purple,human,Crewmate,Yellow
+web_a143882f989045d8b7b8ade9c08c6e68,45936,44,1,Yellow,human,Impostor,
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,49549,18,1,Player 4: blue,ai,Crewmate,Green
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,49559,18,1,White,human,Crewmate,
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,49567,18,1,Red,human,Crewmate,Green
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,49587,18,1,Orange,human,Crewmate,Player 4: blue
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,49599,18,1,Green,human,Impostor,Player 4: blue
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,49946,20,2,Player 4: blue,ai,Crewmate,
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,49958,20,2,Orange,human,Crewmate,Player 4: blue
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,49962,20,2,White,human,Crewmate,Player 4: blue
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,49969,20,2,Red,human,Crewmate,Player 4: blue
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,49971,20,2,Green,human,Impostor,Player 4: blue
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,50746,84,3,Orange,human,Crewmate,Green
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,50749,84,3,Green,human,Impostor,White
+web_a1ddbf87bff34b4299a3c3c4fa0c50f2,50755,84,3,White,human,Crewmate,Green
+web_a250047c93cb49b8af6480c468408d38,78116,37,1,Player 5: brown,ai,Crewmate,
+web_a250047c93cb49b8af6480c468408d38,78118,37,1,Player 3: orange,ai,Crewmate,
+web_a250047c93cb49b8af6480c468408d38,78123,37,1,Player 2: red,ai,Impostor,
+web_a250047c93cb49b8af6480c468408d38,78145,37,1,Pink,human,Crewmate,Player 2: red
+web_a250047c93cb49b8af6480c468408d38,78156,37,1,Cyan,human,Crewmate,Player 2: red
+web_a2c7dc71aac74c3382cec02ff849c8d7,12237,5,1,Brown,human,Crewmate,Orange
+web_a2c7dc71aac74c3382cec02ff849c8d7,12240,5,1,Red,human,Impostor,Orange
+web_a2c7dc71aac74c3382cec02ff849c8d7,12243,5,1,Orange,human,Crewmate,Brown
+web_a2c9f970d7424787ae969948596b04a2,83531,26,1,Player 3: blue,ai,Crewmate,Player 4: black
+web_a2c9f970d7424787ae969948596b04a2,83536,26,1,Player 2: red,ai,Crewmate,Player 4: black
+web_a2c9f970d7424787ae969948596b04a2,83537,26,1,Player 4: black,ai,Impostor,Player 3: blue
+web_a2c9f970d7424787ae969948596b04a2,83539,26,1,Player 5: cyan,ai,Crewmate,
+web_a37d7d141a114ce6a7b22d21be8a2a88,70533,131,1,Player 5: lime,ai,Impostor,
+web_a37d7d141a114ce6a7b22d21be8a2a88,70540,131,1,Player 3: white,ai,Crewmate,
+web_a37d7d141a114ce6a7b22d21be8a2a88,70593,131,1,Orange,human,Crewmate,Blue
+web_a37d7d141a114ce6a7b22d21be8a2a88,70638,131,1,Blue,human,Crewmate,
+web_a3e21c08be4a41389d753ea56f63dc6f,70678,13,1,Player 5: brown,ai,Impostor,Player 3: black
+web_a3e21c08be4a41389d753ea56f63dc6f,70679,13,1,Player 3: black,ai,Crewmate,
+web_a3e21c08be4a41389d753ea56f63dc6f,70700,13,1,Lime,human,Crewmate,Player 5: brown
+web_a432c17dd40b4282a1c944a7e4d75d2b,73449,43,1,Player 4: orange,ai,Crewmate,
+web_a432c17dd40b4282a1c944a7e4d75d2b,73450,43,1,Player 2: black,ai,Impostor,
+web_a432c17dd40b4282a1c944a7e4d75d2b,73481,43,1,Pink,human,Crewmate,Player 4: orange
+web_a432c17dd40b4282a1c944a7e4d75d2b,73508,43,1,Cyan,human,Crewmate,Player 4: orange
+web_a432c17dd40b4282a1c944a7e4d75d2b,73985,45,2,Player 2: black,ai,Impostor,Pink
+web_a432c17dd40b4282a1c944a7e4d75d2b,74004,45,2,Cyan,human,Crewmate,Player 2: black
+web_a432c17dd40b4282a1c944a7e4d75d2b,74017,45,2,Pink,human,Crewmate,Cyan
+web_a48f551d76a4415f87050a4b52a7b127,39097,23,1,Player 5: cyan,ai,Crewmate,Player 4: orange
+web_a48f551d76a4415f87050a4b52a7b127,39099,23,1,Player 4: orange,ai,Crewmate,
+web_a48f551d76a4415f87050a4b52a7b127,39120,23,1,Black,human,Impostor,Player 4: orange
+web_a48f551d76a4415f87050a4b52a7b127,39135,23,1,Pink,human,Crewmate,Player 4: orange
+web_a555b7917dc0403fb0f3dbe99e12c2e2,9383,38,1,Player 4: red,ai,Crewmate,
+web_a555b7917dc0403fb0f3dbe99e12c2e2,9384,38,1,Player 3: cyan,ai,Crewmate,
+web_a555b7917dc0403fb0f3dbe99e12c2e2,9385,38,1,Player 2: yellow,ai,Crewmate,Pink
+web_a555b7917dc0403fb0f3dbe99e12c2e2,9401,38,1,Pink,human,Impostor,Player 3: cyan
+web_a555b7917dc0403fb0f3dbe99e12c2e2,9654,42,2,Player 2: yellow,ai,Crewmate,Pink
+web_a555b7917dc0403fb0f3dbe99e12c2e2,9656,42,2,Player 3: cyan,ai,Crewmate,
+web_a555b7917dc0403fb0f3dbe99e12c2e2,9658,42,2,Player 4: red,ai,Crewmate,
+web_a555b7917dc0403fb0f3dbe99e12c2e2,9677,42,2,Pink,human,Impostor,Player 4: red
+web_a555b7917dc0403fb0f3dbe99e12c2e2,10289,90,3,Player 3: cyan,ai,Crewmate,Pink
+web_a555b7917dc0403fb0f3dbe99e12c2e2,10290,90,3,Player 2: yellow,ai,Crewmate,Pink
+web_a555b7917dc0403fb0f3dbe99e12c2e2,10308,90,3,Pink,human,Impostor,Player 3: cyan
+web_a595ff2c55d04ffcbf44cd5a33f0ab64,49005,28,1,Player 2: purple,ai,Crewmate,
+web_a595ff2c55d04ffcbf44cd5a33f0ab64,49014,28,1,Blue,human,Crewmate,Brown
+web_a595ff2c55d04ffcbf44cd5a33f0ab64,49017,28,1,Brown,human,Impostor,Blue
+web_a595ff2c55d04ffcbf44cd5a33f0ab64,49024,28,1,White,human,Crewmate,Blue
+web_a595ff2c55d04ffcbf44cd5a33f0ab64,49026,28,1,Cyan,human,Crewmate,Brown
+web_a595ff2c55d04ffcbf44cd5a33f0ab64,49750,103,2,Brown,human,Impostor,Cyan
+web_a595ff2c55d04ffcbf44cd5a33f0ab64,49752,103,2,White,human,Crewmate,Brown
+web_a595ff2c55d04ffcbf44cd5a33f0ab64,49754,103,2,Cyan,human,Crewmate,White
+web_a84e54d7400148019644a9b8d3d48f81,17379,11,1,Player 5: yellow,ai,Crewmate,Blue
+web_a84e54d7400148019644a9b8d3d48f81,17380,11,1,Player 4: lime,ai,Impostor,Blue
+web_a84e54d7400148019644a9b8d3d48f81,17391,11,1,Orange,human,Crewmate,Blue
+web_a84e54d7400148019644a9b8d3d48f81,17401,11,1,Black,human,Crewmate,Blue
+web_a84e54d7400148019644a9b8d3d48f81,17410,11,1,Blue,human,Crewmate,Player 4: lime
+web_a89933b92d2448079bf11f9812be09a6,67617,12,1,Player 5: white,ai,Crewmate,Red
+web_a89933b92d2448079bf11f9812be09a6,67619,12,1,Player 2: yellow,ai,Crewmate,Red
+web_a89933b92d2448079bf11f9812be09a6,67627,12,1,Purple,human,Crewmate,Red
+web_a89933b92d2448079bf11f9812be09a6,67629,12,1,Pink,human,Crewmate,Red
+web_a89933b92d2448079bf11f9812be09a6,67643,12,1,Red,human,Impostor,Player 2: yellow
+web_a93ccee78a5549a8821a2dd7a50df572,66971,107,1,Player 4: yellow,ai,Impostor,
+web_a93ccee78a5549a8821a2dd7a50df572,66982,107,1,Orange,human,Crewmate,Player 4: yellow
+web_a93ccee78a5549a8821a2dd7a50df572,66984,107,1,Brown,human,Crewmate,Orange
+web_a93ccee78a5549a8821a2dd7a50df572,66990,107,1,Blue,human,Crewmate,Orange
+web_aa5c5483bcab43f2b7c608fc71d01754,78654,1,1,Player 3: orange,ai,Crewmate,
+web_aa5c5483bcab43f2b7c608fc71d01754,78655,1,1,Player 4: white,ai,Crewmate,
+web_aa5c5483bcab43f2b7c608fc71d01754,78656,1,1,Player 5: brown,ai,Crewmate,
+web_aa5c5483bcab43f2b7c608fc71d01754,78671,1,1,Blue,human,Impostor,Cyan
+web_aa5c5483bcab43f2b7c608fc71d01754,78675,1,1,Cyan,human,Crewmate,
+web_aa5c5483bcab43f2b7c608fc71d01754,79105,21,2,Player 3: orange,ai,Crewmate,Blue
+web_aa5c5483bcab43f2b7c608fc71d01754,79107,21,2,Player 4: white,ai,Crewmate,
+web_aa5c5483bcab43f2b7c608fc71d01754,79117,21,2,Blue,human,Impostor,Player 3: orange
+web_aad846996cbe4916bea2c74192bb4955,13944,25,1,Player 4: red,ai,Crewmate,Player 3: brown
+web_aad846996cbe4916bea2c74192bb4955,13945,25,1,Player 2: purple,ai,Crewmate,
+web_aad846996cbe4916bea2c74192bb4955,13946,25,1,Player 5: green,ai,Crewmate,
+web_aad846996cbe4916bea2c74192bb4955,13948,25,1,Player 3: brown,ai,Impostor,Player 4: red
+web_aad846996cbe4916bea2c74192bb4955,14039,29,2,Player 3: brown,ai,Impostor,Player 5: green
+web_aad846996cbe4916bea2c74192bb4955,14040,29,2,Player 4: red,ai,Crewmate,
+web_aad846996cbe4916bea2c74192bb4955,14041,29,2,Player 5: green,ai,Crewmate,Player 3: brown
+web_aad846996cbe4916bea2c74192bb4955,14042,29,2,Player 2: purple,ai,Crewmate,
+web_aad846996cbe4916bea2c74192bb4955,14380,88,3,Player 4: red,ai,Crewmate,Player 3: brown
+web_aad846996cbe4916bea2c74192bb4955,14381,88,3,Player 2: purple,ai,Crewmate,
+web_aad846996cbe4916bea2c74192bb4955,14382,88,3,Player 3: brown,ai,Impostor,Player 4: red
+web_ab73148b78984744954c9c1f469de935,84681,29,1,Player 4: pink,ai,Crewmate,Brown
+web_ab73148b78984744954c9c1f469de935,84682,29,1,Player 3: black,ai,Crewmate,Brown
+web_ab73148b78984744954c9c1f469de935,84685,29,1,Player 5: white,ai,Impostor,Brown
+web_ab73148b78984744954c9c1f469de935,84686,29,1,Player 2: blue,ai,Crewmate,Brown
+web_ab73148b78984744954c9c1f469de935,84700,29,1,Brown,human,Crewmate,Player 2: blue
+web_ac3ce232f62d4078ba02936f5f416951,38001,85,1,Player 5: brown,ai,Crewmate,Pink
+web_ac3ce232f62d4078ba02936f5f416951,38021,85,1,Red,human,Impostor,Pink
+web_ac3ce232f62d4078ba02936f5f416951,38031,85,1,Lime,human,Crewmate,Pink
+web_ac3ce232f62d4078ba02936f5f416951,38033,85,1,Pink,human,Crewmate,
+web_ac3ce232f62d4078ba02936f5f416951,38051,85,1,Blue,human,Crewmate,Pink
+web_ac3ce232f62d4078ba02936f5f416951,38974,162,2,Player 5: brown,ai,Crewmate,
+web_ac3ce232f62d4078ba02936f5f416951,38980,162,2,Lime,human,Crewmate,Red
+web_ac3ce232f62d4078ba02936f5f416951,38986,162,2,Red,human,Impostor,Player 5: brown
+web_ac3ce232f62d4078ba02936f5f416951,39003,162,2,Blue,human,Crewmate,
+web_acac9e6675e144f492b9777b04203952,52916,131,1,Player 3: yellow,ai,Impostor,Blue
+web_acac9e6675e144f492b9777b04203952,52940,131,1,Blue,human,Crewmate,Player 3: yellow
+web_acac9e6675e144f492b9777b04203952,52972,131,1,Cyan,human,Crewmate,
+web_acac9e6675e144f492b9777b04203952,53449,136,2,Player 3: yellow,ai,Impostor,Blue
+web_acac9e6675e144f492b9777b04203952,53456,136,2,Blue,human,Crewmate,Player 3: yellow
+web_acac9e6675e144f492b9777b04203952,53458,136,2,Cyan,human,Crewmate,Blue
+web_acbbef5648c5404c97170b2d0584bacb,70484,101,1,Player 3: red,ai,Impostor,
+web_acbbef5648c5404c97170b2d0584bacb,70493,101,1,Player 2: white,ai,Crewmate,
+web_acbbef5648c5404c97170b2d0584bacb,70536,101,1,Yellow,human,Crewmate,Player 2: white
+web_ad26303b67b54945ba2b0dab7754a88d,16391,30,1,Green,human,Crewmate,Brown
+web_ad26303b67b54945ba2b0dab7754a88d,16395,30,1,Red,human,Impostor,
+web_ad26303b67b54945ba2b0dab7754a88d,16397,30,1,Brown,human,Crewmate,Green
+web_ad26303b67b54945ba2b0dab7754a88d,16401,30,1,Pink,human,Crewmate,Green
+web_ad26303b67b54945ba2b0dab7754a88d,16610,45,2,Pink,human,Crewmate,Red
+web_ad26303b67b54945ba2b0dab7754a88d,16617,45,2,Red,human,Impostor,Brown
+web_ad26303b67b54945ba2b0dab7754a88d,16619,45,2,Brown,human,Crewmate,Pink
+web_adc7f592b85442f4be1743c4b9871ce1,39511,29,1,Player 5: cyan,ai,Crewmate,Player 3: black
+web_adc7f592b85442f4be1743c4b9871ce1,39512,29,1,Player 3: black,ai,Impostor,Player 5: cyan
+web_adc7f592b85442f4be1743c4b9871ce1,39526,29,1,Pink,human,Crewmate,Player 3: black
+web_adc7f592b85442f4be1743c4b9871ce1,39528,29,1,White,human,Crewmate,Player 3: black
+web_ae2271ef83a74f43a6a49af94dae5aed,74213,95,1,Player 2: green,ai,Crewmate,
+web_ae2271ef83a74f43a6a49af94dae5aed,74214,95,1,Player 4: orange,ai,Impostor,Player 5: brown
+web_ae2271ef83a74f43a6a49af94dae5aed,74218,95,1,Player 5: brown,ai,Crewmate,
+web_ae2271ef83a74f43a6a49af94dae5aed,74233,95,1,Red,human,Crewmate,Player 5: brown
+web_ae2271ef83a74f43a6a49af94dae5aed,74235,95,1,Purple,human,Crewmate,Player 5: brown
+web_ae2271ef83a74f43a6a49af94dae5aed,74693,97,2,Player 4: orange,ai,Impostor,Red
+web_ae2271ef83a74f43a6a49af94dae5aed,74694,97,2,Player 2: green,ai,Crewmate,
+web_ae2271ef83a74f43a6a49af94dae5aed,74712,97,2,Red,human,Crewmate,Player 4: orange
+web_ae2271ef83a74f43a6a49af94dae5aed,74715,97,2,Purple,human,Crewmate,Red
+web_ae372a14c46d412aadc97b688e696c8f,18668,127,1,Purple,human,Crewmate,Brown
+web_ae372a14c46d412aadc97b688e696c8f,18671,127,1,Lime,human,Crewmate,White
+web_ae372a14c46d412aadc97b688e696c8f,18677,127,1,Brown,human,Impostor,
+web_ae372a14c46d412aadc97b688e696c8f,18680,127,1,Black,human,Crewmate,Brown
+web_ae372a14c46d412aadc97b688e696c8f,18682,127,1,White,human,Crewmate,Lime
+web_af718c36ede046bfa782f1c8e7f9dd6a,26061,8,1,Brown,human,Crewmate,Purple
+web_af718c36ede046bfa782f1c8e7f9dd6a,26065,8,1,Purple,human,Impostor,Lime
+web_af718c36ede046bfa782f1c8e7f9dd6a,26067,8,1,White,human,Crewmate,Purple
+web_af718c36ede046bfa782f1c8e7f9dd6a,26073,8,1,Lime,human,Crewmate,White
+web_af718c36ede046bfa782f1c8e7f9dd6a,26075,8,1,Red,human,Crewmate,Lime
+web_af718c36ede046bfa782f1c8e7f9dd6a,26484,13,2,Purple,human,Impostor,Red
+web_af718c36ede046bfa782f1c8e7f9dd6a,26493,13,2,White,human,Crewmate,Lime
+web_af718c36ede046bfa782f1c8e7f9dd6a,26495,13,2,Lime,human,Crewmate,Purple
+web_af718c36ede046bfa782f1c8e7f9dd6a,26508,13,2,Red,human,Crewmate,Purple
+web_afb5e2d989dc45a88949139b8254e34b,84655,77,1,Player 3: green,ai,Impostor,
+web_afb5e2d989dc45a88949139b8254e34b,84656,77,1,Player 5: orange,ai,Crewmate,
+web_afb5e2d989dc45a88949139b8254e34b,84661,77,1,Brown,human,Crewmate,Player 5: orange
+web_afe4ae8124e34197bb385f8a95fbcbca,41373,10,1,Player 3: blue,ai,Crewmate,
+web_afe4ae8124e34197bb385f8a95fbcbca,41378,10,1,Orange,human,Impostor,Brown
+web_afe4ae8124e34197bb385f8a95fbcbca,41380,10,1,Purple,human,Crewmate,Brown
+web_afe4ae8124e34197bb385f8a95fbcbca,41390,10,1,Green,human,Crewmate,Orange
+web_afe4ae8124e34197bb385f8a95fbcbca,41404,10,1,Brown,human,Crewmate,
+web_afe4ae8124e34197bb385f8a95fbcbca,41553,14,2,Player 3: blue,ai,Crewmate,
+web_afe4ae8124e34197bb385f8a95fbcbca,41558,14,2,Orange,human,Impostor,Player 3: blue
+web_afe4ae8124e34197bb385f8a95fbcbca,41567,14,2,Purple,human,Crewmate,Player 3: blue
+web_b22b91f82a0443cbb0febbb1458b3a2e,79114,51,1,Player 4: yellow,ai,Crewmate,
+web_b22b91f82a0443cbb0febbb1458b3a2e,79115,51,1,Player 2: lime,ai,Impostor,
+web_b22b91f82a0443cbb0febbb1458b3a2e,79116,51,1,Player 3: brown,ai,Crewmate,
+web_b25ecffc495245588619d4f49988e2a0,76298,78,1,Player 2: pink,ai,Impostor,
+web_b25ecffc495245588619d4f49988e2a0,76302,78,1,Player 5: orange,ai,Crewmate,
+web_b25ecffc495245588619d4f49988e2a0,76303,78,1,Player 4: green,ai,Crewmate,
+web_b25ecffc495245588619d4f49988e2a0,76342,78,1,Yellow,human,Crewmate,Player 5: orange
+web_b29b3607b2cc43058bdac9c8f6c3c137,68580,37,1,Player 2: white,ai,Crewmate,
+web_b29b3607b2cc43058bdac9c8f6c3c137,68584,37,1,Orange,human,Crewmate,Player 2: white
+web_b29b3607b2cc43058bdac9c8f6c3c137,68590,37,1,Red,human,Impostor,
+web_b29b3607b2cc43058bdac9c8f6c3c137,68595,37,1,Blue,human,Crewmate,
+web_b31e6fb5aad043ac955a10250c00e755,80066,33,1,Player 4: orange,ai,Impostor,
+web_b31e6fb5aad043ac955a10250c00e755,80067,33,1,Player 2: pink,ai,Crewmate,
+web_b31e6fb5aad043ac955a10250c00e755,80069,33,1,Player 3: lime,ai,Crewmate,
+web_b31e6fb5aad043ac955a10250c00e755,80087,33,1,Blue,human,Crewmate,Player 3: lime
+web_b35c1b5358b3447cb7e1ff3b197d2323,53569,53,1,Player 3: white,ai,Impostor,Orange
+web_b35c1b5358b3447cb7e1ff3b197d2323,53586,53,1,Red,human,Crewmate,Player 3: white
+web_b35c1b5358b3447cb7e1ff3b197d2323,53591,53,1,Black,human,Crewmate,Player 3: white
+web_b35c1b5358b3447cb7e1ff3b197d2323,53593,53,1,Orange,human,Crewmate,Player 3: white
+web_b3f4e2afddae46a29a98b3ea26e70de3,25866,68,1,Brown,human,Crewmate,Yellow
+web_b3f4e2afddae46a29a98b3ea26e70de3,25868,68,1,Yellow,human,Impostor,
+web_b3f4e2afddae46a29a98b3ea26e70de3,25870,68,1,Cyan,human,Crewmate,
+web_b3f4e2afddae46a29a98b3ea26e70de3,25879,68,1,White,human,Crewmate,
+web_b3f4e2afddae46a29a98b3ea26e70de3,25886,68,1,Orange,human,Crewmate,White
+web_b3f4e2afddae46a29a98b3ea26e70de3,26302,74,2,Cyan,human,Crewmate,Yellow
+web_b3f4e2afddae46a29a98b3ea26e70de3,26304,74,2,Brown,human,Crewmate,Yellow
+web_b3f4e2afddae46a29a98b3ea26e70de3,26312,74,2,Yellow,human,Impostor,Brown
+web_b3f4e2afddae46a29a98b3ea26e70de3,26315,74,2,Orange,human,Crewmate,Yellow
+web_b3f4e2afddae46a29a98b3ea26e70de3,26322,74,2,White,human,Crewmate,Yellow
+web_b4b481d459a04211b255e4ab7d492c09,12755,32,1,Player 2: white,ai,Crewmate,
+web_b4b481d459a04211b255e4ab7d492c09,12756,32,1,Player 3: blue,ai,Crewmate,Lime
+web_b4b481d459a04211b255e4ab7d492c09,12757,32,1,Player 5: pink,ai,Crewmate,
+web_b4b481d459a04211b255e4ab7d492c09,12761,32,1,Lime,human,Impostor,Player 5: pink
+web_b4b481d459a04211b255e4ab7d492c09,12796,35,2,Player 3: blue,ai,Crewmate,Lime
+web_b4b481d459a04211b255e4ab7d492c09,12797,35,2,Player 5: pink,ai,Crewmate,
+web_b4b481d459a04211b255e4ab7d492c09,12798,35,2,Player 2: white,ai,Crewmate,Lime
+web_b4b481d459a04211b255e4ab7d492c09,12802,35,2,Lime,human,Impostor,Player 5: pink
+web_b564af9f02cf4b64bf7584ac0cc2aefc,77648,143,1,Player 5: purple,ai,Crewmate,Blue
+web_b564af9f02cf4b64bf7584ac0cc2aefc,77649,143,1,Player 3: brown,ai,Crewmate,
+web_b564af9f02cf4b64bf7584ac0cc2aefc,77686,143,1,Blue,human,Crewmate,Yellow
+web_b564af9f02cf4b64bf7584ac0cc2aefc,77689,143,1,Yellow,human,Impostor,Blue
+web_b564af9f02cf4b64bf7584ac0cc2aefc,78124,145,2,Player 3: brown,ai,Crewmate,
+web_b564af9f02cf4b64bf7584ac0cc2aefc,78127,145,2,Player 5: purple,ai,Crewmate,
+web_b564af9f02cf4b64bf7584ac0cc2aefc,78169,145,2,Yellow,human,Impostor,Player 3: brown
+web_b603bec991c24b159cb9093ca569ff99,27113,40,1,White,human,Crewmate,Cyan
+web_b603bec991c24b159cb9093ca569ff99,27117,40,1,Purple,human,Crewmate,Cyan
+web_b603bec991c24b159cb9093ca569ff99,27121,40,1,Yellow,human,Crewmate,Cyan
+web_b603bec991c24b159cb9093ca569ff99,27123,40,1,Cyan,human,Impostor,
+web_b603bec991c24b159cb9093ca569ff99,27126,40,1,Red,human,Crewmate,Cyan
+web_b6d4f61b69f14ef1a835e0c7d5682dde,34465,4,1,Pink,human,Impostor,Orange
+web_b6d4f61b69f14ef1a835e0c7d5682dde,34476,4,1,Orange,human,Crewmate,Pink
+web_b6d4f61b69f14ef1a835e0c7d5682dde,34489,4,1,Brown,human,Crewmate,Orange
+web_b6d4f61b69f14ef1a835e0c7d5682dde,34502,4,1,Green,human,Crewmate,
+web_b701f90e04b0409f8bf07f5e1af73b5a,52309,20,1,Green,human,Impostor,White
+web_b701f90e04b0409f8bf07f5e1af73b5a,52311,20,1,Blue,human,Crewmate,White
+web_b701f90e04b0409f8bf07f5e1af73b5a,52324,20,1,White,human,Crewmate,Blue
+web_b701f90e04b0409f8bf07f5e1af73b5a,52331,20,1,Pink,human,Crewmate,
+web_b701f90e04b0409f8bf07f5e1af73b5a,52741,22,2,Blue,human,Crewmate,Pink
+web_b701f90e04b0409f8bf07f5e1af73b5a,52758,22,2,Pink,human,Crewmate,Blue
+web_b701f90e04b0409f8bf07f5e1af73b5a,52764,22,2,Green,human,Impostor,Pink
+web_b80556542b04416b9f487ba259b5f39a,45352,26,1,Player 4: lime,ai,Impostor,
+web_b80556542b04416b9f487ba259b5f39a,45365,26,1,Blue,human,Crewmate,Player 4: lime
+web_b80556542b04416b9f487ba259b5f39a,45370,26,1,Brown,human,Crewmate,Player 4: lime
+web_b80556542b04416b9f487ba259b5f39a,45372,26,1,Red,human,Crewmate,Player 4: lime
+web_b842d9b8b39b43cf8188e4385fbbd6fb,87682,45,1,Player 2: brown,ai,Crewmate,Player 4: blue
+web_b842d9b8b39b43cf8188e4385fbbd6fb,87689,45,1,Player 3: green,ai,Crewmate,
+web_b842d9b8b39b43cf8188e4385fbbd6fb,87690,45,1,Player 5: red,ai,Crewmate,
+web_b842d9b8b39b43cf8188e4385fbbd6fb,87691,45,1,Player 4: blue,ai,Impostor,
+web_b8e8d1df4b10487fbc20ce3213f14b16,11116,56,1,Player 5: white,ai,Impostor,Yellow
+web_b8e8d1df4b10487fbc20ce3213f14b16,11118,56,1,Yellow,human,Crewmate,Player 5: white
+web_b8e8d1df4b10487fbc20ce3213f14b16,11120,56,1,Purple,human,Crewmate,Player 5: white
+web_b8e8d1df4b10487fbc20ce3213f14b16,11122,56,1,Pink,human,Crewmate,Player 5: white
+web_b8e8d1df4b10487fbc20ce3213f14b16,11125,56,1,Black,human,Crewmate,Player 5: white
+web_b8ed04c00bd343e29754273f05e08fce,16539,13,1,Player 5: black,ai,Crewmate,Orange
+web_b8ed04c00bd343e29754273f05e08fce,16547,13,1,Cyan,human,Crewmate,Orange
+web_b8ed04c00bd343e29754273f05e08fce,16553,13,1,Orange,human,Impostor,Player 5: black
+web_b8ed04c00bd343e29754273f05e08fce,16555,13,1,Purple,human,Crewmate,Orange
+web_b8fca897c9294d8fa8e7753fda079d07,16682,25,1,Player 4: lime,ai,Crewmate,Yellow
+web_b8fca897c9294d8fa8e7753fda079d07,16683,25,1,Player 5: green,ai,Crewmate,
+web_b8fca897c9294d8fa8e7753fda079d07,16684,25,1,Player 3: cyan,ai,Crewmate,
+web_b8fca897c9294d8fa8e7753fda079d07,16710,25,1,Yellow,human,Crewmate,White
+web_b8fca897c9294d8fa8e7753fda079d07,16723,25,1,White,human,Impostor,
+web_b8fca897c9294d8fa8e7753fda079d07,17099,41,2,Player 3: cyan,ai,Crewmate,White
+web_b8fca897c9294d8fa8e7753fda079d07,17100,41,2,Player 5: green,ai,Crewmate,White
+web_b8fca897c9294d8fa8e7753fda079d07,17102,41,2,Player 4: lime,ai,Crewmate,White
+web_b8fca897c9294d8fa8e7753fda079d07,17121,41,2,White,human,Impostor,
+web_b8fca897c9294d8fa8e7753fda079d07,17125,41,2,Yellow,human,Crewmate,White
+web_bb7ea0410c344dbbb121714ab38a6a54,32251,92,1,White,human,Impostor,Orange
+web_bb7ea0410c344dbbb121714ab38a6a54,32253,92,1,Orange,human,Crewmate,White
+web_bb7ea0410c344dbbb121714ab38a6a54,32269,92,1,Cyan,human,Crewmate,White
+web_bc327d9b1b1c4082a769b0f0b2a04fcc,81858,84,1,Player 3: brown,ai,Crewmate,
+web_bc327d9b1b1c4082a769b0f0b2a04fcc,81859,84,1,Player 2: orange,ai,Crewmate,
+web_bc327d9b1b1c4082a769b0f0b2a04fcc,81861,84,1,Player 5: pink,ai,Crewmate,
+web_bc327d9b1b1c4082a769b0f0b2a04fcc,81862,84,1,Player 4: cyan,ai,Impostor,
+web_bc327d9b1b1c4082a769b0f0b2a04fcc,82053,89,2,Player 2: orange,ai,Crewmate,Player 5: pink
+web_bc327d9b1b1c4082a769b0f0b2a04fcc,82055,89,2,Player 3: brown,ai,Crewmate,
+web_bc327d9b1b1c4082a769b0f0b2a04fcc,82056,89,2,Player 4: cyan,ai,Impostor,
+web_bc327d9b1b1c4082a769b0f0b2a04fcc,82060,89,2,Player 5: pink,ai,Crewmate,
+web_bcaec65a95634122aa21966b081c6d0c,78406,11,1,Player 3: lime,ai,Crewmate,Black
+web_bcaec65a95634122aa21966b081c6d0c,78410,11,1,Player 5: red,ai,Crewmate,
+web_bcaec65a95634122aa21966b081c6d0c,78417,11,1,Player 2: cyan,ai,Crewmate,Black
+web_bcaec65a95634122aa21966b081c6d0c,78431,11,1,Black,human,Impostor,Player 5: red
+web_be3d18bcd4034f1b8c8a153ecd2e9f93,85796,57,1,Player 3: red,ai,Crewmate,Player 5: cyan
+web_be3d18bcd4034f1b8c8a153ecd2e9f93,85798,57,1,Player 2: blue,ai,Crewmate,
+web_be3d18bcd4034f1b8c8a153ecd2e9f93,85799,57,1,Player 5: cyan,ai,Impostor,
+web_be3d18bcd4034f1b8c8a153ecd2e9f93,85814,57,1,White,human,Crewmate,Player 5: cyan
+web_bf526dd785d44ac48ff6bbcbc6aad54d,73888,57,1,Player 3: black,ai,Crewmate,Player 4: pink
+web_bf526dd785d44ac48ff6bbcbc6aad54d,73889,57,1,Player 2: lime,ai,Crewmate,
+web_bf526dd785d44ac48ff6bbcbc6aad54d,73890,57,1,Player 4: pink,ai,Impostor,
+web_bf526dd785d44ac48ff6bbcbc6aad54d,73909,57,1,White,human,Crewmate,Player 4: pink
+web_c10c6afd97074ad28c483fab0e406cc2,40130,1,1,Player 2: pink,ai,Crewmate,
+web_c10c6afd97074ad28c483fab0e406cc2,40132,1,1,Black,human,Crewmate,
+web_c10c6afd97074ad28c483fab0e406cc2,40134,1,1,White,human,Impostor,
+web_c10c6afd97074ad28c483fab0e406cc2,40138,1,1,Purple,human,Crewmate,Player 2: pink
+web_c10c6afd97074ad28c483fab0e406cc2,40143,1,1,Red,human,Crewmate,
+web_c17f60da33014d0098c75da7dd8b5e1b,84197,89,1,Player 5: pink,ai,Impostor,Player 3: white
+web_c17f60da33014d0098c75da7dd8b5e1b,84199,89,1,Player 3: white,ai,Crewmate,Player 5: pink
+web_c17f60da33014d0098c75da7dd8b5e1b,84201,89,1,Player 2: black,ai,Crewmate,
+web_c1e668a45a024baeb922f5c3e3151fe1,24002,52,1,Cyan,human,Crewmate,Green
+web_c1e668a45a024baeb922f5c3e3151fe1,24004,52,1,Green,human,Crewmate,Black
+web_c1e668a45a024baeb922f5c3e3151fe1,24009,52,1,Black,human,Crewmate,Green
+web_c1e668a45a024baeb922f5c3e3151fe1,24012,52,1,Brown,human,Crewmate,Green
+web_c1e668a45a024baeb922f5c3e3151fe1,24018,52,1,White,human,Impostor,Black
+web_c1e668a45a024baeb922f5c3e3151fe1,24404,105,2,Cyan,human,Crewmate,White
+web_c1e668a45a024baeb922f5c3e3151fe1,24408,105,2,White,human,Impostor,Brown
+web_c1e668a45a024baeb922f5c3e3151fe1,24421,105,2,Black,human,Crewmate,White
+web_c1e668a45a024baeb922f5c3e3151fe1,24433,105,2,Brown,human,Crewmate,
+web_c272c3d0572d4495ade1513a2793e147,14912,16,1,Player 5: orange,ai,Crewmate,Red
+web_c272c3d0572d4495ade1513a2793e147,14916,16,1,Brown,human,Crewmate,Player 5: orange
+web_c272c3d0572d4495ade1513a2793e147,14918,16,1,Red,human,Impostor,Player 5: orange
+web_c272c3d0572d4495ade1513a2793e147,14920,16,1,Blue,human,Crewmate,Player 5: orange
+web_c32ee3f61f6c443e810218a94ff80d47,79042,44,1,Player 3: green,ai,Crewmate,
+web_c32ee3f61f6c443e810218a94ff80d47,79044,44,1,Player 2: lime,ai,Crewmate,
+web_c32ee3f61f6c443e810218a94ff80d47,79045,44,1,Player 4: orange,ai,Impostor,
+web_c32ee3f61f6c443e810218a94ff80d47,79059,44,1,Purple,human,Crewmate,Player 4: orange
+web_c34432f02399402cb13bfcf8440c50fa,46719,14,1,Player 2: blue,ai,Impostor,Brown
+web_c34432f02399402cb13bfcf8440c50fa,46735,14,1,Cyan,human,Crewmate,Player 2: blue
+web_c34432f02399402cb13bfcf8440c50fa,46739,14,1,Brown,human,Crewmate,Player 2: blue
+web_c34432f02399402cb13bfcf8440c50fa,46743,14,1,Lime,human,Crewmate,Player 2: blue
+web_c34432f02399402cb13bfcf8440c50fa,46752,14,1,White,human,Crewmate,Brown
+web_c3d23b986d2c4d81abecb943b39250fa,44730,17,1,Player 2: orange,ai,Crewmate,Player 4: cyan
+web_c3d23b986d2c4d81abecb943b39250fa,44731,17,1,Player 4: cyan,ai,Impostor,Player 2: orange
+web_c3d23b986d2c4d81abecb943b39250fa,44732,17,1,Player 3: yellow,ai,Crewmate,
+web_c3d23b986d2c4d81abecb943b39250fa,44736,17,1,White,human,Crewmate,Player 4: cyan
+web_c4bf21c0debb4938ba87ae4baf193684,58490,39,1,Player 4: white,ai,Crewmate,Player 2: purple
+web_c4bf21c0debb4938ba87ae4baf193684,58491,39,1,Player 2: purple,ai,Impostor,Player 4: white
+web_c4bf21c0debb4938ba87ae4baf193684,58511,39,1,Black,human,Crewmate,Player 2: purple
+web_c4bf21c0debb4938ba87ae4baf193684,58523,39,1,Pink,human,Crewmate,Player 4: white
+web_c4bf21c0debb4938ba87ae4baf193684,58546,39,1,Green,human,Crewmate,Player 4: white
+web_c4bf21c0debb4938ba87ae4baf193684,58902,42,2,Player 2: purple,ai,Impostor,
+web_c4bf21c0debb4938ba87ae4baf193684,58915,42,2,Black,human,Crewmate,Player 2: purple
+web_c4bf21c0debb4938ba87ae4baf193684,58919,42,2,Green,human,Crewmate,Player 2: purple
+web_c4bf21c0debb4938ba87ae4baf193684,58921,42,2,Pink,human,Crewmate,Player 2: purple
+web_c590f81c41fd417980e41981159f92f3,68469,36,1,Player 4: lime,ai,Crewmate,
+web_c590f81c41fd417980e41981159f92f3,68472,36,1,Player 3: orange,ai,Crewmate,
+web_c590f81c41fd417980e41981159f92f3,68489,36,1,Yellow,human,Impostor,White
+web_c590f81c41fd417980e41981159f92f3,68510,36,1,White,human,Crewmate,Player 4: lime
+web_c627636f36e24dcab15fedd273ebce44,81808,81,1,Player 5: black,ai,Crewmate,Lime
+web_c627636f36e24dcab15fedd273ebce44,81809,81,1,Player 2: red,ai,Impostor,
+web_c627636f36e24dcab15fedd273ebce44,81813,81,1,Lime,human,Crewmate,Player 5: black
+web_c67a8c9818664d55b9bceaac0bfc5ed8,80326,48,1,Player 2: red,ai,Crewmate,
+web_c67a8c9818664d55b9bceaac0bfc5ed8,80328,48,1,Player 5: lime,ai,Crewmate,
+web_c67a8c9818664d55b9bceaac0bfc5ed8,80329,48,1,Player 4: cyan,ai,Impostor,
+web_c67a8c9818664d55b9bceaac0bfc5ed8,80340,48,1,Purple,human,Crewmate,Player 5: lime
+web_c67a8c9818664d55b9bceaac0bfc5ed8,80842,98,2,Player 4: cyan,ai,Impostor,Player 2: red
+web_c67a8c9818664d55b9bceaac0bfc5ed8,80844,98,2,Player 2: red,ai,Crewmate,
+web_c67a8c9818664d55b9bceaac0bfc5ed8,80858,98,2,Purple,human,Crewmate,Player 2: red
+web_c68bb855d57049cdb30554e902683e26,25700,84,1,Cyan,human,Crewmate,Yellow
+web_c68bb855d57049cdb30554e902683e26,25703,84,1,Orange,human,Crewmate,
+web_c68bb855d57049cdb30554e902683e26,25709,84,1,Yellow,human,Crewmate,Orange
+web_c68bb855d57049cdb30554e902683e26,25715,84,1,Purple,human,Impostor,
+web_c68bb855d57049cdb30554e902683e26,25733,84,1,White,human,Crewmate,Orange
+web_c695e62073a0487dba0df7c520ff9506,35191,14,1,Green,human,Impostor,Blue
+web_c695e62073a0487dba0df7c520ff9506,35193,14,1,Blue,human,Crewmate,Green
+web_c695e62073a0487dba0df7c520ff9506,35195,14,1,Red,human,Crewmate,Blue
+web_c695e62073a0487dba0df7c520ff9506,35197,14,1,Orange,human,Crewmate,Green
+web_c72e542d50b74d5f84f4a06e788e6cf0,22539,76,1,Lime,human,Crewmate,Green
+web_c72e542d50b74d5f84f4a06e788e6cf0,22541,76,1,Brown,human,Crewmate,Green
+web_c72e542d50b74d5f84f4a06e788e6cf0,22547,76,1,Purple,human,Crewmate,Green
+web_c72e542d50b74d5f84f4a06e788e6cf0,22557,76,1,Orange,human,Crewmate,Green
+web_c734431f2ac24f3bab68b4417ca6010a,33843,24,1,Purple,human,Crewmate,
+web_c734431f2ac24f3bab68b4417ca6010a,33849,24,1,White,human,Crewmate,Cyan
+web_c734431f2ac24f3bab68b4417ca6010a,33851,24,1,Cyan,human,Impostor,White
+web_c734431f2ac24f3bab68b4417ca6010a,33861,24,1,Green,human,Crewmate,Purple
+web_c868cc32971147888c8a61101e569129,32232,1,1,Red,human,Crewmate,Yellow
+web_c868cc32971147888c8a61101e569129,32240,1,1,Orange,human,Crewmate,Yellow
+web_c868cc32971147888c8a61101e569129,32242,1,1,Lime,human,Crewmate,Orange
+web_c868cc32971147888c8a61101e569129,32248,1,1,Yellow,human,Impostor,Orange
+web_c868cc32971147888c8a61101e569129,32266,1,1,Blue,human,Crewmate,
+web_c868cc32971147888c8a61101e569129,32529,20,2,Yellow,human,Impostor,Blue
+web_c868cc32971147888c8a61101e569129,32533,20,2,Red,human,Crewmate,Blue
+web_c868cc32971147888c8a61101e569129,32535,20,2,Orange,human,Crewmate,Red
+web_c868cc32971147888c8a61101e569129,32571,20,2,Blue,human,Crewmate,
+web_c948e1adb3a94e429b56f9354e5ac0f3,32100,50,1,Blue,human,Crewmate,Green
+web_c948e1adb3a94e429b56f9354e5ac0f3,32106,50,1,Red,human,Crewmate,Orange
+web_c948e1adb3a94e429b56f9354e5ac0f3,32109,50,1,Green,human,Crewmate,Orange
+web_c948e1adb3a94e429b56f9354e5ac0f3,32112,50,1,Orange,human,Impostor,Red
+web_c9b2b67673d345bca174d678d066e390,8807,41,1,Purple,human,Crewmate,Yellow
+web_c9b2b67673d345bca174d678d066e390,8811,41,1,Yellow,human,Crewmate,Purple
+web_c9b2b67673d345bca174d678d066e390,8815,41,1,Brown,human,Impostor,Yellow
+web_c9b2b67673d345bca174d678d066e390,8819,41,1,Pink,human,Crewmate,Brown
+web_c9b2b67673d345bca174d678d066e390,9175,46,2,Pink,human,Crewmate,Brown
+web_c9b2b67673d345bca174d678d066e390,9179,46,2,Purple,human,Crewmate,Brown
+web_c9b2b67673d345bca174d678d066e390,9186,46,2,Brown,human,Impostor,Purple
+web_ca08102ca7a544c09b8c5ef1593317bb,9486,1,1,Black,human,Crewmate,Blue
+web_ca08102ca7a544c09b8c5ef1593317bb,9489,1,1,Cyan,human,Crewmate,Blue
+web_ca08102ca7a544c09b8c5ef1593317bb,9491,1,1,Red,human,Impostor,Blue
+web_ca08102ca7a544c09b8c5ef1593317bb,9493,1,1,Yellow,human,Crewmate,
+web_ca08102ca7a544c09b8c5ef1593317bb,9502,1,1,Blue,human,Crewmate,
+web_ca08102ca7a544c09b8c5ef1593317bb,9807,3,2,Black,human,Crewmate,Yellow
+web_ca08102ca7a544c09b8c5ef1593317bb,9814,3,2,Red,human,Impostor,Black
+web_ca08102ca7a544c09b8c5ef1593317bb,9857,3,2,Yellow,human,Crewmate,
+web_ca08102ca7a544c09b8c5ef1593317bb,9858,3,2,Cyan,human,Crewmate,
+web_ca08102ca7a544c09b8c5ef1593317bb,10883,187,3,Cyan,human,Crewmate,Red
+web_ca08102ca7a544c09b8c5ef1593317bb,10885,187,3,Black,human,Crewmate,Red
+web_ca08102ca7a544c09b8c5ef1593317bb,10889,187,3,Red,human,Impostor,Black
+web_ca41c0d24cfb46f5837c9840e95365bf,15930,107,1,Player 4: purple,ai,Crewmate,
+web_ca41c0d24cfb46f5837c9840e95365bf,15931,107,1,Player 5: green,ai,Crewmate,
+web_ca41c0d24cfb46f5837c9840e95365bf,15932,107,1,Player 2: red,ai,Impostor,
+web_ca41c0d24cfb46f5837c9840e95365bf,15965,111,2,Player 5: green,ai,Crewmate,Player 2: red
+web_ca41c0d24cfb46f5837c9840e95365bf,15966,111,2,Player 2: red,ai,Impostor,
+web_ca41c0d24cfb46f5837c9840e95365bf,15967,111,2,Player 4: purple,ai,Crewmate,
+web_ca4fe1a4b177481c8f4afaddfe6e272a,17259,12,1,Player 5: white,ai,Crewmate,
+web_ca4fe1a4b177481c8f4afaddfe6e272a,17263,12,1,Cyan,human,Impostor,Pink
+web_ca4fe1a4b177481c8f4afaddfe6e272a,17265,12,1,Brown,human,Crewmate,Pink
+web_ca4fe1a4b177481c8f4afaddfe6e272a,17280,12,1,Pink,human,Crewmate,
+web_caa4027019824cbda804b4fcd30c48f4,60766,153,1,Player 5: cyan,ai,Crewmate,Player 4: yellow
+web_caa4027019824cbda804b4fcd30c48f4,60768,153,1,Player 4: yellow,ai,Impostor,
+web_caa4027019824cbda804b4fcd30c48f4,60791,153,1,Pink,human,Crewmate,Player 4: yellow
+web_caa4027019824cbda804b4fcd30c48f4,60802,153,1,Blue,human,Crewmate,Player 4: yellow
+web_cadfc470f0c649359cf5bcede6b90738,56679,20,1,Player 3: yellow,ai,Impostor,Player 4: orange
+web_cadfc470f0c649359cf5bcede6b90738,56680,20,1,Player 4: orange,ai,Crewmate,Player 3: yellow
+web_cadfc470f0c649359cf5bcede6b90738,56681,20,1,Player 5: cyan,ai,Crewmate,
+web_cadfc470f0c649359cf5bcede6b90738,56710,20,1,Pink,human,Crewmate,
+web_cadfc470f0c649359cf5bcede6b90738,56851,22,2,Player 4: orange,ai,Crewmate,
+web_cadfc470f0c649359cf5bcede6b90738,56852,22,2,Player 5: cyan,ai,Crewmate,
+web_cadfc470f0c649359cf5bcede6b90738,56853,22,2,Player 3: yellow,ai,Impostor,
+web_cadfc470f0c649359cf5bcede6b90738,56858,22,2,Pink,human,Crewmate,Player 4: orange
+web_cc8c8bb79b6640b0a2feefcd072ca0a7,8224,4,1,Brown,human,Crewmate,Cyan
+web_cc8c8bb79b6640b0a2feefcd072ca0a7,8226,4,1,Green,human,Crewmate,
+web_cc8c8bb79b6640b0a2feefcd072ca0a7,8228,4,1,Pink,human,Impostor,White
+web_cc8c8bb79b6640b0a2feefcd072ca0a7,8230,4,1,Cyan,human,Crewmate,
+web_cc8c8bb79b6640b0a2feefcd072ca0a7,8234,4,1,White,human,Crewmate,Cyan
+web_cc8c8bb79b6640b0a2feefcd072ca0a7,8587,8,2,White,human,Crewmate,Pink
+web_cc8c8bb79b6640b0a2feefcd072ca0a7,8589,8,2,Pink,human,Impostor,Brown
+web_cc8c8bb79b6640b0a2feefcd072ca0a7,8591,8,2,Brown,human,Crewmate,Pink
+web_cc8c8bb79b6640b0a2feefcd072ca0a7,8595,8,2,Green,human,Crewmate,Pink
+web_cd3cbe98b3994bf28a956bdaeb666ff7,65089,11,1,Player 3: orange,ai,Crewmate,
+web_cd3cbe98b3994bf28a956bdaeb666ff7,65091,11,1,Player 2: purple,ai,Crewmate,
+web_cd3cbe98b3994bf28a956bdaeb666ff7,65104,11,1,Green,human,Crewmate,Blue
+web_cd3cbe98b3994bf28a956bdaeb666ff7,65107,11,1,Blue,human,Crewmate,Green
+web_cd3cbe98b3994bf28a956bdaeb666ff7,65109,11,1,Yellow,human,Impostor,
+web_cd3cbe98b3994bf28a956bdaeb666ff7,65527,52,2,Player 3: orange,ai,Crewmate,
+web_cd3cbe98b3994bf28a956bdaeb666ff7,65528,52,2,Player 2: purple,ai,Crewmate,
+web_cd3cbe98b3994bf28a956bdaeb666ff7,65548,52,2,Yellow,human,Impostor,Player 2: purple
+web_cd9ec20090c149fdb1c2f4814b57d8a2,16819,9,1,Brown,human,Impostor,Purple
+web_cd9ec20090c149fdb1c2f4814b57d8a2,16821,9,1,White,human,Crewmate,Purple
+web_cd9ec20090c149fdb1c2f4814b57d8a2,16827,9,1,Purple,human,Crewmate,Green
+web_cd9ec20090c149fdb1c2f4814b57d8a2,16831,9,1,Green,human,Crewmate,Purple
+web_cd9ec20090c149fdb1c2f4814b57d8a2,16864,9,1,Red,human,Crewmate,
+web_cd9ec20090c149fdb1c2f4814b57d8a2,17292,59,2,Brown,human,Impostor,Green
+web_cd9ec20090c149fdb1c2f4814b57d8a2,17294,59,2,Red,human,Crewmate,Green
+web_cd9ec20090c149fdb1c2f4814b57d8a2,17296,59,2,Green,human,Crewmate,Red
+web_d00d96aef4a645ca9f9012848afe09fd,52708,28,1,Player 4: orange,ai,Crewmate,
+web_d00d96aef4a645ca9f9012848afe09fd,52720,28,1,White,human,Impostor,Blue
+web_d00d96aef4a645ca9f9012848afe09fd,52724,28,1,Blue,human,Crewmate,White
+web_d00d96aef4a645ca9f9012848afe09fd,52726,28,1,Cyan,human,Crewmate,White
+web_d01d30b805244e408708b6a9949cefc0,57077,34,1,Player 5: yellow,ai,Crewmate,
+web_d01d30b805244e408708b6a9949cefc0,57078,34,1,Player 4: white,ai,Impostor,
+web_d01d30b805244e408708b6a9949cefc0,57079,34,1,Player 3: orange,ai,Crewmate,
+web_d01d30b805244e408708b6a9949cefc0,57083,34,1,Blue,human,Crewmate,Player 4: white
+web_d05af35bf31e4824a16f5245148d7c54,32841,33,1,Blue,human,Crewmate,Purple
+web_d05af35bf31e4824a16f5245148d7c54,32846,33,1,Purple,human,Crewmate,Blue
+web_d05af35bf31e4824a16f5245148d7c54,32854,33,1,Black,human,Impostor,Purple
+web_d0775cfdaf6f4db9b6fcfad68ea09862,64394,71,1,Player 3: orange,ai,Crewmate,
+web_d0775cfdaf6f4db9b6fcfad68ea09862,64420,71,1,Brown,human,Crewmate,Pink
+web_d0775cfdaf6f4db9b6fcfad68ea09862,64425,71,1,Pink,human,Crewmate,Brown
+web_d0775cfdaf6f4db9b6fcfad68ea09862,64467,71,1,Cyan,human,Impostor,Brown
+web_d14c89dc616442029d83a6ddec13250e,89245,54,1,Player 5: black,ai,Crewmate,
+web_d14c89dc616442029d83a6ddec13250e,89246,54,1,Player 3: blue,ai,Crewmate,
+web_d14c89dc616442029d83a6ddec13250e,89249,54,1,Green,human,Impostor,Player 3: blue
+web_d14c89dc616442029d83a6ddec13250e,89251,54,1,Purple,human,Crewmate,Player 5: black
+web_d14c89dc616442029d83a6ddec13250e,89351,82,2,Player 5: black,ai,Crewmate,
+web_d14c89dc616442029d83a6ddec13250e,89352,82,2,Player 3: blue,ai,Crewmate,
+web_d14c89dc616442029d83a6ddec13250e,89355,82,2,Green,human,Impostor,Player 3: blue
+web_d16a1f2f7f9f4464afadc8d601bb30ae,45369,6,1,Player 3: brown,ai,Crewmate,
+web_d16a1f2f7f9f4464afadc8d601bb30ae,45392,6,1,Purple,human,Crewmate,Yellow
+web_d16a1f2f7f9f4464afadc8d601bb30ae,45394,6,1,Yellow,human,Impostor,Player 3: brown
+web_d16a1f2f7f9f4464afadc8d601bb30ae,45399,6,1,Pink,human,Crewmate,Purple
+web_d1c85a827aea45ae916a98664a59bc95,77394,32,1,Player 3: purple,ai,Impostor,Black
+web_d1c85a827aea45ae916a98664a59bc95,77398,32,1,Player 4: white,ai,Crewmate,
+web_d1c85a827aea45ae916a98664a59bc95,77412,32,1,Blue,human,Crewmate,Black
+web_d1c85a827aea45ae916a98664a59bc95,77435,32,1,Black,human,Crewmate,Player 3: purple
+web_d1c85a827aea45ae916a98664a59bc95,77900,34,2,Player 3: purple,ai,Impostor,Blue
+web_d1c85a827aea45ae916a98664a59bc95,77902,34,2,Player 4: white,ai,Crewmate,
+web_d1c85a827aea45ae916a98664a59bc95,77920,34,2,Blue,human,Crewmate,Player 3: purple
+web_d253b3790a56498eb61e6506c9c131ad,70351,54,1,Player 3: white,ai,Crewmate,
+web_d253b3790a56498eb61e6506c9c131ad,70352,54,1,Player 5: orange,ai,Impostor,
+web_d253b3790a56498eb61e6506c9c131ad,70377,54,1,Brown,human,Crewmate,Red
+web_d253b3790a56498eb61e6506c9c131ad,70383,54,1,Red,human,Crewmate,Player 3: white
+web_d253b3790a56498eb61e6506c9c131ad,71388,128,2,Player 5: orange,ai,Impostor,
+web_d253b3790a56498eb61e6506c9c131ad,71408,128,2,Brown,human,Crewmate,Red
+web_d253b3790a56498eb61e6506c9c131ad,71459,128,2,Red,human,Crewmate,
+web_d4f783f8572c4953a0cb9059331f9250,81848,21,1,Player 2: lime,ai,Crewmate,Black
+web_d4f783f8572c4953a0cb9059331f9250,81849,21,1,Player 3: purple,ai,Crewmate,Black
+web_d4f783f8572c4953a0cb9059331f9250,81851,21,1,Player 4: orange,ai,Crewmate,Black
+web_d4f783f8572c4953a0cb9059331f9250,81868,21,1,Black,human,Impostor,Player 3: purple
+web_d57a6bc9f62c4b7ba20481e7614d40ca,34047,1,1,Orange,human,Impostor,Black
+web_d57a6bc9f62c4b7ba20481e7614d40ca,34051,1,1,Purple,human,Crewmate,Orange
+web_d57a6bc9f62c4b7ba20481e7614d40ca,34053,1,1,Black,human,Crewmate,Orange
+web_d57a6bc9f62c4b7ba20481e7614d40ca,34057,1,1,Blue,human,Crewmate,Orange
+web_d5964fa847cc451589e490af4111af18,12596,113,1,Player 2: red,ai,Crewmate,
+web_d5964fa847cc451589e490af4111af18,12598,113,1,Player 4: cyan,ai,Crewmate,
+web_d5964fa847cc451589e490af4111af18,12599,113,1,Player 5: pink,ai,Impostor,
+web_d60176a47d444508aaed52aa3742ca02,88007,30,1,Player 3: blue,ai,Impostor,Player 2: orange
+web_d60176a47d444508aaed52aa3742ca02,88009,30,1,Player 2: orange,ai,Crewmate,
+web_d60176a47d444508aaed52aa3742ca02,88010,30,1,Player 4: pink,ai,Crewmate,
+web_d60176a47d444508aaed52aa3742ca02,88033,30,1,Black,human,Crewmate,Player 3: blue
+web_d60176a47d444508aaed52aa3742ca02,88296,32,2,Player 4: pink,ai,Crewmate,Player 3: blue
+web_d60176a47d444508aaed52aa3742ca02,88298,32,2,Player 2: orange,ai,Crewmate,Player 3: blue
+web_d60176a47d444508aaed52aa3742ca02,88300,32,2,Player 3: blue,ai,Impostor,
+web_d60176a47d444508aaed52aa3742ca02,88305,32,2,Black,human,Crewmate,Player 3: blue
+web_d63889175f0b49be87b6c2ce23c94088,62476,15,1,Player 2: yellow,ai,Crewmate,
+web_d63889175f0b49be87b6c2ce23c94088,62477,15,1,Player 3: orange,ai,Crewmate,
+web_d63889175f0b49be87b6c2ce23c94088,62491,15,1,Purple,human,Crewmate,
+web_d63889175f0b49be87b6c2ce23c94088,62500,15,1,Red,human,Crewmate,
+web_d63889175f0b49be87b6c2ce23c94088,62522,15,1,Blue,human,Impostor,
+web_d63889175f0b49be87b6c2ce23c94088,63253,99,2,Player 2: yellow,ai,Crewmate,Blue
+web_d63889175f0b49be87b6c2ce23c94088,63257,99,2,Player 3: orange,ai,Crewmate,
+web_d63889175f0b49be87b6c2ce23c94088,63265,99,2,Purple,human,Crewmate,Blue
+web_d63889175f0b49be87b6c2ce23c94088,63269,99,2,Blue,human,Impostor,Player 2: yellow
+web_d6cc4cef03254942a2f397812f74f98c,55130,52,1,Player 2: purple,ai,Crewmate,
+web_d6cc4cef03254942a2f397812f74f98c,55153,52,1,Yellow,human,Crewmate,Brown
+web_d6cc4cef03254942a2f397812f74f98c,55158,52,1,Lime,human,Crewmate,Brown
+web_d6cc4cef03254942a2f397812f74f98c,55161,52,1,Brown,human,Crewmate,Lime
+web_d6cc4cef03254942a2f397812f74f98c,55171,52,1,White,human,Impostor,Yellow
+web_d6cc4cef03254942a2f397812f74f98c,56226,104,2,Player 2: purple,ai,Crewmate,
+web_d6cc4cef03254942a2f397812f74f98c,56233,104,2,Yellow,human,Crewmate,Player 2: purple
+web_d6cc4cef03254942a2f397812f74f98c,56237,104,2,White,human,Impostor,Player 2: purple
+web_d6ea8b40a29845c5babc46dd9dff5ff3,52538,21,1,Player 3: green,ai,Impostor,
+web_d6ea8b40a29845c5babc46dd9dff5ff3,52552,21,1,Blue,human,Crewmate,Player 3: green
+web_d6ea8b40a29845c5babc46dd9dff5ff3,52554,21,1,Black,human,Crewmate,Player 3: green
+web_d6ea8b40a29845c5babc46dd9dff5ff3,52565,21,1,Purple,human,Crewmate,Blue
+web_d6f9d8b9de504f12996e757a177d2606,67211,96,1,Player 2: pink,ai,Crewmate,White
+web_d6f9d8b9de504f12996e757a177d2606,67212,96,1,Player 3: lime,ai,Crewmate,White
+web_d6f9d8b9de504f12996e757a177d2606,67222,96,1,White,human,Impostor,Player 2: pink
+web_d6f9d8b9de504f12996e757a177d2606,67224,96,1,Green,human,Crewmate,White
+web_d6f9d8b9de504f12996e757a177d2606,67240,96,1,Brown,human,Crewmate,White
+web_d89af2b4f4aa44aea5b64e84ba0022a3,55541,45,1,Player 5: orange,ai,Crewmate,
+web_d89af2b4f4aa44aea5b64e84ba0022a3,55549,45,1,Player 2: brown,ai,Crewmate,
+web_d89af2b4f4aa44aea5b64e84ba0022a3,55587,45,1,Red,human,Impostor,
+web_d8c95511d041491482d53b0691f97036,17623,25,1,White,human,Impostor,Lime
+web_d8c95511d041491482d53b0691f97036,17625,25,1,Lime,human,Crewmate,White
+web_d8c95511d041491482d53b0691f97036,17630,25,1,Purple,human,Crewmate,Lime
+web_d8c95511d041491482d53b0691f97036,17641,25,1,Green,human,Crewmate,White
+web_d8c95511d041491482d53b0691f97036,17861,33,2,Purple,human,Crewmate,White
+web_d8c95511d041491482d53b0691f97036,17863,33,2,Lime,human,Crewmate,White
+web_d8c95511d041491482d53b0691f97036,17869,33,2,White,human,Impostor,Lime
+web_d9d7ef656cd44853a264a04ce89cc2d4,48279,12,1,Player 4: cyan,ai,Crewmate,Blue
+web_d9d7ef656cd44853a264a04ce89cc2d4,48289,12,1,Blue,human,Impostor,Black
+web_d9d7ef656cd44853a264a04ce89cc2d4,48294,12,1,Purple,human,Crewmate,Blue
+web_d9d7ef656cd44853a264a04ce89cc2d4,48322,12,1,Black,human,Crewmate,
+web_d9ed0e2d251a4ab69000093a945d9394,43848,1,1,Player 3: yellow,ai,Crewmate,
+web_d9ed0e2d251a4ab69000093a945d9394,43851,1,1,Player 4: green,ai,Crewmate,
+web_d9ed0e2d251a4ab69000093a945d9394,43852,1,1,Player 5: red,ai,Impostor,
+web_d9ed0e2d251a4ab69000093a945d9394,43861,1,1,Blue,human,Crewmate,Player 4: green
+web_d9ed0e2d251a4ab69000093a945d9394,43987,3,2,Player 5: red,ai,Impostor,
+web_d9ed0e2d251a4ab69000093a945d9394,43988,3,2,Player 3: yellow,ai,Crewmate,
+web_d9ed0e2d251a4ab69000093a945d9394,43996,3,2,Blue,human,Crewmate,Player 5: red
+web_da6728d3329c485e80c7aecab0a8d85d,27087,37,1,Black,human,Crewmate,Brown
+web_da6728d3329c485e80c7aecab0a8d85d,27098,37,1,Brown,human,Impostor,Black
+web_da6c152043f0426e9362106a525dad43,65610,27,1,Player 5: pink,ai,Crewmate,Orange
+web_da6c152043f0426e9362106a525dad43,65611,27,1,Player 3: yellow,ai,Crewmate,Orange
+web_da6c152043f0426e9362106a525dad43,65632,27,1,Purple,human,Crewmate,Orange
+web_da6c152043f0426e9362106a525dad43,65634,27,1,Orange,human,Impostor,Purple
+web_dac7de6b4d344037993d3a5d09d1f0d5,61472,52,1,Player 5: lime,ai,Crewmate,
+web_dac7de6b4d344037993d3a5d09d1f0d5,61480,52,1,Player 2: green,ai,Impostor,
+web_dac7de6b4d344037993d3a5d09d1f0d5,61492,52,1,Blue,human,Crewmate,Player 5: lime
+web_dac7de6b4d344037993d3a5d09d1f0d5,61526,52,1,Brown,human,Crewmate,
+web_dca1cc242be34241996066ca9169a3bf,12165,25,1,Player 3: brown,ai,Crewmate,Player 4: green
+web_dca1cc242be34241996066ca9169a3bf,12166,25,1,Player 2: white,ai,Crewmate,
+web_dca1cc242be34241996066ca9169a3bf,12167,25,1,Player 4: green,ai,Impostor,Pink
+web_dca1cc242be34241996066ca9169a3bf,12171,25,1,Pink,human,Crewmate,Player 4: green
+web_dd7882265b1145e0b54ef73141736c6e,36230,4,1,Player 5: pink,ai,Crewmate,Brown
+web_dd7882265b1145e0b54ef73141736c6e,36241,4,1,Lime,human,Crewmate,Brown
+web_dd7882265b1145e0b54ef73141736c6e,36250,4,1,Purple,human,Crewmate,Lime
+web_dd7882265b1145e0b54ef73141736c6e,36252,4,1,Brown,human,Impostor,
+web_dd7882265b1145e0b54ef73141736c6e,36271,4,1,White,human,Crewmate,Player 5: pink
+web_dd87ee2566a846d786af2aaa051568d5,63160,161,1,Player 5: yellow,ai,Impostor,
+web_dd87ee2566a846d786af2aaa051568d5,63168,161,1,Red,human,Crewmate,Player 5: yellow
+web_dd87ee2566a846d786af2aaa051568d5,63172,161,1,White,human,Crewmate,Player 5: yellow
+web_dd87ee2566a846d786af2aaa051568d5,63174,161,1,Pink,human,Crewmate,Player 5: yellow
+web_def1a64d21254482ae3dcf4ede361bca,69946,17,1,Player 3: lime,ai,Crewmate,
+web_def1a64d21254482ae3dcf4ede361bca,69948,17,1,Player 5: purple,ai,Crewmate,
+web_def1a64d21254482ae3dcf4ede361bca,69994,17,1,Pink,human,Impostor,Player 3: lime
+web_df821046c2c845709f0eb2fc3272e2f8,41608,18,1,Player 5: black,ai,Impostor,
+web_df821046c2c845709f0eb2fc3272e2f8,41617,18,1,Brown,human,Crewmate,Green
+web_df821046c2c845709f0eb2fc3272e2f8,41623,18,1,Green,human,Crewmate,
+web_df821046c2c845709f0eb2fc3272e2f8,41627,18,1,Orange,human,Crewmate,Player 5: black
+web_df86272ce53e427f88a16d8b5b8b2417,59621,28,1,Player 4: yellow,ai,Impostor,
+web_df86272ce53e427f88a16d8b5b8b2417,59624,28,1,Player 3: brown,ai,Crewmate,
+web_df86272ce53e427f88a16d8b5b8b2417,59634,28,1,Black,human,Crewmate,Player 4: yellow
+web_df86272ce53e427f88a16d8b5b8b2417,59637,28,1,Orange,human,Crewmate,Player 3: brown
+web_df86272ce53e427f88a16d8b5b8b2417,59647,28,1,White,human,Crewmate,
+web_df86272ce53e427f88a16d8b5b8b2417,59857,32,2,Player 3: brown,ai,Crewmate,Player 4: yellow
+web_df86272ce53e427f88a16d8b5b8b2417,59860,32,2,Player 4: yellow,ai,Impostor,
+web_df86272ce53e427f88a16d8b5b8b2417,59884,32,2,Black,human,Crewmate,Player 3: brown
+web_df86272ce53e427f88a16d8b5b8b2417,59887,32,2,Orange,human,Crewmate,Player 3: brown
+web_df86272ce53e427f88a16d8b5b8b2417,59909,32,2,White,human,Crewmate,
+web_df86272ce53e427f88a16d8b5b8b2417,60376,44,3,Player 4: yellow,ai,Impostor,Black
+web_df86272ce53e427f88a16d8b5b8b2417,60391,44,3,Black,human,Crewmate,Player 4: yellow
+web_df86272ce53e427f88a16d8b5b8b2417,60393,44,3,Orange,human,Crewmate,Black
+web_dff7862d9d7b407b8809d5a1b932e4ce,67807,14,1,Player 4: pink,ai,Crewmate,
+web_dff7862d9d7b407b8809d5a1b932e4ce,67808,14,1,Player 3: white,ai,Crewmate,
+web_dff7862d9d7b407b8809d5a1b932e4ce,67830,14,1,Blue,human,Impostor,Player 4: pink
+web_dff7862d9d7b407b8809d5a1b932e4ce,67839,14,1,Cyan,human,Crewmate,Player 3: white
+web_dff7862d9d7b407b8809d5a1b932e4ce,68523,86,2,Player 4: pink,ai,Crewmate,
+web_dff7862d9d7b407b8809d5a1b932e4ce,68535,86,2,Blue,human,Impostor,Player 4: pink
+web_dff7862d9d7b407b8809d5a1b932e4ce,68548,86,2,Cyan,human,Crewmate,Player 4: pink
+web_e03de0921ec048b089ca3b391ed5f287,43079,1,1,Player 2: red,ai,Impostor,
+web_e03de0921ec048b089ca3b391ed5f287,43083,1,1,Yellow,human,Crewmate,Black
+web_e03de0921ec048b089ca3b391ed5f287,43088,1,1,Black,human,Crewmate,Brown
+web_e03de0921ec048b089ca3b391ed5f287,43090,1,1,Brown,human,Crewmate,Black
+web_e03de0921ec048b089ca3b391ed5f287,43092,1,1,Purple,human,Crewmate,Yellow
+web_e03de0921ec048b089ca3b391ed5f287,43197,7,2,Player 2: red,ai,Impostor,
+web_e03de0921ec048b089ca3b391ed5f287,43201,7,2,Yellow,human,Crewmate,Brown
+web_e03de0921ec048b089ca3b391ed5f287,43203,7,2,Brown,human,Crewmate,Yellow
+web_e03de0921ec048b089ca3b391ed5f287,43224,7,2,Purple,human,Crewmate,
+web_e03de0921ec048b089ca3b391ed5f287,43478,22,3,Player 2: red,ai,Impostor,
+web_e03de0921ec048b089ca3b391ed5f287,43490,22,3,Yellow,human,Crewmate,Player 2: red
+web_e03de0921ec048b089ca3b391ed5f287,43510,22,3,Purple,human,Crewmate,
+web_e0de846d5e1d45e393f2691b601123cf,33069,18,1,Purple,human,Crewmate,Green
+web_e0de846d5e1d45e393f2691b601123cf,33071,18,1,Cyan,human,Crewmate,Brown
+web_e0de846d5e1d45e393f2691b601123cf,33076,18,1,Green,human,Impostor,Purple
+web_e0de846d5e1d45e393f2691b601123cf,33090,18,1,Brown,human,Crewmate,
+web_e0dede66add84338afe4b410b1092f13,33251,7,1,Brown,human,Crewmate,Cyan
+web_e0dede66add84338afe4b410b1092f13,33255,7,1,Green,human,Crewmate,Cyan
+web_e0dede66add84338afe4b410b1092f13,33269,7,1,Pink,human,Crewmate,Cyan
+web_e0dede66add84338afe4b410b1092f13,33271,7,1,Purple,human,Crewmate,Cyan
+web_e0dede66add84338afe4b410b1092f13,33279,7,1,Cyan,human,Impostor,Green
+web_e0e074f00ce24300b32c00d137c00f94,34635,1,1,Brown,human,Crewmate,
+web_e0e074f00ce24300b32c00d137c00f94,34644,1,1,Purple,human,Crewmate,Pink
+web_e0e074f00ce24300b32c00d137c00f94,34646,1,1,Pink,human,Crewmate,
+web_e0e074f00ce24300b32c00d137c00f94,34649,1,1,Green,human,Crewmate,
+web_e0e074f00ce24300b32c00d137c00f94,34654,1,1,Cyan,human,Impostor,Brown
+web_e0e074f00ce24300b32c00d137c00f94,35296,89,2,Pink,human,Crewmate,Cyan
+web_e0e074f00ce24300b32c00d137c00f94,35307,89,2,Brown,human,Crewmate,Cyan
+web_e0e074f00ce24300b32c00d137c00f94,35315,89,2,Cyan,human,Impostor,Purple
+web_e0e074f00ce24300b32c00d137c00f94,35329,89,2,Purple,human,Crewmate,Cyan
+web_e0e074f00ce24300b32c00d137c00f94,35356,89,2,Green,human,Crewmate,
+web_e17abc4ca70f450f95c5118d4d67c917,11517,24,1,Player 4: pink,ai,Crewmate,Player 3: orange
+web_e17abc4ca70f450f95c5118d4d67c917,11518,24,1,Player 2: red,ai,Crewmate,Player 3: orange
+web_e17abc4ca70f450f95c5118d4d67c917,11519,24,1,Player 3: orange,ai,Impostor,Player 5: lime
+web_e17abc4ca70f450f95c5118d4d67c917,11520,24,1,Player 5: lime,ai,Crewmate,
+web_e275b4d5168148d5b7a45aceb3391f5e,7348,5,1,Orange,human,Crewmate,
+web_e275b4d5168148d5b7a45aceb3391f5e,7350,5,1,Yellow,human,Crewmate,Blue
+web_e275b4d5168148d5b7a45aceb3391f5e,7356,5,1,Blue,human,Crewmate,
+web_e275b4d5168148d5b7a45aceb3391f5e,7364,5,1,Black,human,Impostor,
+web_e275b4d5168148d5b7a45aceb3391f5e,7368,5,1,Green,human,Crewmate,Black
+web_e275b4d5168148d5b7a45aceb3391f5e,7908,85,2,Orange,human,Crewmate,Yellow
+web_e275b4d5168148d5b7a45aceb3391f5e,7915,85,2,Yellow,human,Crewmate,Orange
+web_e275b4d5168148d5b7a45aceb3391f5e,7918,85,2,Black,human,Impostor,Orange
+web_e2a90069ccae478789035fec0734be0e,19710,10,1,Lime,human,Crewmate,Red
+web_e2a90069ccae478789035fec0734be0e,19714,10,1,Red,human,Impostor,Lime
+web_e2a90069ccae478789035fec0734be0e,19741,10,1,Blue,human,Crewmate,
+web_e3a0c87cb44b4ca6ad9aa53f826843f4,18799,38,1,Player 3: brown,ai,Impostor,
+web_e3a0c87cb44b4ca6ad9aa53f826843f4,18800,38,1,Player 5: blue,ai,Crewmate,
+web_e3a0c87cb44b4ca6ad9aa53f826843f4,18801,38,1,Player 2: purple,ai,Crewmate,
+web_e3a0c87cb44b4ca6ad9aa53f826843f4,18811,38,1,White,human,Crewmate,Player 3: brown
+web_e4a227102b4d4337bcbadd3785fd543a,56145,70,1,Player 5: yellow,ai,Impostor,
+web_e4a227102b4d4337bcbadd3785fd543a,56159,70,1,Blue,human,Crewmate,Player 5: yellow
+web_e4a227102b4d4337bcbadd3785fd543a,56162,70,1,Cyan,human,Crewmate,Player 5: yellow
+web_e4a227102b4d4337bcbadd3785fd543a,56169,70,1,White,human,Crewmate,Player 5: yellow
+web_e507365e860549ee9313bb944da7a999,21394,19,1,Yellow,human,Crewmate,Green
+web_e507365e860549ee9313bb944da7a999,21401,19,1,Red,human,Crewmate,Green
+web_e507365e860549ee9313bb944da7a999,21403,19,1,Lime,human,Crewmate,Purple
+web_e507365e860549ee9313bb944da7a999,21407,19,1,Green,human,Impostor,Lime
+web_e507365e860549ee9313bb944da7a999,21435,19,1,Purple,human,Crewmate,
+web_e5480897f3d54c9c994b9e920df89c50,63425,116,1,Player 5: cyan,ai,Impostor,
+web_e5480897f3d54c9c994b9e920df89c50,63426,116,1,Player 4: yellow,ai,Crewmate,
+web_e5480897f3d54c9c994b9e920df89c50,63447,116,1,Purple,human,Crewmate,
+web_e5b328cfd28d4a088f9ffd71768c4424,49310,8,1,Player 3: green,ai,Crewmate,Cyan
+web_e5b328cfd28d4a088f9ffd71768c4424,49327,8,1,Pink,human,Crewmate,Player 3: green
+web_e5b328cfd28d4a088f9ffd71768c4424,49339,8,1,Cyan,human,Impostor,
+web_e5b328cfd28d4a088f9ffd71768c4424,49790,30,2,Player 3: green,ai,Crewmate,Cyan
+web_e5b328cfd28d4a088f9ffd71768c4424,49805,30,2,Cyan,human,Impostor,Player 3: green
+web_e5b328cfd28d4a088f9ffd71768c4424,49807,30,2,Pink,human,Crewmate,Player 3: green
+web_e5d56a9e04e24f118af5ea4cab13ae0f,23801,29,1,Brown,human,Crewmate,Cyan
+web_e5d56a9e04e24f118af5ea4cab13ae0f,23804,29,1,Cyan,human,Impostor,Lime
+web_e5d56a9e04e24f118af5ea4cab13ae0f,23816,29,1,Lime,human,Crewmate,
+web_e5d56a9e04e24f118af5ea4cab13ae0f,23823,29,1,Yellow,human,Crewmate,Orange
+web_e5d56a9e04e24f118af5ea4cab13ae0f,23832,29,1,Orange,human,Crewmate,Lime
+web_e5d56a9e04e24f118af5ea4cab13ae0f,24046,31,2,Brown,human,Crewmate,Cyan
+web_e5d56a9e04e24f118af5ea4cab13ae0f,24048,31,2,Cyan,human,Impostor,Brown
+web_e5d56a9e04e24f118af5ea4cab13ae0f,24060,31,2,Yellow,human,Crewmate,Cyan
+web_e5d56a9e04e24f118af5ea4cab13ae0f,24080,31,2,Orange,human,Crewmate,
+web_e615b2a2d1884a76a4c1741585642569,59043,38,1,Player 2: purple,ai,Crewmate,
+web_e615b2a2d1884a76a4c1741585642569,59044,38,1,Player 4: blue,ai,Crewmate,
+web_e615b2a2d1884a76a4c1741585642569,59052,38,1,Black,human,Impostor,Lime
+web_e615b2a2d1884a76a4c1741585642569,59054,38,1,Lime,human,Crewmate,Black
+web_e615b2a2d1884a76a4c1741585642569,59305,60,2,Player 4: blue,ai,Crewmate,Black
+web_e615b2a2d1884a76a4c1741585642569,59312,60,2,Player 2: purple,ai,Crewmate,
+web_e615b2a2d1884a76a4c1741585642569,59328,60,2,Black,human,Impostor,Player 4: blue
+web_e64ba96e01c440d0b5679770b9fb17ab,31499,6,1,Player 5: purple,ai,Crewmate,Brown
+web_e64ba96e01c440d0b5679770b9fb17ab,31503,6,1,Blue,human,Crewmate,Brown
+web_e64ba96e01c440d0b5679770b9fb17ab,31509,6,1,Brown,human,Impostor,Player 5: purple
+web_e6f12268d3a14f41836a48f94428e2ce,27923,106,1,Black,human,Crewmate,White
+web_e6f12268d3a14f41836a48f94428e2ce,27930,106,1,Purple,human,Crewmate,
+web_e6f12268d3a14f41836a48f94428e2ce,27948,106,1,Red,human,Impostor,
+web_e6f12268d3a14f41836a48f94428e2ce,27950,106,1,Orange,human,Crewmate,White
+web_e6f12268d3a14f41836a48f94428e2ce,27954,106,1,White,human,Crewmate,Orange
+web_e7960eeba00c49c995b17521214e57f6,23081,12,1,Green,human,Impostor,Black
+web_e7960eeba00c49c995b17521214e57f6,23085,12,1,Blue,human,Crewmate,Black
+web_e7960eeba00c49c995b17521214e57f6,23090,12,1,Yellow,human,Crewmate,Black
+web_e881af8632434ffe9a396d465abeaa7b,52831,45,1,Player 5: purple,ai,Crewmate,
+web_e881af8632434ffe9a396d465abeaa7b,52844,45,1,Brown,human,Impostor,Player 5: purple
+web_e881af8632434ffe9a396d465abeaa7b,52847,45,1,Yellow,human,Crewmate,Player 5: purple
+web_e881af8632434ffe9a396d465abeaa7b,52888,45,1,Orange,human,Crewmate,
+web_e881af8632434ffe9a396d465abeaa7b,53404,48,2,Yellow,human,Crewmate,Brown
+web_e881af8632434ffe9a396d465abeaa7b,53406,48,2,Orange,human,Crewmate,Brown
+web_e881af8632434ffe9a396d465abeaa7b,53418,48,2,Brown,human,Impostor,Orange
+web_e9d2a9ae4db347e597a614cddd533fd6,86837,41,1,Player 5: pink,ai,Crewmate,Player 4: blue
+web_e9d2a9ae4db347e597a614cddd533fd6,86840,41,1,Player 4: blue,ai,Impostor,Player 5: pink
+web_e9d2a9ae4db347e597a614cddd533fd6,86843,41,1,Player 2: red,ai,Crewmate,
+web_ea284926d587497996cd5fcb947f1526,47006,14,1,Player 5: lime,ai,Crewmate,
+web_ea284926d587497996cd5fcb947f1526,47023,14,1,Pink,human,Crewmate,
+web_ea284926d587497996cd5fcb947f1526,47064,14,1,Orange,human,Crewmate,
+web_ea284926d587497996cd5fcb947f1526,47065,14,1,Blue,human,Impostor,
+web_ea284926d587497996cd5fcb947f1526,47506,31,2,Player 5: lime,ai,Crewmate,Blue
+web_ea284926d587497996cd5fcb947f1526,47516,31,2,Blue,human,Impostor,Player 5: lime
+web_ea284926d587497996cd5fcb947f1526,47538,31,2,Pink,human,Crewmate,Player 5: lime
+web_ea284926d587497996cd5fcb947f1526,47561,31,2,Orange,human,Crewmate,
+web_ea945cf400564df987e3e87fbe3ce85b,33035,36,1,Cyan,human,Crewmate,Yellow
+web_ea945cf400564df987e3e87fbe3ce85b,33037,36,1,Orange,human,Crewmate,Yellow
+web_ea945cf400564df987e3e87fbe3ce85b,33041,36,1,Yellow,human,Impostor,
+web_ea945cf400564df987e3e87fbe3ce85b,33062,36,1,Black,human,Crewmate,
+web_eabfd7187c804221a880b1bc41742e32,18941,73,1,Player 5: black,ai,Crewmate,
+web_eabfd7187c804221a880b1bc41742e32,18949,73,1,Blue,human,Crewmate,Red
+web_eabfd7187c804221a880b1bc41742e32,18951,73,1,Red,human,Impostor,Player 5: black
+web_eabfd7187c804221a880b1bc41742e32,19054,84,2,Player 5: black,ai,Crewmate,
+web_eabfd7187c804221a880b1bc41742e32,19060,84,2,Blue,human,Crewmate,Red
+web_eabfd7187c804221a880b1bc41742e32,19062,84,2,Red,human,Impostor,Player 5: black
+web_eb843db5f0934639a48ee601679f67f4,13852,25,1,Player 5: green,ai,Crewmate,Player 3: black
+web_eb843db5f0934639a48ee601679f67f4,13853,25,1,Player 3: black,ai,Impostor,Player 5: green
+web_eb843db5f0934639a48ee601679f67f4,13854,25,1,Player 2: lime,ai,Crewmate,Player 3: black
+web_eb843db5f0934639a48ee601679f67f4,13855,25,1,Player 4: red,ai,Crewmate,
+web_eba29bed8d594ecf8c1423431a07abd7,40423,39,1,Player 2: orange,ai,Crewmate,Yellow
+web_eba29bed8d594ecf8c1423431a07abd7,40424,39,1,Player 5: lime,ai,Crewmate,
+web_eba29bed8d594ecf8c1423431a07abd7,40427,39,1,Yellow,human,Impostor,Player 2: orange
+web_ebcf203e8f3d4de3847d1161e4372d17,36243,92,1,Red,human,Crewmate,Brown
+web_ebcf203e8f3d4de3847d1161e4372d17,36248,92,1,White,human,Impostor,
+web_ebcf203e8f3d4de3847d1161e4372d17,36256,92,1,Brown,human,Crewmate,Pink
+web_ebcf203e8f3d4de3847d1161e4372d17,36277,92,1,Pink,human,Crewmate,
+web_ebcf203e8f3d4de3847d1161e4372d17,36946,138,2,Red,human,Crewmate,Brown
+web_ebcf203e8f3d4de3847d1161e4372d17,36948,138,2,White,human,Impostor,Red
+web_ebcf203e8f3d4de3847d1161e4372d17,36950,138,2,Brown,human,Crewmate,Red
+web_ebcf203e8f3d4de3847d1161e4372d17,36983,138,2,Pink,human,Crewmate,
+web_ec18069330764393b8838c5e066f32c3,34374,2,1,Green,human,Impostor,Orange
+web_ec18069330764393b8838c5e066f32c3,34376,2,1,Orange,human,Crewmate,Green
+web_ec18069330764393b8838c5e066f32c3,34379,2,1,Yellow,human,Crewmate,Orange
+web_ec18069330764393b8838c5e066f32c3,34385,2,1,Purple,human,Crewmate,Red
+web_ec18069330764393b8838c5e066f32c3,34389,2,1,Red,human,Crewmate,Green
+web_ec18069330764393b8838c5e066f32c3,34573,4,2,Orange,human,Crewmate,Green
+web_ec18069330764393b8838c5e066f32c3,34575,4,2,Green,human,Impostor,Purple
+web_ec18069330764393b8838c5e066f32c3,34579,4,2,Red,human,Crewmate,Green
+web_ec18069330764393b8838c5e066f32c3,34585,4,2,Purple,human,Crewmate,Orange
+web_ec6675b556db4961b2b456a5d9713f78,83457,35,1,Player 2: pink,ai,Impostor,
+web_ec6675b556db4961b2b456a5d9713f78,83461,35,1,Player 4: black,ai,Crewmate,
+web_ec6675b556db4961b2b456a5d9713f78,83462,35,1,Player 5: yellow,ai,Crewmate,
+web_ec6675b556db4961b2b456a5d9713f78,83463,35,1,Player 3: green,ai,Crewmate,
+web_ecbb327c36e040bdae992e7090ff2f2c,19988,18,1,Player 4: brown,ai,Impostor,
+web_ecbb327c36e040bdae992e7090ff2f2c,19989,18,1,Player 5: orange,ai,Crewmate,
+web_ecbb327c36e040bdae992e7090ff2f2c,20005,18,1,Cyan,human,Crewmate,
+web_ecbb327c36e040bdae992e7090ff2f2c,20016,18,1,Pink,human,Crewmate,Red
+web_ecbb327c36e040bdae992e7090ff2f2c,20037,18,1,Red,human,Crewmate,Pink
+web_ecbb327c36e040bdae992e7090ff2f2c,20553,49,2,Player 5: orange,ai,Crewmate,
+web_ecbb327c36e040bdae992e7090ff2f2c,20560,49,2,Player 4: brown,ai,Impostor,
+web_ecbb327c36e040bdae992e7090ff2f2c,20588,49,2,Cyan,human,Crewmate,Player 4: brown
+web_ecbb327c36e040bdae992e7090ff2f2c,20606,49,2,Pink,human,Crewmate,Player 4: brown
+web_ed84b4ca4916468ebcd6242a80267e2e,37896,33,1,Player 4: orange,ai,Impostor,Red
+web_ed84b4ca4916468ebcd6242a80267e2e,37900,33,1,Player 3: white,ai,Crewmate,
+web_ed84b4ca4916468ebcd6242a80267e2e,37901,33,1,Player 5: yellow,ai,Crewmate,Red
+web_ed84b4ca4916468ebcd6242a80267e2e,37916,33,1,Red,human,Crewmate,Player 5: yellow
+web_ed84b4ca4916468ebcd6242a80267e2e,37918,33,1,Green,human,Crewmate,Red
+web_ed84b4ca4916468ebcd6242a80267e2e,38670,54,2,Player 5: yellow,ai,Crewmate,
+web_ed84b4ca4916468ebcd6242a80267e2e,38671,54,2,Player 4: orange,ai,Impostor,Player 5: yellow
+web_ed84b4ca4916468ebcd6242a80267e2e,38693,54,2,Green,human,Crewmate,Player 4: orange
+web_ee5c8f3aae574a4dacb494702f0ebaca,19907,68,1,Green,human,Crewmate,Pink
+web_ee5c8f3aae574a4dacb494702f0ebaca,19909,68,1,Orange,human,Impostor,Green
+web_ee5c8f3aae574a4dacb494702f0ebaca,19919,68,1,White,human,Crewmate,
+web_ee5c8f3aae574a4dacb494702f0ebaca,19921,68,1,Pink,human,Crewmate,
+web_eefbba67f10a4a538b1eeaa1d4a719e6,84666,65,1,Player 2: lime,ai,Crewmate,Player 3: yellow
+web_eefbba67f10a4a538b1eeaa1d4a719e6,84667,65,1,Player 5: white,ai,Crewmate,
+web_eefbba67f10a4a538b1eeaa1d4a719e6,84668,65,1,Player 3: yellow,ai,Impostor,
+web_eefbba67f10a4a538b1eeaa1d4a719e6,84683,65,1,Black,human,Crewmate,Player 3: yellow
+web_f086e33d5bd8443b8b9d9d1e1e285072,23465,13,1,Player 5: lime,ai,Crewmate,Orange
+web_f086e33d5bd8443b8b9d9d1e1e285072,23467,13,1,Purple,human,Crewmate,Orange
+web_f086e33d5bd8443b8b9d9d1e1e285072,23471,13,1,Red,human,Crewmate,Orange
+web_f086e33d5bd8443b8b9d9d1e1e285072,23473,13,1,Cyan,human,Crewmate,Orange
+web_f086e33d5bd8443b8b9d9d1e1e285072,23478,13,1,Orange,human,Impostor,Player 5: lime
+web_f09a768cc51344508388e268c3269a84,18013,40,1,Player 4: yellow,ai,Crewmate,
+web_f09a768cc51344508388e268c3269a84,18020,40,1,Green,human,Impostor,Player 4: yellow
+web_f09a768cc51344508388e268c3269a84,18024,40,1,Blue,human,Crewmate,Green
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,29573,25,1,Green,human,Crewmate,Pink
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,29580,25,1,Orange,human,Impostor,Green
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,29592,25,1,Cyan,human,Crewmate,Purple
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,29627,25,1,Purple,human,Crewmate,
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,29630,25,1,Pink,human,Crewmate,
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,29896,36,2,Green,human,Crewmate,Orange
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,29903,36,2,Pink,human,Crewmate,Green
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,29914,36,2,Orange,human,Impostor,Cyan
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,29931,36,2,Cyan,human,Crewmate,Green
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,29951,36,2,Purple,human,Crewmate,
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,30891,141,3,Cyan,human,Crewmate,Orange
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,30893,141,3,Orange,human,Impostor,Cyan
+web_f0afb6b0f48a4142b84e3a5cbfbd13b1,30938,141,3,Purple,human,Crewmate,
+web_f138d26e25d94e738f6d89891fe91e85,82210,68,1,Player 4: blue,ai,Crewmate,Player 3: black
+web_f138d26e25d94e738f6d89891fe91e85,82212,68,1,Player 3: black,ai,Impostor,Player 2: red
+web_f138d26e25d94e738f6d89891fe91e85,82213,68,1,Player 2: red,ai,Crewmate,
+web_f138d26e25d94e738f6d89891fe91e85,82214,68,1,Player 5: white,ai,Crewmate,
+web_f138d26e25d94e738f6d89891fe91e85,82227,68,1,Pink,human,Crewmate,Player 3: black
+web_f14239124cf646d59f2bdfd69ec9fafd,85876,64,1,Player 2: white,ai,Crewmate,Player 4: orange
+web_f14239124cf646d59f2bdfd69ec9fafd,85880,64,1,Player 3: black,ai,Crewmate,Player 4: orange
+web_f14239124cf646d59f2bdfd69ec9fafd,85882,64,1,Player 4: orange,ai,Impostor,Lime
+web_f14239124cf646d59f2bdfd69ec9fafd,85901,64,1,Lime,human,Crewmate,Player 4: orange
+web_f22a2bfaaf3f45bba17b523dbb4754ab,21550,6,1,White,human,Crewmate,Yellow
+web_f22a2bfaaf3f45bba17b523dbb4754ab,21552,6,1,Yellow,human,Crewmate,Cyan
+web_f22a2bfaaf3f45bba17b523dbb4754ab,21554,6,1,Cyan,human,Impostor,Yellow
+web_f22a2bfaaf3f45bba17b523dbb4754ab,21557,6,1,Blue,human,Crewmate,Yellow
+web_f22a2bfaaf3f45bba17b523dbb4754ab,21575,6,1,Red,human,Crewmate,Yellow
+web_f22a2bfaaf3f45bba17b523dbb4754ab,21861,12,2,Blue,human,Crewmate,Cyan
+web_f22a2bfaaf3f45bba17b523dbb4754ab,21863,12,2,White,human,Crewmate,Cyan
+web_f22a2bfaaf3f45bba17b523dbb4754ab,21873,12,2,Cyan,human,Impostor,Blue
+web_f22a2bfaaf3f45bba17b523dbb4754ab,21884,12,2,Red,human,Crewmate,Cyan
+web_f22d6ba7d4cb4a9f91e076d99edd8ddf,60386,24,1,Player 3: white,ai,Crewmate,
+web_f22d6ba7d4cb4a9f91e076d99edd8ddf,60387,24,1,Player 5: orange,ai,Crewmate,
+web_f22d6ba7d4cb4a9f91e076d99edd8ddf,60421,24,1,Green,human,Impostor,
+web_f22d6ba7d4cb4a9f91e076d99edd8ddf,60424,24,1,Cyan,human,Crewmate,Green
+web_f22d6ba7d4cb4a9f91e076d99edd8ddf,60430,24,1,Brown,human,Crewmate,
+web_f2a2758dfaab4b75b1f8246d25a03628,88077,21,1,Player 4: cyan,ai,Crewmate,
+web_f2a2758dfaab4b75b1f8246d25a03628,88078,21,1,Player 5: pink,ai,Crewmate,
+web_f2a2758dfaab4b75b1f8246d25a03628,88087,21,1,Purple,human,Impostor,White
+web_f2a2758dfaab4b75b1f8246d25a03628,88098,21,1,White,human,Crewmate,Purple
+web_f2a2758dfaab4b75b1f8246d25a03628,88454,54,2,Player 4: cyan,ai,Crewmate,White
+web_f2a2758dfaab4b75b1f8246d25a03628,88458,54,2,Player 5: pink,ai,Crewmate,
+web_f2a2758dfaab4b75b1f8246d25a03628,88472,54,2,Purple,human,Impostor,Player 4: cyan
+web_f2a2758dfaab4b75b1f8246d25a03628,88481,54,2,White,human,Crewmate,Purple
+web_f2a331b7c9b94cfd884c1d0dde0196b3,40637,2,1,Player 3: red,ai,Impostor,
+web_f2a331b7c9b94cfd884c1d0dde0196b3,40639,2,1,Yellow,human,Crewmate,Purple
+web_f2a331b7c9b94cfd884c1d0dde0196b3,40641,2,1,Green,human,Crewmate,Player 3: red
+web_f2a331b7c9b94cfd884c1d0dde0196b3,40643,2,1,Brown,human,Crewmate,Player 3: red
+web_f2a331b7c9b94cfd884c1d0dde0196b3,40666,2,1,Purple,human,Crewmate,
+web_f384dea9c6404591ac1c140eb00a22fc,75886,15,1,Player 2: green,ai,Crewmate,Black
+web_f384dea9c6404591ac1c140eb00a22fc,75891,15,1,Player 5: brown,ai,Crewmate,
+web_f384dea9c6404591ac1c140eb00a22fc,75892,15,1,Player 4: lime,ai,Crewmate,
+web_f384dea9c6404591ac1c140eb00a22fc,75922,15,1,Red,human,Crewmate,Black
+web_f384dea9c6404591ac1c140eb00a22fc,75999,15,1,Black,human,Impostor,
+web_f3d3575d0b0444b8bdd039ad584c9cef,85032,11,1,Player 3: orange,ai,Crewmate,Purple
+web_f3d3575d0b0444b8bdd039ad584c9cef,85039,11,1,Player 4: cyan,ai,Crewmate,Purple
+web_f3d3575d0b0444b8bdd039ad584c9cef,85041,11,1,Player 2: black,ai,Impostor,
+web_f3d3575d0b0444b8bdd039ad584c9cef,85043,11,1,Player 5: white,ai,Crewmate,
+web_f3d3575d0b0444b8bdd039ad584c9cef,85103,11,1,Purple,human,Crewmate,Player 3: orange
+web_f3d3575d0b0444b8bdd039ad584c9cef,85765,41,2,Player 4: cyan,ai,Crewmate,Player 2: black
+web_f3d3575d0b0444b8bdd039ad584c9cef,85771,41,2,Player 3: orange,ai,Crewmate,
+web_f3d3575d0b0444b8bdd039ad584c9cef,85772,41,2,Player 2: black,ai,Impostor,
+web_f5575a90a9314ef0a8abf82904add618,83642,15,1,Player 5: pink,ai,Crewmate,Player 4: black
+web_f5575a90a9314ef0a8abf82904add618,83643,15,1,Player 3: orange,ai,Crewmate,Player 4: black
+web_f5575a90a9314ef0a8abf82904add618,83645,15,1,Player 4: black,ai,Impostor,Yellow
+web_f5575a90a9314ef0a8abf82904add618,83659,15,1,Yellow,human,Crewmate,Player 4: black
+web_f581f7ceb3c04e5db68bd33072e611fc,70956,16,1,Player 4: yellow,ai,Impostor,
+web_f581f7ceb3c04e5db68bd33072e611fc,70957,16,1,Player 3: cyan,ai,Crewmate,
+web_f581f7ceb3c04e5db68bd33072e611fc,70978,16,1,Orange,human,Crewmate,Player 4: yellow
+web_f581f7ceb3c04e5db68bd33072e611fc,70985,16,1,Pink,human,Crewmate,Player 4: yellow
+web_f644c19a822445bf8e5b7a9e25f33678,33119,21,1,Lime,human,Crewmate,Cyan
+web_f644c19a822445bf8e5b7a9e25f33678,33127,21,1,Cyan,human,Impostor,Red
+web_f644c19a822445bf8e5b7a9e25f33678,33131,21,1,Red,human,Crewmate,Lime
+web_f644c19a822445bf8e5b7a9e25f33678,33135,21,1,Orange,human,Crewmate,
+web_f644c19a822445bf8e5b7a9e25f33678,33168,21,1,Pink,human,Crewmate,
+web_f6a33590ca364a51824cc42a5aa7789c,36633,19,1,Orange,human,Impostor,Blue
+web_f6a33590ca364a51824cc42a5aa7789c,36637,19,1,Pink,human,Crewmate,Orange
+web_f6a33590ca364a51824cc42a5aa7789c,36655,19,1,Blue,human,Crewmate,Orange
+web_f6a33590ca364a51824cc42a5aa7789c,36667,19,1,Yellow,human,Crewmate,Orange
+web_f718636ded44422fbe339b4ff2f0885b,80905,28,1,Player 4: red,ai,Crewmate,Player 5: pink
+web_f718636ded44422fbe339b4ff2f0885b,80909,28,1,Player 5: pink,ai,Impostor,
+web_f718636ded44422fbe339b4ff2f0885b,80910,28,1,Player 2: black,ai,Crewmate,
+web_f718636ded44422fbe339b4ff2f0885b,80929,28,1,Purple,human,Crewmate,Player 5: pink
+web_f7b612f137be4c6d8a8133ba794c9153,13000,118,1,Player 2: brown,ai,Crewmate,
+web_f7b612f137be4c6d8a8133ba794c9153,13001,118,1,Player 3: red,ai,Impostor,
+web_f7b612f137be4c6d8a8133ba794c9153,13002,118,1,Player 5: pink,ai,Crewmate,
+web_f7b612f137be4c6d8a8133ba794c9153,13003,118,1,Player 4: lime,ai,Crewmate,
+web_f7b6229a69e94a068ecedcfe794c41d4,80285,36,1,Player 4: cyan,ai,Impostor,Player 3: blue
+web_f7b6229a69e94a068ecedcfe794c41d4,80286,36,1,Player 5: pink,ai,Crewmate,
+web_f7b6229a69e94a068ecedcfe794c41d4,80287,36,1,Player 3: blue,ai,Crewmate,
+web_f7b6229a69e94a068ecedcfe794c41d4,80288,36,1,Player 2: white,ai,Crewmate,
+web_f8d465f317874e088590ed478c01e706,16099,24,1,Player 5: blue,ai,Crewmate,
+web_f8d465f317874e088590ed478c01e706,16100,24,1,Player 3: pink,ai,Crewmate,
+web_f8d465f317874e088590ed478c01e706,16101,24,1,Player 4: green,ai,Crewmate,
+web_f8d465f317874e088590ed478c01e706,16105,24,1,Brown,human,Impostor,Player 4: green
+web_f8d8af5865524db4a73987ffb6700eee,20908,72,1,Pink,human,Crewmate,Blue
+web_f8d8af5865524db4a73987ffb6700eee,20910,72,1,Blue,human,Impostor,Pink
+web_f8d8af5865524db4a73987ffb6700eee,20918,72,1,Orange,human,Crewmate,Pink
+web_f8d8af5865524db4a73987ffb6700eee,20920,72,1,Lime,human,Crewmate,Blue
+web_f8ef917267ec4f2290154f5973e8059b,22534,15,1,Cyan,human,Crewmate,Orange
+web_f8ef917267ec4f2290154f5973e8059b,22537,15,1,Blue,human,Crewmate,
+web_f8ef917267ec4f2290154f5973e8059b,22545,15,1,Red,human,Crewmate,Blue
+web_f8ef917267ec4f2290154f5973e8059b,22549,15,1,Orange,human,Impostor,
+web_f987a101e92443b09766996d0d267f90,82983,54,1,Player 3: black,ai,Crewmate,
+web_f987a101e92443b09766996d0d267f90,82984,54,1,Player 5: brown,ai,Crewmate,
+web_f987a101e92443b09766996d0d267f90,82985,54,1,Player 2: blue,ai,Impostor,
+web_f9bb38d17117419bbafecaec4a1c9519,86813,10,1,Player 3: yellow,ai,Crewmate,
+web_f9bb38d17117419bbafecaec4a1c9519,86815,10,1,Player 2: orange,ai,Crewmate,
+web_f9bb38d17117419bbafecaec4a1c9519,86816,10,1,Player 5: green,ai,Crewmate,
+web_f9bb38d17117419bbafecaec4a1c9519,86818,10,1,Player 4: purple,ai,Crewmate,
+web_f9bb38d17117419bbafecaec4a1c9519,86878,10,1,Lime,human,Impostor,
+web_fb457f12f5484539bc8161af7aa3c779,81617,165,1,Player 5: orange,ai,Impostor,
+web_fb457f12f5484539bc8161af7aa3c779,81624,165,1,Player 2: pink,ai,Crewmate,
+web_fb457f12f5484539bc8161af7aa3c779,81644,165,1,Lime,human,Crewmate,Player 5: orange
+web_fbf049ceb96c46df9e1517867b198f8a,88316,1,1,Player 5: lime,ai,Crewmate,Brown
+web_fbf049ceb96c46df9e1517867b198f8a,88320,1,1,Player 4: cyan,ai,Crewmate,
+web_fbf049ceb96c46df9e1517867b198f8a,88323,1,1,Pink,human,Impostor,Brown
+web_fbf049ceb96c46df9e1517867b198f8a,88325,1,1,Brown,human,Crewmate,
+web_fbf049ceb96c46df9e1517867b198f8a,88334,1,1,Green,human,Crewmate,Brown
+web_fbf049ceb96c46df9e1517867b198f8a,89013,65,2,Player 5: lime,ai,Crewmate,
+web_fbf049ceb96c46df9e1517867b198f8a,89025,65,2,Pink,human,Impostor,Green
+web_fbf049ceb96c46df9e1517867b198f8a,89034,65,2,Green,human,Crewmate,Player 5: lime
+web_fc406758fdad439380134361e56fb020,11672,59,1,Player 4: black,ai,Impostor,White
+web_fc406758fdad439380134361e56fb020,11673,59,1,Player 5: yellow,ai,Crewmate,
+web_fc406758fdad439380134361e56fb020,11674,59,1,Player 2: blue,ai,Crewmate,White
+web_fc406758fdad439380134361e56fb020,11680,59,1,White,human,Crewmate,
+web_fc406758fdad439380134361e56fb020,11835,130,2,Player 2: blue,ai,Crewmate,Player 4: black
+web_fc406758fdad439380134361e56fb020,11836,130,2,Player 4: black,ai,Impostor,Player 2: blue
+web_fc406758fdad439380134361e56fb020,11837,130,2,Player 5: yellow,ai,Crewmate,
+web_fc4bfb7021554451b65fb8c14dd4dbdc,65379,29,1,Player 2: yellow,ai,Crewmate,Lime
+web_fc4bfb7021554451b65fb8c14dd4dbdc,65384,29,1,Player 5: cyan,ai,Crewmate,
+web_fc4bfb7021554451b65fb8c14dd4dbdc,65398,29,1,Red,human,Crewmate,Player 2: yellow
+web_fc4bfb7021554451b65fb8c14dd4dbdc,65404,29,1,Lime,human,Impostor,Player 2: yellow
+web_fc4bfb7021554451b65fb8c14dd4dbdc,65765,31,2,Player 5: cyan,ai,Crewmate,
+web_fc4bfb7021554451b65fb8c14dd4dbdc,65787,31,2,Red,human,Crewmate,Lime
+web_fc4bfb7021554451b65fb8c14dd4dbdc,65794,31,2,Lime,human,Impostor,Player 5: cyan
+web_fe0f92e49e0a4272bfb904fde4367ae4,76704,68,1,Player 5: lime,ai,Crewmate,Player 4: red
+web_fe0f92e49e0a4272bfb904fde4367ae4,76720,68,1,Player 4: red,ai,Impostor,
+web_fe0f92e49e0a4272bfb904fde4367ae4,76772,68,1,Black,human,Crewmate,Player 4: red
+web_fe0f92e49e0a4272bfb904fde4367ae4,76774,68,1,Green,human,Crewmate,Player 4: red
+web_fe1f1488921540628a122c6ce4a3b933,71632,118,1,Player 4: pink,ai,Crewmate,
+web_fe1f1488921540628a122c6ce4a3b933,71641,118,1,Player 2: green,ai,Crewmate,
+web_fe1f1488921540628a122c6ce4a3b933,71642,118,1,Player 5: purple,ai,Impostor,
+web_fe1f1488921540628a122c6ce4a3b933,72150,121,2,Player 5: purple,ai,Impostor,
+web_fe1f1488921540628a122c6ce4a3b933,72152,121,2,Player 2: green,ai,Crewmate,
+web_fe1f1488921540628a122c6ce4a3b933,72153,121,2,Player 4: pink,ai,Crewmate,
+web_ff866d0df8104eb59bf0bf64e570e4cd,9953,3,1,Red,human,Crewmate,
+web_ff866d0df8104eb59bf0bf64e570e4cd,9955,3,1,Yellow,human,Crewmate,Black
+web_ff866d0df8104eb59bf0bf64e570e4cd,9957,3,1,Purple,human,Crewmate,Black
+web_ff866d0df8104eb59bf0bf64e570e4cd,9961,3,1,Black,human,Crewmate,Red
+web_ff866d0df8104eb59bf0bf64e570e4cd,9971,3,1,Brown,human,Impostor,Black
+web_fffb811a5af54d5dbce7a4390db750dd,18235,60,1,Player 3: yellow,ai,Impostor,
+web_fffb811a5af54d5dbce7a4390db750dd,18246,60,1,Lime,human,Crewmate,Player 3: yellow
+web_fffb811a5af54d5dbce7a4390db750dd,18248,60,1,Purple,human,Crewmate,Lime
+web_fffb811a5af54d5dbce7a4390db750dd,18255,60,1,Orange,human,Crewmate,Player 3: yellow
